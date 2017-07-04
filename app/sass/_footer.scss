@@ -1,0 +1,78 @@
+.footer {
+	text-align: center;
+	.top-footer {
+		min-height: 110px;
+		padding-top: 38px;
+		padding-bottom: 38px;
+		background-color: #f6f9fd;
+		p {
+			display: inline-block;
+			color: #b5bdca;
+			font-family: $CB;
+			font-size: 14px;
+			margin: 0 50px;
+			padding-left: 23px;
+		}
+		.place {background: url(../img/place-icon.png) 0 50% no-repeat;}
+		.email-adress {background: url(../img/email-icon.png) 0 50% no-repeat;}
+		.phone-number {background: url(../img/phone-icon.png) 0 50% no-repeat;}
+		.search {
+			width: 260px;
+			height: 34px;
+			border-radius: 28px;
+			border: 1px dashed #e5eaf5;
+			color: #a1a4ad;
+			font-family: $CR;
+			font-size: 14px;
+			padding-left: 16px;
+			background:  #ecf1f6 url(../img/serach-icon.png) 90% 50% no-repeat;
+		}
+	}
+	.main-footer {
+		min-height: 350px;
+		background-color: $blue;
+		padding-top: 68px;
+		.logo {
+			color: $white;
+			font-family: $MB;
+			font-size: 27px;
+			line-height: 27px;
+			margin-bottom: 29px;
+		}
+		.footer-nav {
+			margin: 0;
+			padding: 0;
+			margin-bottom: 33px;
+			li {
+				display: inline-block;
+				margin: 0 15px;
+				a {
+					opacity: 0.8;
+					color: $white;
+					font-family: $CB;
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+			}
+		}
+		.social {
+			display: block;
+			width: 162px;
+			height: 26px;
+			background: url(../img/social.png) 0 0 no-repeat;
+			margin: 0 auto;
+			margin-bottom: 54px;
+		}
+	}
+	.copy {
+		min-height: 50px;
+		background-color: #1c73a9;
+		padding-top: 16px;
+		p {
+			opacity: 0.6;
+			color: $white;
+			font-family: $CR;
+			font-size: 13px;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.main-header {
+	width: 100%;
+	max-width: 1140px;
+	padding: 0 10px;
+	min-height: 72px;
+	padding-top: 25px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 99;
+	.logo {
+		color: $white;
+		font-family: $MB;
+		font-size: 28px;
+		line-height: 28px;
+		float: left;
+	}
+	.header-menu {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		float: right;
+		li {
+			float: left;
+			margin: 0 12px;
+			z-index: 999;
+			a {
+				color: $white;
+				font-size: 16px;
+				line-height: 28px;
+				font-family: $CB;
+				opacity: 0.8;
+				display: inline-block;
+				position: relative;
+				transition: all 0.3s linear;
+				z-index: 999;
+				&:after {
+					position: absolute;
+					content: '';
+					display: block;
+					width: 0;
+					bottom: -19px;
+					height: 3px;
+					border-radius: 4px;
+					background-color: $red;
+				}
+				&.active,
+				&:hover,
+				&:focus,
+				&:active {
+					opacity: 1;
+					&:after {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

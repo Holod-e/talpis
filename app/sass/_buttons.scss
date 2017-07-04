@@ -1,0 +1,93 @@
+.btn {
+	height: 48px;
+	border-radius: 54px;
+	padding: 0 42px;
+	background-color: $red;
+	padding-top: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: $white;
+	font-family: $CB;
+	font-size: 13px;
+	display: inline-block;
+}
+
+.footer-btn {
+	width: 178px;
+	height: 42px;
+	border-radius: 54px;
+	background-image: linear-gradient(270deg, #fc912a 0%, #f55d5b 100%);
+	color: $white;
+	font-family: $CB;
+	font-size: 12px;
+	line-height: 42px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.btn-teraphy {
+	color: $white;
+	font-family: $CB;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-left: 75px;
+	padding-right: 75px;
+	border: 2px solid rgba(256,256,256,0.4);
+	background-color: transparent;
+	transition: all 0.3s linear;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $red;
+		border: 2px solid $red;
+	}
+}
+
+.btn-send {
+	border: none;
+	width: 161px;
+	height: 42px;
+	color: $white;
+	font-family: $CB;
+	font-size: 13px;
+	line-height: 47px;
+	padding: 0;
+	text-transform: uppercase;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
+
+.btn-bron,
+.btn-more {
+	width: 236px;
+	height: 57px;
+	line-height: 57px;
+	padding: 0;
+	border-radius: 100px;
+	border: 2px solid $red;
+	background-color: transparent;
+	color: $red;
+	transition: all 0.3s linear;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $red;
+		color: #fff;
+	}
+}
+
+.btn-details {
+	text-transform: uppercase;
+}
+
+.met-subm {
+	text-transform: uppercase;
+	border: none;
+	padding: 0;
+	width: 230px;
+	height: 57px;
+	border-radius: 100px;
+	background-color: $red;
+	cursor: pointer;
+}

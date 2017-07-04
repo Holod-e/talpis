@@ -1,0 +1,71 @@
+/*Параметры контейнера */
+.countdownHolder{
+	width:450px;
+	margin: 0 auto;
+	font: 30px/1.5 'MyriadProRegular',sans-serif;
+	text-align:center;
+	letter-spacing:-3px;
+}
+
+.countdownHolder .position{
+	display: inline-block;
+	height: 1.7em;
+	overflow: hidden;
+	position: relative;
+	width: 0.55em;
+}
+/*Параметры цифр */
+.countdownHolder .digit{
+	position:absolute;
+	display:block;
+	width:0.5em;
+	border-radius:0.2em;
+	text-align:center;
+	color:#000;
+	letter-spacing:-1px;
+}
+
+.countdownHolder .digit.static{
+margin-top:18px;
+}
+
+/*Параметры подложки для секций */
+.countdownHolder .countDays{ background:#fff; border-radius: 5px; 	padding:10px 20px; 	margin:5px;}
+.countdownHolder .countDiv0{}
+.countdownHolder .countHours{background:#fff; border-radius: 5px; 	padding:10px 20px; 	margin:5px ;}
+.countdownHolder .countDiv1{}
+.countdownHolder .countMinutes{background:#fff; border-radius: 5px; 	padding:10px 20px; 	margin:5px;}
+.countdownHolder .countDiv2{}
+.countdownHolder .countSeconds{background:#fff; border-radius: 5px; 	padding:10px 20px; 	margin:5px;}
+
+/*Параметры секций разделения (:)*/
+.countdownHolder .countDiv{
+	display:none;
+	width:16px;
+	height:1.6em;
+	position:relative;
+}
+
+.countdownHolder .countDiv:before,
+.countdownHolder .countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#444;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countdownHolder .countDiv:after{
+	top:0.9em;
+}
+/*Параметры вспомогательного текста (дни, часы, минуты, секунды)*/
+.countdownHolder .textdigit{
+	font-size:15px;
+	font-family: MyriadProRegular;
+	letter-spacing: 0px;
+}
