@@ -1317,11 +1317,12 @@ section.breadcrumbs {
 }
 
 
-
+// COURSES PAGES
 
 
 // METAPHOR CARDS PAGE
-.met-sec1 {
+.met-sec1,
+.course-sec1 {
 	min-height: 700px;
 	padding-top: 208px;
 	text-align: center;
@@ -2014,6 +2015,174 @@ section.breadcrumbs {
 	}
 }
 
+// TRAINER COURSE PAGE
+.trainer-sec1 {
+	background: url(../img/trainer-course-sec1.jpg) 50% no-repeat;
+	background-size: cover;
+	&:after {
+		background: url(../img/layer-snow.png)50%no-repeat;
+	}
+}
+
+.trainer-sec2 {
+	padding-top: 116px;
+	padding-bottom: 116px;
+	text-align: center;
+	.element {
+		margin-top: 43px;
+		margin-bottom: 18px;
+		display: inline-block;
+		vertical-align: top;
+		width: 33%;
+		transition: all 0.3s linear;
+		&:hover {
+			.element-icon {
+				transform: scale(1.03);
+			}
+		}
+		.element-icon {
+			width: 130px;
+			height: 130px;
+			border-radius: 50%;
+			display: inline-block;
+			margin-bottom: 30px;
+			background-repeat: no-repeat;
+			background-position: 50%;
+			transition: all 0.3s linear;
+		}
+		&.el1 {
+			.element-icon {
+				background-color: #f29c1f;
+				background-image: url(../img/trainer-el1.svg);
+			}
+		}
+		&.el2 {
+			.element-icon {
+				background-color: #ff5656;
+				background-image: url(../img/trainer-el2.png);
+			}
+		}
+		&.el3 {
+			.element-icon {
+				background-color: #2fa8cc;
+				background-image: url(../img/trainer-el3.svg);
+			}
+		}
+		.element-text {
+			color: #333333;
+			font-family: $CR;
+			font-size: 20px;
+			margin-bottom: 18px;
+			span {
+				font-family: $CB;
+			}
+		}
+		.to-course {
+			color: #ff5656;
+			font-family: $CB;
+			font-size: 14px;
+			&:after {
+				content: '';
+				height: 7px;
+				width: 10px;
+				display: inline-block;
+				background: url(../img/arr-right.png) 50% no-repeat;
+				margin-left: 5px;
+			}
+		}
+	}
+	.bottom-text {
+		display: inline-block;
+		padding-top: 40px;
+		border-top: 1px solid #e4e4e4;
+		font-size: 16px;
+		color: #a2a2a2;
+		font-family: $CR;
+		span {
+			color: #fc3c45;
+			font-family: $HR;
+		}
+	}
+}
+
+.trainer-sec3 {
+	text-align: center;
+	padding: 115px 0;
+	position: relative;
+	background: url(../img/trainer-sec3-bg.jpg) 50% no-repeat;
+	background-size: cover;
+	&:after {
+		content: '';
+		display: block;
+		width: 117px;
+		height: 32px;
+		background: url(../img/layer-white.png) 50% no-repeat;
+		bottom: -18px;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+	}
+	.txt {
+		color: #ffffff;
+		font-family: $CB;
+		font-size: 26px;
+		margin-bottom: 42px;
+	}
+	.btn {
+		text-transform: uppercase;
+	}
+}
+
+.trainer-sec4 {
+	padding: 115px 0;
+	background-color: #f6f9fd;
+	text-align: center;
+	.sec-title {
+		margin-bottom: 50px;
+	}
+	.items {
+		padding: 50px 0;
+		border-top: 1px solid #efefef;
+		.item {
+			width: 280px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			color: #333333;
+			font-family: $CR;
+			font-size: 18px;
+			line-height: 25px;
+			position: relative;
+			&:before {
+				content: '';
+				display: block;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				background-color: #7dd68a;
+				position: absolute;
+				left: -20px;
+				top: 7px;
+			}
+			span {
+				display: block;
+				color: #333333;
+				font-family: $CB;
+				font-size: 24px;
+				line-height: 32px;
+				margin-bottom: 19px;
+			}
+			&:nth-child(2) {
+				margin: 0 100px;
+			}
+			&.lst {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
 
 /* ----------IMPORT FOOTER STYLES---------- */
 @import "_footer.scss";
