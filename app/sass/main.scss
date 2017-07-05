@@ -1639,7 +1639,8 @@ section.breadcrumbs {
 	}
 }
 
-.met-sec8 {
+.met-sec8,
+.course-formblock {
 	height: 966px;
 	background-color: #eef3fa;
 	text-align: center;
@@ -2180,6 +2181,91 @@ section.breadcrumbs {
 					display: none;
 				}
 			}
+		}
+	}
+}
+
+.trainer-sec5 {
+	padding-top: 90px;
+	padding-bottom: 120px;
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		width: 117px;
+		height: 32px;
+		background: url(../img/layer1.png) 50% no-repeat;
+		bottom: -15px;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+	}
+	.left-block {
+		width: 55%;
+		display: inline-block;
+		vertical-align: top;
+		.sec-title {
+			margin-bottom: 40px;
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.image-block {
+		display: inline-block;
+		vertical-align: top;
+		width: 44%;
+		min-height: 702px;
+		background: url(../img/trainer-sec5-img.jpg) 100% 0 no-repeat;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li {
+			margin-bottom: 40px;
+			opacity: 0.78;
+			color: #333333;
+			font-family: $CL;
+			font-size: 20px;
+			padding-left: 74px;
+			position: relative;
+			span {
+				color: #f34d67;
+			}
+			&:before {
+				content: '';
+				display: block;
+				width: 53px;
+				height: 53px;
+				background: url(../img/bull-big.png) 50% no-repeat;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+}
+
+.trainer-sec6 {
+	min-height: 550px;
+	background: url(../img/trainer-sec6.jpg) 50% no-repeat;
+	background-size: cover;
+}
+
+.trainer-sec7 {
+	height: 851px;
+	.form-block {
+		transform: translateY(-434px);
+	}
+	.bottom-text {
+		margin-top: 40px;
+		opacity: 0.8;
+		font-size: 16px;
+		font-family: $CR;
+		color: #676767;
+		span {
+			color: #fc3c45;
 		}
 	}
 }
