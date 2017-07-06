@@ -2552,6 +2552,140 @@ section.breadcrumbs {
 		margin-bottom: 24px;
 	}
 }
+
+// BATCH LEARNING
+.batch-sec1 {
+	background: url(../img/batch-sec1.jpg) 50% no-repeat;
+	background-size: cover;
+}
+
+.batch-sec2 {
+	.sec-title {
+		span {color: #f34d67;}
+	}
+	.element {
+
+		.element-title {
+			color: #333333;
+			font-family: $CB;
+			font-size: 20px;
+			margin-bottom: 16px;
+		}
+		.element-text {
+			display: inline-block;
+			max-width: 325px;
+			color: #666;
+			font-size: 16px;
+			span {
+				color:#262626
+			}
+		}
+		&.el1 .element-icon {
+			background-color: #ff5656;
+			background-image: url(../img/trainer-el2.png);
+		}
+		&.el2 .element-icon {
+			background-color: #edc92f;
+			background-image: url(../img/bath-el2.svg);
+		}
+		&.el3 .element-icon {
+			background-color: #f29c1f;
+			background-image: url(../img/bath-el3.svg);
+		}
+		&.el4 .element-icon {
+			background-color: #f29c1f;
+			background-image: url(../img/batch-el4.png);
+		}
+		&.el5 .element-icon {
+			background-color: #2fa8cc;
+			background-image: url(../img/batch-el5.svg);
+		}
+	}
+}
+
+.batch-sec3 {
+	background: url(../img/batch-sec3.jpg) 50%  no-repeat;
+	background-size: cover;
+	.sec-title{
+		color: #fff;
+		&:after {
+			margin: 32px auto;
+		}
+	}
+	.sec-subtitle {
+		opacity: 0.9;
+		color: #ffffff;
+		font-family: $CR;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.batch-sec4 {
+	background-color: #fff;
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		width: 14px;
+		height: 21px;
+		background: url(../img/arr-btm.png) 50% no-repeat;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		z-index: 10;
+	}
+	.items {
+		border: none;
+	}
+}
+
+.batch-sec6 {
+	text-align: center;
+	padding-top: 115px;
+	background: url(../img/batch-sec5.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	.sec-title {
+		color: #fff;
+		&:after {
+			margin: 34px auto;
+		}
+	}
+	.sec-subtitle {
+		color: #fff;
+		opacity: 0.8;
+	}
+}
+
+.course-formblock {
+	.bottom-text {
+		max-width: 620px;
+		display: inline-block;
+		margin-bottom: 36px;
+		margin-top: 0px;
+		font-size: 16px;
+		font-family: $CR;
+		color: #929292;
+		span {
+			color: #fc3c45;
+		}
+		b {
+			color: #000;
+		}
+	}
+}
+
+.batch-sec7 {
+	.form-block {
+		.bottom-text {
+			margin-top: 36px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
 /* ----------IMPORT FOOTER STYLES---------- */
 @import "_footer.scss";
 

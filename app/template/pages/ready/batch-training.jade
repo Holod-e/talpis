@@ -1,0 +1,139 @@
+extends ../layouts/freelance.jade
+
+block title
+	title Bath learning page
+
+block content
+	//- variables
+
+	//- Content code
+
+	// SECTION 1
+	section.course-sec1.batch-sec1
+		.container
+		h1.course-title Пакетное обучение
+		p.course-subtitle.
+			Пройдите программу из 7-ми семинаров с самыми прогрессивными психологическими техниками, <br>
+			и начните, наконец, жить на полную!
+		a.btn.btn-bron(href="#") Забронировать
+		a.btn.btn-more(href="#") Узнать подробней
+
+	// SECTION 2
+	section.trainer-sec2.batch-sec2
+		.container
+			h2.sec-title.
+				<span>7 семинаров</span> предназначены для обучения <br>
+				ВсеЛенской терапии в полном объеме <br>
+				и проработки основных психологических блоков
+			p.sec-subtitle Как достичь гармонии и баланса в жизни
+			.elements
+
+				.element.el1
+					.element-icon
+					p.element-title Метафорические карты
+					p.element-text.
+						Карты помогут увидеть то, что происходит в Вашем <span>подсознании</span> и договориться с ним.
+
+				.element.el2
+					.element-icon
+					p.element-title Тета-Хилинг
+					p.element-text.
+						Причины происходящего отнюдь 
+						не в вашей <span>голове</span>. Связь с чем-то большим открывает новые возможности для развития 
+						и понимания.
+
+				.element.el3
+					.element-icon
+					p.element-title ВсеЛенская терапия
+					p.element-text.
+						Как сделать так, чтобы <span>душа</span> клиента брала то, что происходит на сеансах терапии, 
+						и чтобы это меняло его жизнь
+
+				.element.el4
+					.element-icon
+					p.element-title.
+						ВсеЛенская терапия. <br>
+						Дополнения 1-2-3
+					p.element-text.
+						Углубления и дополнения ВсеЛенской терапии помогут выйти за рамки своих привычных сценариев: <span>Личность</span> и Свобода, Жизнь и Смерть, Время и Неопределенность, Власть и Безумие и другие ключевые вопросы нашего существования.
+
+				.element.el5
+					.element-icon
+					p.element-title Точка сборки
+					p.element-text.
+						Новейшие достижения квантовой психологии за два дня! Наше <span>окружение</span> представляет нам нашу точку наблюдения, систему убеждения и ценностей, изменения которых кардинальным образом меняют нашу жизнь
+
+
+	// SECTION 3
+	section.trainer-sec3.batch-sec3
+		.container
+			h2.sec-title.
+				Два года обучения сделают вашу жизнь наполненной <br>
+				новыми смыслами и возможностями
+			p.sec-subtitle.
+				Нестандартное обучение в кругу единомышленников. <br>
+				Знания и навыки, получаемые с юмором и легкостью!
+			a.btn.btn-bron(href="#") Забронировать
+
+	// SECTION 4
+	section.trainer-sec4.batch-sec4
+		.container
+			.items
+				p.item.
+					<span>У Вас будет 
+										730 дней</span>
+					Из которых Вы сможете выбрать тренинги с удобными для Вас датами, большинство семинаров проходят два раза в год.
+				p.item.
+					<span>На протяжении 
+						двух лет</span>
+					Вас будут информировать о времени и месте проведения тренингов и семинаров.
+				p.item.
+					<span>Возможно повторное 
+						посещение семинаров</span>
+					С 30% скидкой и преимущественное право посещения семинаров групповой терапии и групп поддержки между семинарами за отдельную плату.
+
+
+	// SECTION 6
+	section.trainer-sec6.batch-sec6
+		.container
+			h2.sec-title.
+				Покупая программу целиком - Вы <br>
+				существенно экономите!
+			p.sec-subtitle.
+				Оплатив пакетное обучение, вы проходите семинары <br>
+				с существенной скидкой!
+
+	// SECTION 7
+	section.batch-sec7.course-formblock
+		.container
+
+			.form-block
+				form
+					p.form-title.
+						Берите и применяйте!
+					p.form-subtitle Для регистрации на курс – заполните форму
+					input(type="text", name="name", placeholder="Имя / Фамилия").name
+					input(type="text", name="phone", placeholder="Номер телефона").phone
+					input(type="text", name="email", placeholder="Email").email
+					input(type="text", name="country", placeholder=" Город / Страна").country
+					.education-block
+						p.question Есть ли у вас психологическое образование?
+						span.radio.checked Нет
+						span.radio Да
+					p.price-title Стоимость участия
+					p.price <span>180 000 </span> руб 
+					p.after-price  
+					input(type="submit", value="Забронировать").btn.met-subm
+					p.bottom-text.
+						<span>*</span> Посещение тренингов возможно только после <b>полной оплаты первого и последнего</b> семинаров текущей программы
+
+
+
+
+
+
+
+
+
+
+
