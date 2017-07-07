@@ -1,0 +1,280 @@
+extends ../layouts/freelance.jade
+
+block title
+	title Tochka sborki page
+
+block content
+	//- variables
+
+	//- Content code
+
+	// SECTION 1
+	section.course-sec1.ts-sec1
+		.container
+		h1.course-title Точка Сборки
+		p.course-subtitle.
+			Эффективная техника по квантовой психологии, доступная как профессионалам, <br>
+			так и все желающим
+		a.btn.btn-bron(href="#") Забронировать
+		a.btn.btn-more(href="#") Узнать подробней
+
+	// SECTION 2
+	section.course-sec2.ts-sec2
+		.container
+			h2.sec-title.
+				Жизненные сферы
+			p.sec-subtitle.
+				Обучение включает в себя квантовую психологию, элементы ВсеЛенской терапии <br>
+				и технологию выявления базовых зарядов и дуальностей <br>
+				для работы с более серьезными темами
+			.elements
+
+				.element.el1
+					.element-icon
+					p.element-title.
+						Здоровье
+					p.element-text.
+						Lorem ipsum dolor sit amet, consectetur limit
+
+				.element.el2
+					.element-icon
+					p.element-title.
+						Отношения
+					p.element-text.
+						Lorem ipsum dolor sit amet, consectetur limit
+
+				.element.el3
+					.element-icon
+					p.element-title.
+						Самореализация
+					p.element-text.
+						Lorem ipsum dolor sit amet, consectetur limit
+
+				.element.el4
+					.element-icon
+					p.element-title.
+						Достижение целей
+					p.element-text.
+						Lorem ipsum dolor sit amet, consectetur limit
+	// SECTION 3
+	section.met-sec3.ts-sec3
+		.container
+			p.cart-txt1 Эта технология позволяет
+			p.cart-txt2.
+				Выбрать из бесконечного множества существующих реальностей ту, <br>
+				в которой вы можете встретится с оптимальной версией себя, <br>
+				своей жизни, своего здоровья
+			a.btn.btn-details(href="#") Забронировать
+
+	// SECTION 4
+	section.vsel-sec4.ts-sec4
+		.container
+			h2.sec-title.
+				Хотите преодолеть собственные блоки <br>
+				и выйти за рамки собственных <br>
+				ограничений?
+			p.sec-text.
+				Точка сборки поможет Вам получить самые современные инструменты квантовой психологии <br>
+				для управления Вашей реальностью и стать более уверенным и гибким <br>
+				в выборе вариантов своего будущего
+
+	// SECTION 5
+	section.met-sec6.ts-sec5
+		.container
+			p.txt1 После 2-х дней семинара
+			p.txt2.
+				Вы сможете сразу использовать полученные знания и навыки <br>
+				для себя, своих близких и своих клиентов
+
+
+	// SECTION 6
+	section.met-sec5.vsel-sec8.ts-sec6
+		.container
+			h2.sec-title Семинар «Точка Сборки» направлен на:
+			p.title	План семинара
+			ul
+				li.
+					Расширение ваших терапевтических возможностей по работе с клиентами: разработку алгоритмов воздействия с клиентом и отслеживания результатов терапии
+				li.
+					Получение техник работы с установками, которые ограничивают Вашу реальность.
+				li.
+					Приобретение опыта работы с факторами, постоянно создающими необходимость борьбы в Вашей жизни и лишающими Вас необходимых ресурсов.
+
+			ul
+				li.
+					Понимание временных, пространственных 
+					и энергетических характеристик реальности, а также основных техник работы с ними.
+				li.small.
+					Возможность изменять Вашу реальность 
+					во всех жизненных сферах
+
+				li.
+					Обучение работы с полей сердца, использование собственных ресурсов клиента для решения его собственных вопросов
+
+	// SECTION 7
+	section.met-sec6.ts-sec7
+		.container
+			p.txt1 а главное:
+			p.txt2.
+				«Точка Сборки» поможет найти обновленного, уверенного <br>
+				и сильного себя!
+
+	// SECTION REWIEWS
+	section.sec-rewiews.rew-white
+		.container
+			h2.sec-title Отзывы
+			.rewiew-slider
+				.rewiew.rew1
+					.author-info
+						.author-icon
+						p.author-name Хана Шнайдман
+						p.author-prof Психолог, Израиль
+					.rewiew-info
+						p.rewiew-theme ВсеЛенская терапия
+						p.rewiew-name.
+							Фантастической красоты, 
+							глубины и силы работа
+						p.rewiew-text.
+							Фантастической красоты, глубины и силы работа. Правильная, точная, чистая. Всем, кто живет и думает, а еще больше тем, кто думает и не живет — срочно, немедленно и необходимо — к Тальпису!
+			.slider-nav
+
+	// SECTION 8
+	section.met-sec7.ts-sec8
+		.container
+			h2.sec-title.
+				Хотите получить ответы <br>
+				на все волнующие Вас вопросы и найти <br>
+				эффективное решение?
+			p.sec-subtitle.
+				Вы освободитесь от старых установок, отживших убеждений <br>
+				и эмоциональных ограничений
+
+	// SECTION 10
+	section.ts-sec9.course-formblock
+		.container
+			.form-block
+				form
+					p.form-title.
+						Трансформируйте Вашу жизнь 
+						уже сегодня!
+					p.form-subtitle Для регистрации на семинар – заполните форму
+					input(type="text", name="name", placeholder="Имя / Фамилия").name
+					input(type="text", name="phone", placeholder="Номер телефона").phone
+					input(type="text", name="email", placeholder="Email").email
+					input(type="text", name="country", placeholder=" Город / Страна").country
+					.education-block
+						p.question Есть ли у вас психологическое образование?
+						span.radio.checked Нет
+						span.radio Да
+					p.price-title Стоимость участия
+					input(type="submit", value="Забронировать место").btn.met-subm
+
+	// SECTION 11
+	section.met-sec9
+		.container
+			h2.sec-title Ближайшие семинары
+			.seminars
+				.seminar
+					.seminar-photo
+					.seminar-info
+						p.seminar-name.
+							Семинар
+							<span>«Точка сборки»</span>
+						p.seminar-txt.
+							Новейшие инструменты работы с психикой сейчас находятся на …
+						span.date 14 Апреля
+						a.more Подробнее
+				.seminar
+					.seminar-photo
+					.seminar-info
+						p.seminar-name.
+							Семинар
+							<span>«Точка сборки»</span>
+						p.seminar-txt.
+							Новейшие инструменты работы с психикой сейчас находятся на …
+						span.date 14 Апреля
+						a.more Подробнее
+				.seminar
+					.seminar-photo
+					.seminar-info
+						p.seminar-name.
+							Семинар
+							<span>«Точка сборки»</span>
+						p.seminar-txt.
+							Новейшие инструменты работы с психикой сейчас находятся на …
+						span.date 14 Апреля
+						a.more Подробнее
+				.seminar
+					.seminar-photo
+					.seminar-info
+						p.seminar-name.
+							Семинар
+							<span>«Точка сборки»</span>
+						p.seminar-txt.
+							Новейшие инструменты работы с психикой сейчас находятся на …
+						span.date 14 Апреля
+						a.more Подробнее 
+
+	// SECTION VIDEO REWIEWS
+	section.video-rewiews
+		.container
+			h2.sec-title Видеотзывы
+			.video-slider
+			.slider-nav
+
+	// SECTION ABOUT TALPIS
+	section.met-sec11
+		.container
+			.talpis-bio
+				h2.sec-title Тальпис Леонид Борисович
+				p.talpis-info.
+					Практикующий психолог и потомственный врач, имеющий два высших образования: 
+					Медицина и Психология
+				p.text.
+					<span>20</span> Лет практики
+				p.text.
+					<span>8</span> Лет разработки собственного метода
+				p.text.big.
+					<span>1-й</span> Кто дополнил базовое обучение 
+						метафорическими картами авторской методикой
+				p.text.
+					<span>20</span> Тис. учеников за годы практики 
+				a.btn.btn-more ПОДРОБНЕЕ ОБ АВТОРЕ
+			.talpis-photo
+
+	// SECTION TERAPHY
+	section.sec-teraphy
+		.left
+			h2.sec-title.
+				Запись на <br>
+				 индивидуальную терапию
+			a.btn.btn-teraphy(href="#")  Записаться
+		.right
+			h2.sec-title.
+				Запись на <br>
+				 рупповую терапию
+			a.btn.btn-teraphy(href="#")  Записаться
+
+	// SECTION SERTIFICATE
+	section.sec-sertificate
+		.container
+			.sertificate-photo
+			.sertificate-info 
+				h2.sec-title.
+					Сертификат<br>
+					о прохождении тренинга
+				p.sert-text.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+				a.btn.btn-bron(href="#") Забронировать место
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2942,6 +2942,94 @@ section.breadcrumbs {
 		}
 	}
 }
+
+.ts-sec1 {
+	background: url(../img/ts-sec1.jpg) 50% no-repeat;
+	background-size: cover;
+}
+
+.ts-sec2 {
+	.elements {
+		.element {
+			width: 25%;
+			float: left;
+			&.el1 {
+				.element-icon {
+					background-image: url(../img/ts-el1.svg);
+				}
+			}
+			&.el2 {
+				.element-icon {
+					background-image: url(../img/ts-el2.svg);
+				}
+			}
+			&.el3 {
+				.element-icon {
+					background-image: url(../img/ts-el3.svg);
+				}
+			}
+			&.el4 {
+				.element-icon {
+					background-image: url(../img/ts-el4.svg);
+				}
+			}
+			.element-text {
+				max-width: 240px;
+			}
+		}
+	}
+}
+
+.ts-sec3 {
+	background: #f6f9fd url(../img/ts-sec3.png) 50% no-repeat;
+	background-size: cover;
+	&:after {
+		z-index: 10;
+	}
+}
+
+.ts-sec4 {
+	padding-bottom: 200px;
+	text-align: center;
+	background: url(../img/ts-sec4.jpg) 50% no-repeat;
+	background-size: cover;
+	&:after {display: none;}
+	.sec-title {
+		&:after {
+			margin: 32px auto
+		}
+	}
+}
+
+.ts-sec5,
+.ts-sec7 {
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		width: 117px;
+		height: 32px;
+		background: url(../img/layer-blue.png) 50% no-repeat;
+		position: absolute;
+		left: 50%;
+		bottom: -15px;
+		transform: translateX(-50%) rotate(180deg);
+		z-index: 10;
+	}
+}
+
+.ts-sec6 {
+	padding-bottom: 96px;
+}
+
+.ts-sec8 {
+	background: url(../img/ts-sec8.jpg) 50% no-repeat;
+	background-size: cover;
+}
+
+.ts-sec9 {
+	padding-bottom: 0;
+}
 /* ----------IMPORT FOOTER STYLES---------- */
 @import "_footer.scss";
 
