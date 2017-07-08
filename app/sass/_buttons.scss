@@ -2,14 +2,32 @@
 	height: 48px;
 	border-radius: 54px;
 	padding: 0 42px;
-	background-color: $red;
+	border: 2px solid $red;
 	padding-top: 16px;
 	line-height: 19px;
 	text-align: center;
-	color: $white;
+	color: $red;
 	font-family: $CB;
 	font-size: 13px;
 	display: inline-block;
+	cursor: pointer;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $red;
+		color: #fff;
+	}
+	&.btn-red {
+		background-color: $red;
+		text-transform: uppercase;
+		color: #fff;
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: transparent;
+			color: $red;
+		}
+	}
 }
 
 .footer-btn {

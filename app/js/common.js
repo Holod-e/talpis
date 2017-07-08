@@ -8,7 +8,24 @@ $('.rewiews-block .read-more').on('click', function (e) {
   e.preventDefault();
   $(this).css('display', 'none');
   $(this).closest('.rewiew-info').find('.rewiew-text').css('height', 'auto');
-})
+});
+
+$('.teta-courses .btn-more').on('click', function(e) {
+  if ($(this).hasClass('active')) {
+    $('.seminar-plan.active').slideUp().removeClass('active');
+    $(this).removeClass('active');
+  }
+  else {
+    $('.teta-courses .btn-more.active').removeClass('active');
+    $(this).addClass('active');
+    var target=$(this).attr('data-target');
+    $('.seminar-plan.active').slideUp().removeClass('active');
+    $('.hidden-'+target).slideDown().addClass('active');
+  }
+});
+
+
+
 
 // Disable scroll zooming and bind back the click event
  var onMapMouseleaveHandler = function (event) {
