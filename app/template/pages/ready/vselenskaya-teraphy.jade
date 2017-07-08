@@ -27,6 +27,7 @@ block content
 				ВсеЛенская терапия – авторская методика, которая базируется на более чем 20-и летней практике Леонида Тальписа, <br>
 				его оригинальных разработках и опыте в гештальте, расстановках, провокативной терапии, квантовой психология, <br>
 				тета-хилинге, телесной и процессуальной терапии и многом другом
+			p.text Основные достоинства ВсеЛенской терапии:
 			.elements
 
 				.element.el1
@@ -76,7 +77,7 @@ block content
 			p.cart-txt2.
 				Является четкая пошаговая структура выявления причин происходящего <br>
 				и понятный и четкий алгоритм решения психологических вопросов
-			a.btn.btn-details(href="#") Забронировать
+			a.btn.btn-red(href="#") Забронировать
 
 	// SECTION 4
 	section.vsel-sec4
@@ -193,24 +194,7 @@ block content
 				a.btn.btn-bron Забронировать место
 
 
-	// SECTION REWIEWS
-	section.sec-rewiews.rew-white
-		.container
-			h2.sec-title Отзывы
-			.rewiew-slider
-				.rewiew.rew1
-					.author-info
-						.author-icon
-						p.author-name Хана Шнайдман
-						p.author-prof Психолог, Израиль
-					.rewiew-info
-						p.rewiew-theme ВсеЛенская терапия
-						p.rewiew-name.
-							Фантастической красоты, 
-							глубины и силы работа
-						p.rewiew-text.
-							Фантастической красоты, глубины и силы работа. Правильная, точная, чистая. Всем, кто живет и думает, а еще больше тем, кто думает и не живет — срочно, немедленно и необходимо — к Тальпису!
-			.slider-nav
+	include ../common/rewiews.jade
 
 	// SECTION 9
 	section.met-sec7.vsel-sec9
@@ -248,91 +232,13 @@ block content
 						<span>*</span> - Перед семинаром по Вселенской терапии необходимо пройти семинар по <span>Метафорическим картам </span>или <span>«Точке Сборки»</span>. <br><br>
 						<span>*</span> - Беременным в первый триместр беременности участие в курсе не рекомендовано.
 
-	// SECTION 11
-	section.met-sec9
-		.container
-			h2.sec-title Ближайшие семинары
-			.seminars
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее 
+	include ../common/closest-seminars.jade
 
-	// SECTION VIDEO REWIEWS
-	section.video-rewiews
-		.container
-			h2.sec-title Видеотзывы
-			.video-slider
-			.slider-nav
+	include ../common/video-rewiews.jade
 
-	// SECTION ABOUT TALPIS
-	section.met-sec11
-		.container
-			.talpis-bio
-				h2.sec-title Тальпис Леонид Борисович
-				p.talpis-info.
-					Практикующий психолог и потомственный врач, имеющий два высших образования: 
-					Медицина и Психология
-				p.text.
-					<span>20</span> Лет практики
-				p.text.
-					<span>8</span> Лет разработки собственного метода
-				p.text.big.
-					<span>1-й</span> Кто дополнил базовое обучение 
-						метафорическими картами авторской методикой
-				p.text.
-					<span>20</span> Тис. учеников за годы практики 
-				a.btn.btn-more ПОДРОБНЕЕ ОБ АВТОРЕ
-			.talpis-photo
+	include ../common/talpis-bio.jade
 
-	// SECTION TERAPHY
-	section.sec-teraphy
-		.left
-			h2.sec-title.
-				Запись на <br>
-				 индивидуальную терапию
-			a.btn.btn-teraphy(href="#")  Записаться
-		.right
-			h2.sec-title.
-				Запись на <br>
-				 рупповую терапию
-			a.btn.btn-teraphy(href="#")  Записаться
+	include ../common/teraphy.jade
 
 
 

@@ -15,7 +15,7 @@ block content
 		p.course-subtitle.
 			Эффективная техника по квантовой психологии, доступная как профессионалам, <br>
 			так и все желающим
-		a.btn.btn-bron(href="#") Забронировать
+		a.btn.btn-red(href="#") Забронировать
 		a.btn.btn-more(href="#") Узнать подробней
 
 	// SECTION 2
@@ -64,7 +64,7 @@ block content
 				Выбрать из бесконечного множества существующих реальностей ту, <br>
 				в которой вы можете встретится с оптимальной версией себя, <br>
 				своей жизни, своего здоровья
-			a.btn.btn-details(href="#") Забронировать
+			a.btn.btn-red(href="#") Забронировать
 
 	// SECTION 4
 	section.vsel-sec4.ts-sec4
@@ -119,24 +119,7 @@ block content
 				«Точка Сборки» поможет найти обновленного, уверенного <br>
 				и сильного себя!
 
-	// SECTION REWIEWS
-	section.sec-rewiews.rew-white
-		.container
-			h2.sec-title Отзывы
-			.rewiew-slider
-				.rewiew.rew1
-					.author-info
-						.author-icon
-						p.author-name Хана Шнайдман
-						p.author-prof Психолог, Израиль
-					.rewiew-info
-						p.rewiew-theme ВсеЛенская терапия
-						p.rewiew-name.
-							Фантастической красоты, 
-							глубины и силы работа
-						p.rewiew-text.
-							Фантастической красоты, глубины и силы работа. Правильная, точная, чистая. Всем, кто живет и думает, а еще больше тем, кто думает и не живет — срочно, немедленно и необходимо — к Тальпису!
-			.slider-nav
+	include ../common/rewiews.jade
 
 	// SECTION 8
 	section.met-sec7.ts-sec8
@@ -169,103 +152,19 @@ block content
 					p.price-title Стоимость участия
 					input(type="submit", value="Забронировать место").btn.met-subm
 
-	// SECTION 11
-	section.met-sec9
-		.container
-			h2.sec-title Ближайшие семинары
-			.seminars
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее 
+	include ../common/closest-seminars.jade
 
-	// SECTION VIDEO REWIEWS
-	section.video-rewiews
-		.container
-			h2.sec-title Видеотзывы
-			.video-slider
-			.slider-nav
+	include ../common/video-rewiews.jade
 
-	// SECTION ABOUT TALPIS
-	section.met-sec11
-		.container
-			.talpis-bio
-				h2.sec-title Тальпис Леонид Борисович
-				p.talpis-info.
-					Практикующий психолог и потомственный врач, имеющий два высших образования: 
-					Медицина и Психология
-				p.text.
-					<span>20</span> Лет практики
-				p.text.
-					<span>8</span> Лет разработки собственного метода
-				p.text.big.
-					<span>1-й</span> Кто дополнил базовое обучение 
-						метафорическими картами авторской методикой
-				p.text.
-					<span>20</span> Тис. учеников за годы практики 
-				a.btn.btn-more ПОДРОБНЕЕ ОБ АВТОРЕ
-			.talpis-photo
+	include ../common/talpis-bio.jade
 
-	// SECTION TERAPHY
-	section.sec-teraphy
-		.left
-			h2.sec-title.
-				Запись на <br>
-				 индивидуальную терапию
-			a.btn.btn-teraphy(href="#")  Записаться
-		.right
-			h2.sec-title.
-				Запись на <br>
-				 рупповую терапию
-			a.btn.btn-teraphy(href="#")  Записаться
+	include ../common/teraphy.jade
 
-	// SECTION SERTIFICATE
-	section.sec-sertificate
-		.container
-			.sertificate-photo
-			.sertificate-info 
-				h2.sec-title.
-					Сертификат<br>
-					о прохождении тренинга
-				p.sert-text.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-				a.btn.btn-bron(href="#") Забронировать место
+	include ../common/sec-sertificate.jade
+
+
+
+
 
 
 

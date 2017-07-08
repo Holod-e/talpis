@@ -112,7 +112,7 @@ block content
 						несколько сотен тысяч человек, практикующих его 
 						в самых различных сферах человеческого бытия. 
 
-				a.btn.btn-bron Забронировать
+				a.btn.btn-red Забронировать
 
 	// SECTION 4
 	section.teta-sec4
@@ -124,7 +124,7 @@ block content
 				Как в отношении самого себя, так и других?
 			p.blue-text.
 				А главное, по окончании тренинга выдается сертификат Тета-целителя института THInK Вианны Стайбл соответствующего уровня.
-				<a class="btn"> Забронировать место</a>
+				<a class="btn btn-red"> Забронировать место</a>
 
 	// SECTION 5
 	section.teta-sec5
@@ -228,7 +228,7 @@ block content
 						трансформировать свою жизнь в соответствии 
 						с ее задачами
 
-				a.btn.btn-bron Забронировать
+				a.btn.btn-red Забронировать
 			.image-block
 
 	// SECTION 6
@@ -295,91 +295,13 @@ block content
 					a.seminar-price(href="#modal-tetaPrice") Стоимость семинара
 					input(type="submit", value="Забронировать место").btn.met-subm
 
-	// SECTION 9
-	section.met-sec9
-		.container
-			h2.sec-title Ближайшие семинары
-			.seminars
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее 
+	include ../common/closest-seminars.jade
 
-	// SECTION 10
-	section.video-rewiews
-		.container
-			h2.sec-title Видеотзывы
-			.video-slider
-			.slider-nav
+	include ../common/video-rewiews.jade
 
-	// SECTION 11
-	section.met-sec11
-		.container
-			.talpis-bio
-				h2.sec-title Тальпис Леонид Борисович
-				p.talpis-info.
-					Практикующий психолог и потомственный врач, имеющий два высших образования: 
-					Медицина и Психология
-				p.text.
-					<span>20</span> Лет практики
-				p.text.
-					<span>8</span> Лет разработки собственного метода
-				p.text.big.
-					<span>1-й</span> Кто дополнил базовое обучение 
-						метафорическими картами авторской методикой
-				p.text.
-					<span>20</span> Тис. учеников за годы практики 
-				a.btn.btn-more ПОДРОБНЕЕ ОБ АВТОРЕ
-			.talpis-photo
+	include ../common/talpis-bio.jade
 
-	// SECTION TERAPHY
-	section.sec-teraphy
-		.left
-			h2.sec-title.
-				Запись на <br>
-				 индивидуальную терапию
-			a.btn.btn-teraphy(href="#")  Записаться
-		.right
-			h2.sec-title.
-				Запись на <br>
-				 рупповую терапию
-			a.btn.btn-teraphy(href="#")  Записаться
+	include ../common/teraphy.jade
 
 
 

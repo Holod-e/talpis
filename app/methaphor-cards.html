@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/bootstrapGM.css">
     <link rel="stylesheet" href="css/tingle.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/popup_style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
@@ -48,7 +49,7 @@
       </nav>
     </header>
     <!-- SECTION 1-->
-    <section class="met-sec1">
+    <section class="course-sec1">
       <div class="container"></div>
       <h1 class="course-title">Метафорические карты</h1>
       <p class="course-subtitle">Простой и быстрый способ лично познакомиться с методикой
@@ -57,7 +58,7 @@
       <a href="#" class="btn btn-more">Узнать подробней</a>
     </section>
     <!-- SECTION 2-->
-    <section class="met-sec2">
+    <section class="course-sec2 met-sec2">
       <div class="container">
         <h2 class="sec-title">Решение вопросов
           <br> в различных жизненных сферах</h2>
@@ -205,7 +206,7 @@
       </div>
     </section>
     <!-- SECTION 8-->
-    <section class="met-sec8">
+    <section class="course-formblock met-sec8">
       <div class="container">
         <div class="form-block">
           <form>
@@ -231,8 +232,8 @@
         </div>
       </div>
     </section>
-    <!-- SECTION 9-->
-    <section class="met-sec9">
+    <!-- SECTION closest-seminars-->
+    <section class="closest-seminars">
       <div class="container">
         <h2 class="sec-title">Ближайшие семинары</h2>
         <div class="seminars">
@@ -283,7 +284,7 @@
         </div>
       </div>
     </section>
-    <!-- SECTION 10-->
+    <!-- SECTION VIDEO REWIEWS-->
     <section class="video-rewiews">
       <div class="container">
         <h2 class="sec-title">Видеотзывы</h2>
@@ -291,8 +292,8 @@
         <div class="slider-nav"></div>
       </div>
     </section>
-    <!-- SECTION 11-->
-    <section class="met-sec11">
+    <!-- SECTION TALPIS BIO-->
+    <section class="talpis-bio-sec">
       <div class="container">
         <div class="talpis-bio">
           <h2 class="sec-title">Тальпис Леонид Борисович</h2>
@@ -331,7 +332,7 @@
           <h2 class="sec-title">Сертификат
             <br> о прохождении тренинга</h2>
           <p class="sert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque </p>
-          <a href="#" class="btn btn-bron">Забронировать место</a>
+          <a href="#" class="btn btn-red">Забронировать место</a>
         </div>
       </div>
     </section>
@@ -378,6 +379,53 @@
         <p>© Talpis.com. Все права защищены. Копирование материалов сайта разрешено только с письменного согласия правообладателей. </p>
       </div>
     </footer>
+    <!-- MODALS-->
+    <div id="modal-tetaPrice" class="modal-overlay modal-seminar-price">
+      <div class="modal-content">
+        <div class="close-button">
+          <span class="one"></span>
+          <span class="two"></span>
+        </div>
+        <p class="seminar-name">Семинар Тета-Хилинг</p>
+        <p class="modal-title">Стоимость семинара</p>
+        <div class="prices-blocks clearfix">
+          <div class="price-block pb1">
+            <p class="price-val">16 000
+              <span>руб </span>
+            </p>
+            <p class="price-info">При оплате до
+              <span>1 августа</span> с учетом предоплаты.</p>
+          </div>
+          <div class="price-block pb2">
+            <p class="price-val">17 000
+              <span>руб </span>
+            </p>
+            <p class="price-info">При оплате до
+              <span>1 октября</span> с учетом предоплаты.</p>
+          </div>
+          <div class="price-block pb3">
+            <p class="price-val">18 000
+              <span>руб </span>
+            </p>
+            <p class="price-info">При оплате до
+              <span>1 октября</span> с учетом предоплаты.</p>
+          </div>
+          <div class="price-block pb4">
+            <p class="price-val">18 500
+              <span>руб </span>
+            </p>
+            <p class="price-info">При оплате до При оплате в день начала семинара </p>
+          </div>
+        </div>
+        <div class="bottom-text">
+          <span>*</span> Для бронирования места на тренинге и фиксации суммы Вашей оплаты
+          <br> необходимо внести предоплату
+          <span class="blue">5 000 рублей</span>
+        </div>
+        <a class="btn btn-bron">Забронировать</a>
+      </div>
+    </div>
+    <script src="js/popup_script.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

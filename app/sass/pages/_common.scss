@@ -1,0 +1,150 @@
+// COMMON STYLES
+
+.sec-teraphy {
+	position: relative;
+	text-align: center;
+	.left {
+		padding-top: 200px;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		width: 50%;
+		height: 620px;
+		background: url(../img/teraphy-left.jpg) 50%  no-repeat;
+		background-size: cover;
+	}
+	.right {
+		padding-top: 200px;
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		height: 620px;
+		background: url(../img/teraphy-right.jpg) 50%  no-repeat;
+		background-size: cover;
+	}
+	.sec-title {
+		color: #fff;
+	}
+}
+
+.sec-rewiews {
+	min-height: 584px;
+	background: url(../img/sec-rewiewsbg.jpg) 50% no-repeat;
+	background-size: cover;
+	padding-top: 60px;
+	text-align: center;
+	.sec-title {
+		color: $white;
+	}
+	.rewiew-slider {
+		text-align: left;
+		margin-top: 10px;
+		width: 808px;
+		min-height: 241px;
+		border-radius: 5px;
+		background-color: $white;
+		display: inline-block;
+		padding: 60px;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 40px;
+			height: 40px;
+			left: -20px;
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+			border-radius:50%;
+			background:#fff url(../img/prev.png) 50% no-repeat;
+		}
+		&:after {
+			content: '';
+			display: block;
+			width: 40px;
+			height: 40px;
+			right: -20px;
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+			border-radius:50%;
+			background: #fff url(../img/next.png) 50% no-repeat;
+		}
+		.author-info {
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			width: 64px;
+			margin-right: 20px;
+			.author-icon {
+				border-radius: 50%;
+				width: 64px;
+				height: 64px;
+				background-repeat: no-repeat;
+				background-position: 50%;
+				margin-bottom: 13px;
+			}
+			.author-name {
+				color: $darkB;
+				font-family: $CB;
+				font-size: 12px;
+				line-height: 14px;
+				margin-bottom: 6px;
+			}
+			.author-prof {
+				color: #999999;
+				font-family: $CR;
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+		.rewiew-info {
+			display: inline-block;
+			vertical-align: top;
+			width: 600px;
+			.rewiew-name {
+				color: $darkB;
+				font-family: $CB;
+				font-size: 24px;
+				line-height: 33px;
+			}
+			.rewiew-theme {
+				color: #999999;
+				font-family: $CR;
+				font-size: 18px;
+				line-height: 18px;
+				margin-bottom: 12px;
+			}
+			.rewiew-text {
+				opacity: 0.8;
+				color: $darkL;
+				font-family: $CR;
+				font-size: 16px;
+				height: 54px;
+				line-height: 24px;
+				margin-top: 10px;
+			}
+		}
+		.rew1 .author-info .author-icon {background-image: url(../img/rew1.png);}
+	}
+	.slider-nav {
+		width: 186px;
+		height: 41px;
+		background: url(../img/slider-nav.png) 50% 0 no-repeat;
+		margin: 0 auto;
+		margin-top: 75px;
+	}
+}
+
+section.breadcrumbs {
+	height: 60px;
+	padding-top: 21px;
+	background-color: #fafafa;
+	p {
+		font-family: $CR;
+		line-height: 18px;
+		color: #878787;
+		font-size: 14px;
+	}
+}

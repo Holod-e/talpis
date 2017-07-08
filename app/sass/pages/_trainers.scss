@@ -1,0 +1,82 @@
+// TREINER AND PARTNERS PAGE STYLES //
+.trainers-sec1 {
+	padding-top: 70px;
+	.sec-title {
+		text-align: center;
+		&:after {
+			margin-bottom: 0px;
+		}
+	}
+	.trainer {
+		padding-top: 48px;
+		padding-bottom: 48px;
+		border-bottom: 1px solid #eeeeee;
+		&:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+		.trainer-info {
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			.trainer-photo {
+				width: 260px;
+				height: 183px;
+				background: url(../img/trainer1.jpg) 0 0 no-repeat;
+				margin-bottom: 25px;
+			}
+			.trainer-name {
+				color: $darkB;
+				font-family: $CR;
+				font-size: 20px;
+				line-height: 32px;
+			}
+			.trainer-prof{
+				color: #999999;
+				font-family: $CR;
+				font-size: 16px;
+				line-height: 28px;
+			}
+		}
+		.trainer-text {
+			display: inline-block;
+			vertical-align: top;
+			display: inline-block;
+			width: 700px;
+			.text-title {
+				color: $darkB;
+				font-family: $CB;
+				font-size: 26px;
+				line-height: 34px;
+				margin-bottom: 35px;
+			}
+			.text-txt {
+				color: $darkL;
+				font-family: $CR;
+				font-size: 16px;
+				margin-bottom: 30px;
+			}
+			.totrainer-site {
+				color: $red;
+				font-family: $CB;
+				font-size: 14px;
+			}
+		}
+	}
+	.trainer:nth-child(even){
+		.trainer-info {
+			margin-right: 22px;
+		}
+	}
+	.trainer:nth-child(odd){
+		.trainer-info {
+			float: right;
+			margin-left: 22px;
+		}
+		.trainer-text {
+			text-align: right;
+			float: right;
+		}
+	}
+}

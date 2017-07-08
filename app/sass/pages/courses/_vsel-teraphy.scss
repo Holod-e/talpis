@@ -1,0 +1,225 @@
+// VSELENSKAYA TERAPHY PAGE
+.vsel-sec1 {
+	background: url(../img/vsel-sec1.jpg) 50% no-repeat;
+	background-size: cover;
+}
+.vsel-sec2 {
+	background-color: #f6f9fd;
+	.text {
+		color: $darkB;
+		font-family: $CB;
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 70px;
+	}
+	.elements {
+		.element {
+			width: 20%;
+			float: left;
+			.element-icon {
+				width: 95px;
+				height: 95px;
+				background-color: #fff;
+			}
+			&.el1 .element-icon {background-image: url(../img/vsel-el1.svg);}
+			&.el2 .element-icon {background-image: url(../img/vsel-el2.svg);}
+			&.el3 .element-icon {background-image: url(../img/vsel-el3.svg);}
+			&.el4 .element-icon {background-image: url(../img/vsel-el4.svg);}
+			&.el5 .element-icon {background-image: url(../img/vsel-el5.svg);}
+		}
+	}
+}
+
+.vsel-sec3 {
+	background: url(../img/vsel-sec3.png) 50% no-repeat;
+	background-size: cover;
+	&:after {
+		z-index: 15;
+	}
+}
+
+.vsel-sec4 {
+	padding-top: 110px;
+	padding-bottom: 110px;
+	background: url(../img/vsel-se4.jpg) 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		width: 117px;
+		height: 32px;
+		background: url(../img/layer-white.png) 50% no-repeat;
+		position: absolute;
+		left: 50%;
+		bottom: -15px;
+		transform: translateX(-50%);
+		z-index: 10;
+		}
+	.sec-title {
+		color: #fff;
+		&:after {
+			margin-top: 42px;
+			margin-left: 0;
+			margin-bottom: 42px;
+		}
+	}
+	.sec-text {
+		opacity: 0.9;
+		color: $white;
+		font-family: $CR;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.vsel-sec5 {
+	padding-top: 110px;
+	background: url(../img/vsel-sec5.png) 50% no-repeat;
+	background-size: cover;
+	ul {
+		li {
+			padding: 0;
+			padding-left: 20px;
+			background: none;
+			margin-bottom: 40px;
+			&:before {
+				content: '';
+				width: 12px;
+				height: 12px;
+				border-radius: 55px;
+				background-color: $red;
+				left: 0;
+				top: 5px;
+				position: absolute;
+			}
+			&:last-child {
+				&:before {display: block;}
+			}
+		}
+	}
+}
+
+.vsel-sec6 {
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		width: 117px;
+		height: 32px;
+		background: url(../img/layer-blue.png) 50% no-repeat;
+		position: absolute;
+		left: 50%;
+		bottom: -15px;
+		transform: translateX(-50%) rotate(180deg);
+		z-index: 10;
+		}
+}
+.vsel-sec7 {
+	background: url(../img/vsel-sec7.jpg) 50% no-repeat;
+	background-size: cover;
+	padding-top: 110px;
+	.sec-title {
+		color: #fff;
+	}
+	ul {
+		li {
+			padding: 0;
+			padding-left: 20px;
+			background: none;
+			color: $white;
+			opacity: 0.8;
+			margin-bottom: 40px;
+			&:before {
+				content: '';
+				width: 12px;
+				height: 12px;
+				border-radius: 55px;
+				background-color: #7dd68a;
+				left: 0;
+				top: 5px;
+				position: absolute;
+			}
+			&:last-child {
+				&:before {display: block;}
+			}
+		}
+	}
+}
+
+.vsel-sec8 {
+	padding-top: 116px;
+	padding-bottom: 215px;
+	.title {
+		color: $darkB;
+		font-family: $CB;
+		font-size: 26px;
+		padding-bottom: 73px;
+	}
+	ul {
+		li {
+			position: relative;
+			max-width: 430px;
+			background: url(../img/bull-big.png) 0 0 no-repeat;
+			&:before {
+				bottom: 0;
+			}
+			&.small {
+				&:before {
+					bottom: -30px;
+				}
+			}
+		}
+	}
+	.hidden-tooltip {
+		position: absolute;
+		display: block;
+		width: 478px;
+		height: 260px;
+		box-shadow: 0 12px 10px rgba(235, 238, 244, 0.77);
+		border-radius: 5px;
+		border: 1px solid #f3f3f3;
+		background-color: $white;
+		bottom:-260px;
+		left: 0;
+		padding-left: 25px;
+		padding-top: 31px;
+		padding-bottom: 30px;
+		span {
+			color: #676767;
+			font-family: $CB;
+			font-size: 16px;
+			display: block;
+			line-height: 26px;
+			position: relative;
+			padding-left: 25px;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 5px;
+				width: 12px;
+				height: 12px;
+				border-radius: 55px;
+				border: 3px solid #7dd68a;
+			}
+		}
+	}
+}
+
+.vsel-sec9 {
+	background: url(../img/vsel-sec8.jpg) 50% no-repeat;
+	background-size: cover;
+}
+
+.vsel-sec10 {
+	height: 1112px;
+	padding-bottom: 123px;
+	.form-block {
+		.bottom-text {
+				margin-top: 36px;
+			margin-bottom: 0;
+		}
+	}
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Trainer courses page</title>
+    <title>Trainer course page</title>
     <!-- SEO-->
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/bootstrapGM.css">
     <link rel="stylesheet" href="css/tingle.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/popup_style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
@@ -57,7 +58,7 @@
       <a href="#" class="btn btn-more">Узнать подробней</a>
     </section>
     <!-- SECTION 2-->
-    <section class="trainer-sec2">
+    <section class="course-sec2 trainer-sec2">
       <div class="container">
         <h2 class="sec-title">Для прохождения курса
           <br> необходимо пройти:</h2>
@@ -102,7 +103,7 @@
           <br>взаимодействие с клиентами, применение карт в индивидуальной
           <br> и групповой терапии: от психосоматики
           <br> до бизнес-консультирования.</p>
-        <a href="#" class="btn btn-bron">Забронировать</a>
+        <a href="#" class="btn btn-red">Забронировать</a>
       </div>
     </section>
     <!-- SECTION 4-->
@@ -232,6 +233,53 @@
         <p>© Talpis.com. Все права защищены. Копирование материалов сайта разрешено только с письменного согласия правообладателей. </p>
       </div>
     </footer>
+    <!-- MODALS-->
+    <div id="modal-tetaPrice" class="modal-overlay modal-seminar-price">
+      <div class="modal-content">
+        <div class="close-button">
+          <span class="one"></span>
+          <span class="two"></span>
+        </div>
+        <p class="seminar-name">Семинар Тета-Хилинг</p>
+        <p class="modal-title">Стоимость семинара</p>
+        <div class="prices-blocks clearfix">
+          <div class="price-block pb1">
+            <p class="price-val">16 000
+              <span>руб </span>
+            </p>
+            <p class="price-info">При оплате до
+              <span>1 августа</span> с учетом предоплаты.</p>
+          </div>
+          <div class="price-block pb2">
+            <p class="price-val">17 000
+              <span>руб </span>
+            </p>
+            <p class="price-info">При оплате до
+              <span>1 октября</span> с учетом предоплаты.</p>
+          </div>
+          <div class="price-block pb3">
+            <p class="price-val">18 000
+              <span>руб </span>
+            </p>
+            <p class="price-info">При оплате до
+              <span>1 октября</span> с учетом предоплаты.</p>
+          </div>
+          <div class="price-block pb4">
+            <p class="price-val">18 500
+              <span>руб </span>
+            </p>
+            <p class="price-info">При оплате до При оплате в день начала семинара </p>
+          </div>
+        </div>
+        <div class="bottom-text">
+          <span>*</span> Для бронирования места на тренинге и фиксации суммы Вашей оплаты
+          <br> необходимо внести предоплату
+          <span class="blue">5 000 рублей</span>
+        </div>
+        <a class="btn btn-bron">Забронировать</a>
+      </div>
+    </div>
+    <script src="js/popup_script.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

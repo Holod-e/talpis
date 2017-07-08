@@ -1,0 +1,328 @@
+// AUTHOR PAGE STYLES
+.author-sec1 {
+	min-height: 590px;
+	background: url(../img/author1.jpg) 50%  no-repeat;
+	background-size: cover;
+	.container {
+		position: relative;
+	}
+	article {
+		width: 720px;
+		float: left;
+	}
+	aside {
+		width: 355px;
+		padding-top: 155px;
+		float: right;
+	}
+	.author-title {
+		margin: 0;
+		margin-top: 148px;
+		color: $white;
+		font-family: $CB;
+		font-size: 56px;
+		line-height: 72px;
+		position: relative;
+		&:after {
+			content: '';
+			width: 143px;
+			height: 4px;
+			border-radius: 4px;
+			background-color: $red;
+			margin-top: 23px;
+			display: block;
+			margin-bottom: 36px;
+		}
+		&:before {
+			content: '';
+			width: 24px;
+			height: 21px;
+			display: block;
+			position: absolute;
+			top: -20px;
+			left: -25px;
+			background: url(../img/icon-quotes.png) 0 0 no-repeat;
+		}
+	}
+	.subtitle {
+		opacity: 0.9;
+		color: $white;
+		font-family: $CR;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.widget-consultation{
+		width: 354px;
+		height: 304px;
+		border-radius: 5px;
+		border: 2px dashed #ff8255;
+		padding-top: 64px;
+		text-align: center;
+		.widget-title {
+			color: $white;
+			font-family: $CR;
+			font-size: 24px;
+			line-height: 30px;
+			&:after {
+				content: '';
+				display: block;
+				width: 80px;
+				height: 4px;
+				border-radius: 4px;
+				background-color: $red;
+				margin: 0 auto;
+				margin-top: 14px;
+				margin-bottom: 17px;
+			}
+		}
+		.widget-text {
+			color: $white;
+			font-family: $CR;
+			font-size: 16px;
+			line-height: 23px;
+			margin-bottom: 25px;
+		}
+		.btn {
+			width: 173px;
+			height: 40px;
+			border-radius: 44px;
+			background-color: $red;
+			color: $white;
+			font-family: $CR;
+			font-size: 13px;
+			line-height: 44px;
+			padding-top: 0;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.author-sec2 {
+	padding-top: 52px;
+	padding-bottom: 100px;
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: -27px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 119px;
+		height: 44px;
+		background: url(../img/layer1.png) 0 0 no-repeat;
+	}
+	article {
+		width: 720px;
+		float: left;
+	}
+	aside {
+		width: 355px;
+		float: right;
+	}
+	.sec-title {
+		&:after {
+			margin-left: 0;
+		}
+	}
+	.slider {
+		width: 720px;
+		height: 356px;
+		background: url(../img/slider-author1.jpg) 0 0 no-repeat;
+		margin-bottom: 32px;
+	}
+	.txt {
+		color: $darkL;
+		font-family: $CR;
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+	.txt2 {
+		width: 350px;
+		text-align: justify;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.slider2 {
+		width: 341px;
+		height: 260px;
+		background: url(../img/slider2.jpg) 0 0 no-repeat;
+		display: inline-block;
+		vertical-align: top;
+		float: right;
+	}
+	.citate {
+		opacity: 0.8;
+		color: $darkB;
+		font-family: $CL;
+		font-size: 20px;
+		line-height: 32px;
+		padding-left: 50px;
+		border-left: 3px solid $red;
+		margin-bottom: 32px;
+	}
+	.widget-postandvideo {
+		// width: 354px;
+		height: 766px;
+		background: url(../img/widget-postandvideo.jpg) 0 0 no-repeat;
+		margin-bottom: 32px;
+	}
+	.widget-personalmeet {
+		height: 304px;
+		border-radius: 5px;
+		border: 2px dashed $red;
+		padding-top: 54px;
+		text-align: center;
+		.widget-title {
+			color: $darkB;
+			font-family: $CR;
+			font-size: 24px;
+			line-height: 30px;
+			&:after {
+				content: '';
+				display: block;
+				width: 80px;
+				height: 4px;
+				border-radius: 4px;
+				background-color: $red;
+				margin: 0 auto;
+				margin-top: 14px;
+				margin-bottom: 17px;
+			}
+		}
+		.widget-text {
+			color: $darkB;
+			font-family: $CR;
+			font-size: 16px;
+			line-height: 23px;
+			margin-bottom: 25px;
+		}
+		.btn {
+			width: 173px;
+			height: 40px;
+			border-radius: 44px;
+			background-color: $red;
+			color: $white;
+			font-family: $CR;
+			font-size: 13px;
+			line-height: 44px;
+			padding-top: 0;
+			text-transform: uppercase;
+		}
+	}
+	.graphic {
+		width: 425px;
+		min-height: 468px;
+		background:  url(../img/graphic.png) -130px 0px no-repeat;
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 130px;
+		.graphic-title {
+			color: $darkL;
+			font-family: $CL;
+			font-size: 40px;
+			line-height: 28px;
+			margin-bottom: 50px;
+		}
+		.graphic-subtitle {
+			color: $darkL;
+			font-family: $CL;
+			font-size: 20px;
+			line-height: 28px;
+			span {
+				font-size: 26px;
+				font-family: $CB;
+				display: block;
+			}
+		}
+	}
+	.graphic-info {
+		display: inline-block;
+		vertical-align: top;
+		width: 270px;
+		margin-left: 20px;
+		margin-bottom: 48px;
+		.info {
+			color: $darkL;
+			font-family: $CR;
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 24px;
+			span {
+				display: block;
+				color: $darkB;
+				font-family: $CB;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+
+.sec-awards {
+	text-align: center;
+	padding-top: 56px;
+	padding-bottom: 72px;
+	.awards-slider {
+		.slider-item {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			.hidden-text {
+				display: none;
+				color: $white;
+				font-family: $CB;
+				font-size: 20px;
+				line-height: 23px;
+				position: absolute;
+				top: 179px;
+				max-width: 250px;
+				left: 50%;
+				width: 100%;
+				transform: translateX(-50%);
+			}
+			&:before {
+				position: absolute;
+				content: '';
+				display: none;
+				width: 100%;
+				height: 100%;
+				background-color: $red;
+				opacity: 0.8;
+			}
+			&:after {
+				content: 'Увеличить';
+				padding-top: 134px;
+				width: 100%;
+				height: 100%;
+				display: none;
+				position: absolute;
+				background: url(../img/zoom-icon.png) 50% 100px no-repeat;
+				color: $white;
+				font-family: $CB;
+				font-size: 12px;
+				top: 0;
+				left: 0;
+				line-height: 23px;
+				text-transform: uppercase;
+			}
+			&:hover {
+				cursor: pointer;
+				.hidden-text,
+				&:before,
+				&:after {
+					display: block;
+				}
+			}
+		}
+	}
+	.slider-dots {
+		width: 155px;
+		height: 15px;
+		background: url(../img/slider-dots.png) 50% 0 no-repeat;
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+}
+

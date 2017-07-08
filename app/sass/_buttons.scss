@@ -11,6 +11,7 @@
 	font-size: 13px;
 	display: inline-block;
 	cursor: pointer;
+	transition: all 0.3s linear;
 	&:hover,
 	&:active,
 	&:focus {
@@ -106,6 +107,14 @@
 	width: 230px;
 	height: 57px;
 	border-radius: 100px;
+	color: #fff;
 	background-color: $red;
 	cursor: pointer;
+	&:hover,
+	&:active,
+	&:focus {
+		border: 2px solid $red;
+		background-color: transparent;
+		color: $red;
+	}
 }

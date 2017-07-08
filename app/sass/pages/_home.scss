@@ -1,0 +1,414 @@
+// HOME PAGE STYLES
+.home-sec1 {
+	min-height: 590px;
+	background: url(../img/home1.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	.home-title {
+		margin: 0;
+		padding-top: 148px;
+		color: $white;
+		font-family: $CB;
+		font-size: 56px;
+		line-height: 72px;
+		&:after {
+			content: '';
+			width: 143px;
+			height: 4px;
+			border-radius: 4px;
+			background-color: $red;
+			margin-top: 23px;
+			display: block;
+			margin-bottom: 36px;
+		}
+	}
+	.subtitle {
+		opacity: 0.9;
+		color: $white;
+		font-family: $CR;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.home-sec2 {
+	position: relative;
+	background-color: #f6f9fd;
+	text-align: center;
+	padding-top: 190px;
+	padding-bottom: 70px;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 117px;
+		height: 37px;
+		background: url(../img/el.png) 50% 0 no-repeat;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -18px;
+	}
+	.sec-subtitle {
+		color: $darkL;
+		font-family: $CR;
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 60px;
+	}
+	.courses {
+		.course {
+			background-position: 50% 36px;
+			background-repeat: no-repeat;
+			width: 258px;
+			height: 275px;
+			padding-top: 143px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 5px;
+			background-color: $white;
+			display: inline-block;
+			vertical-align: top;
+			margin: 9px;
+			border: 2px solid $white;
+			transition: all 0.3s linear;
+			cursor: pointer;
+			&:hover {
+				box-shadow: 0 12px 10px #ebeef4;
+				border: 2px solid #ebecee;
+			}
+			.course-title {
+				color: $darkB;
+				font-family: $CB;
+				font-size: 20px;
+				line-height: 24px;
+				margin-bottom: 34px;
+				position: relative;
+				transition: all 0.3s linear;
+				&:after {
+					content: '';
+					transition: all 0.3s linear;
+					width: 48px;
+					height: 3px;
+					display: block;
+					position: absolute;
+					bottom: -15px;
+					left: 50%;
+					transform: translateX(-50%);
+					opacity: 0;
+				}
+			}
+			.course-info {
+				opacity: 0.8;
+				color: $darkL;
+				font-family: $CR;
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+		.course1 {
+			background-image: url(../img/icon-course1.png);
+			&:hover {
+				border: 2px solid $red;
+				.course-title {
+					color: $red;
+					&:after {
+						background-color: $red;
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.course2 {
+			background-image: url(../img/icon-course2.png);
+			&:hover {
+				border: 2px solid #2fa8cc;
+				.course-title {  
+					color:  #2fa8cc;
+					&:after {
+						background-color: #2fa8cc;
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.course3 {
+			background-image: url(../img/icon-course3.png);
+			&:hover {
+				border: 2px solid #f29c1f;
+				.course-title {  
+					color: #f29c1f;
+					&:after {
+						background-color: #f29c1f;
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.course4 {
+			background-image: url(../img/icon-course4.png);
+			&:hover {
+				border: 2px solid #edc92f;
+				.course-title {  
+					color: #edc92f;
+					&:after {
+						background-color: #edc92f;
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.course5 {
+			padding-top: 137px;
+			background-image: url(../img/icon-course5.png);
+			.course-title {
+				margin-bottom: 16px;
+			}
+			&:hover {
+				border: 2px solid  #f29c1f;
+				.course-title {  
+					color:  #f29c1f;
+					&:after {
+						background-color: #f29c1f;
+						opacity: 0;
+					}
+				}
+			}
+		}
+		.course6 {
+			background-image: url(../img/icon-course6.png);
+			&:hover {
+				border: 2px solid #b49aca;
+				.course-title {  
+					color: #b49aca;
+					&:after {
+						background-color: #b49aca;
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.course7 {
+			padding-top: 137px;
+			background-image: url(../img/icon-course7.png);
+			.course-title {
+				margin-bottom: 16px;
+			}
+			&:hover {
+				border: 2px solid   #4fba6f;
+				.course-title {  
+					color:  #4fba6f;
+					&:after {
+						background-color: #4fba6f;
+						opacity: 0;
+					}
+				}
+			}
+		}
+		.course8 {
+			background-image: url(../img/icon-course8.png);
+			&:hover {
+				border: 2px solid #27d1db;
+				.course-title {  
+					color: #27d1db;
+					&:after {
+						background-color: #27d1db;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.home-sec3 {
+	padding-top: 70px;
+	padding-bottom: 45px;
+	text-align: center;
+	border-bottom: 1px solid #eeeeee;
+	.left-block {
+		width: 600px;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 48px;
+		.sec-title {
+			padding-top: 40px;
+			background: url(../img/icon-quotes.png) 50% 0 no-repeat;
+		}
+		.video {
+			width: 100%;
+			height: 350px;
+			background: url(../img/vidbg.jpg) 0 0 no-repeat;
+			margin-bottom: 48px;
+		}
+		.text {
+			color: $darkL;
+			font-family: $CR;
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 48px;
+		}
+		.buttons {
+			a {
+				margin: 0 16px;
+			}
+			.all-video {
+				display: inline-block;
+				color: $red;
+				font-family: $CB;
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+	.right-block {
+		width: 456px;
+
+		display: inline-block;
+		vertical-align: top;
+		.rewiews-block {
+			background-color: #f6f9fd;
+			padding-bottom: 40px;
+			.rewiews-title {
+				padding-top: 40px;
+				padding-bottom: 15px;
+				color: $white;
+				font-family: $CB;
+				font-size: 26px;
+				line-height: 32px;
+				background: url(../img/rewiewsbg.jpg) 50% 0 no-repeat;
+				position: relative;
+				&:after {
+					content: '';
+					display: block;
+					width: 61px;
+					height: 3px;
+					background-color: $red;
+					border-radius: 3px;
+					margin: 0 auto;
+					margin-top: 20px;
+					margin-bottom: 18px;
+				}
+			}
+			.rewiew {
+				padding-left: 48px;
+				padding-right: 48px;
+				margin-top: 40px;
+				.author-info {
+					display: inline-block;
+					vertical-align: top;
+					width: 64px;
+					margin-right: 20px;
+					.author-icon {
+						border-radius: 50%;
+						width: 64px;
+						height: 64px;
+						background-repeat: no-repeat;
+						background-position: 50%;
+						margin-bottom: 13px;
+					}
+					.author-name {
+						color: $darkB;
+						font-family: $CB;
+						font-size: 12px;
+						line-height: 14px;
+						margin-bottom: 6px;
+					}
+					.author-prof {
+						color: #999999;
+						font-family: $CR;
+						font-size: 12px;
+						line-height: 14px;
+					}
+				}
+				.rewiew-info {
+					text-align: left;
+					max-width: 271px;
+					display: inline-block;
+					vertical-align: top;
+					.rewiew-name {
+						color: $darkB;
+						font-family: $CB;
+						font-size: 20px;
+						line-height: 23px;
+					}
+					.rewiew-theme {
+						color: #999999;
+						font-family: $CR;
+						font-size: 16px;
+						line-height: 23px;
+						margin-bottom: 12px;
+					}
+					.rewiew-text {
+						opacity: 0.8;
+						color: $darkL;
+						font-family: $CR;
+						font-size: 14px;
+						height: 54px;
+						overflow: hidden;
+						line-height: 18px;
+					}
+					.read-more {
+						display: block;
+						text-align: right;
+						color: $red;
+						font-family: $CB;
+						font-size: 14px;
+					}
+				}
+			}
+			.rew1 {
+				.author-icon {
+					background-image: url(../img/rew1.png);
+				}
+			}
+			.rew2 {
+				.author-icon {
+					background-image: url(../img/rew2.png);
+				}
+			}
+		}
+		.banner {
+			margin-top: 48px;
+			width: 456px;
+			height: 218px;
+			background-color: #dfdfdf;
+		}
+	}
+}
+
+.home-sec4 {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	.talpis-photo {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 50px;
+		width: 377px;
+		height: 369px;
+		background: url(../img/talpis-photo.jpg) 0 0 no-repeat;
+	}
+	.talpis-info {
+		display: inline-block;
+		vertical-align: top;
+		max-width: 677px;
+		width: 100%;
+		margin-bottom: 70px;
+	}
+	.sec-title {
+		&:after {
+			margin-left: 0;
+			margin-bottom: 30px;
+		}
+	}
+	p.talpis-text {
+		color: $darkL;
+		font-family: $CR;
+		font-size: 16px;
+		line-height: 25px;
+		margin-bottom: 63px;
+	}
+	.banner2 {
+		width: 1104px;
+		height: 150px;
+		background-color: #dfdfdf;
+	}
+}

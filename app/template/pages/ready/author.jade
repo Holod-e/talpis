@@ -22,12 +22,9 @@ block content
 					p.widget-text.
 						Вернём управление Вашей жизнью <br>
 						в Ваши руки
-					a.btn Записаться
+					a.btn.btn-red Записаться
 
-	// SECTION breadcrumbs
-	section.breadcrumbs
-		.container
-			p Главная	> Автор
+	include ../common/breadcrumbs.jade
 
 	// SECTION 2
 	section.author-sec2
@@ -159,15 +156,4 @@ block content
 					img(src="img/certificate.png", alt="")
 			.slider-dots
 
-	// SECTION TERAPHY
-	section.sec-teraphy
-		.left
-			h2.sec-title.
-				Запись на <br>
-				 индивидуальную терапию
-			a.btn.btn-teraphy(href="#")  Записаться
-		.right
-			h2.sec-title.
-				Запись на <br>
-				 рупповую терапию
-			a.btn.btn-teraphy(href="#")  Записаться
+	include ../common/teraphy.jade

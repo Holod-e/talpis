@@ -9,7 +9,7 @@ block content
 	//- Content code
 
 	// SECTION 1
-	section.met-sec1
+	section.course-sec1
 		.container
 		h1.course-title Метафорические карты
 		p.course-subtitle.
@@ -19,7 +19,7 @@ block content
 		a.btn.btn-more(href="#") Узнать подробней
 
 	// SECTION 2
-	section.met-sec2
+	section.course-sec2.met-sec2
 		.container
 			h2.sec-title.
 				Решение вопросов <br>
@@ -163,24 +163,7 @@ block content
 				Получите эффективный инструмент, <br>
 				применимый во всех сферах Вашей жизни
 
-	// SECTION REWIEWS
-	section.sec-rewiews.rew-white
-		.container
-			h2.sec-title Отзывы
-			.rewiew-slider
-				.rewiew.rew1
-					.author-info
-						.author-icon
-						p.author-name Хана Шнайдман
-						p.author-prof Психолог, Израиль
-					.rewiew-info
-						p.rewiew-theme ВсеЛенская терапия
-						p.rewiew-name.
-							Фантастической красоты, 
-							глубины и силы работа
-						p.rewiew-text.
-							Фантастической красоты, глубины и силы работа. Правильная, точная, чистая. Всем, кто живет и думает, а еще больше тем, кто думает и не живет — срочно, немедленно и необходимо — к Тальпису!
-			.slider-nav
+	include ../common/rewiews.jade
 
 	// SECTION 7
 	section.met-sec7
@@ -193,7 +176,7 @@ block content
 				быстро и эффективно
 
 	// SECTION 8
-	section.met-sec8
+	section.course-formblock.met-sec8
 		.container
 			.form-block
 				form
@@ -212,103 +195,18 @@ block content
 					p.after-price Посещение семинара возможно только после внесения предоплаты <span>500 р. </span>
 					input(type="submit", value="Забронировать место").btn.met-subm
 
-	// SECTION 9
-	section.met-sec9
-		.container
-			h2.sec-title Ближайшие семинары
-			.seminars
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее
-				.seminar
-					.seminar-photo
-					.seminar-info
-						p.seminar-name.
-							Семинар
-							<span>«Точка сборки»</span>
-						p.seminar-txt.
-							Новейшие инструменты работы с психикой сейчас находятся на …
-						span.date 14 Апреля
-						a.more Подробнее 
+	include ../common/closest-seminars.jade
 
-	// SECTION 10
-	section.video-rewiews
-		.container
-			h2.sec-title Видеотзывы
-			.video-slider
-			.slider-nav
+	include ../common/video-rewiews.jade
 
-	// SECTION 11
-	section.met-sec11
-		.container
-			.talpis-bio
-				h2.sec-title Тальпис Леонид Борисович
-				p.talpis-info.
-					Практикующий психолог и потомственный врач, имеющий два высших образования: 
-					Медицина и Психология
-				p.text.
-					<span>20</span> Лет практики
-				p.text.
-					<span>8</span> Лет разработки собственного метода
-				p.text.big.
-					<span>1-й</span> Кто дополнил базовое обучение 
-						метафорическими картами авторской методикой
-				p.text.
-					<span>20</span> Тис. учеников за годы практики 
-				a.btn.btn-more ПОДРОБНЕЕ ОБ АВТОРЕ
-			.talpis-photo
+	include ../common/talpis-bio.jade
 
-	// SECTION TERAPHY
-	section.sec-teraphy
-		.left
-			h2.sec-title.
-				Запись на <br>
-				 индивидуальную терапию
-			a.btn.btn-teraphy(href="#")  Записаться
-		.right
-			h2.sec-title.
-				Запись на <br>
-				 рупповую терапию
-			a.btn.btn-teraphy(href="#")  Записаться
+	include ../common/teraphy.jade
 
-	// SECTION SERTIFICATE
-	section.sec-sertificate
-		.container
-			.sertificate-photo
-			.sertificate-info 
-				h2.sec-title.
-					Сертификат<br>
-					о прохождении тренинга
-				p.sert-text.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-				a.btn.btn-bron(href="#") Забронировать место
+	include ../common/sec-sertificate.jade
+
+
+
 
 
 
