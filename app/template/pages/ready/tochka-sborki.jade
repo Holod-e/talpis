@@ -16,7 +16,7 @@ block content
 			Эффективная техника по квантовой психологии, доступная как профессионалам, <br>
 			так и все желающим
 		a.btn.btn-red(href="#") Забронировать
-		a.btn.btn-more(href="#") Узнать подробней
+		a.btn(href="#") Узнать подробней
 
 	// SECTION 2
 	section.course-sec2.ts-sec2
@@ -133,7 +133,7 @@ block content
 				и эмоциональных ограничений
 
 	// SECTION 10
-	section.ts-sec9.course-formblock
+	section.course-formblock.ts-sec9
 		.container
 			.form-block
 				form
@@ -149,7 +149,7 @@ block content
 						p.question Есть ли у вас психологическое образование?
 						span.radio.checked Нет
 						span.radio Да
-					p.price-title Стоимость участия
+					a.seminar-price(href="#modal-tsPrice") Стоимость семинара
 					input(type="submit", value="Забронировать место").btn.met-subm
 
 	include ../common/closest-seminars.jade
