@@ -24,6 +24,20 @@ $('.teta-courses .btn-more').on('click', function(e) {
   }
 });
 
+$('.vseladd-additions .btn-more').on('click', function(e) {
+  if ($(this).hasClass('active')) {
+    $('.seminar-plan.active').slideUp().removeClass('active');
+    $(this).removeClass('active');
+  }
+  else {
+    $('.teta-courses .btn-more.active').removeClass('active');
+    $(this).addClass('active');
+    var target=$(this).attr('data-target');
+    $('.seminar-plan.active').slideUp().removeClass('active');
+    $('.hidden-'+target).slideDown().addClass('active');
+  }
+});
+
 
 
 
