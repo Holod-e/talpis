@@ -1,135 +1,203 @@
 extends ../layouts/freelance.jade
 
 block title
-	title Cources
+	title Vselenskaya teraphy addition page
 
 block content
 	//- variables
 
-	// SECTION BLUEHEADER
-	section.blueheader
+	//- Content code
 
-	// SECTION breadcrumbs
-	section.breadcrumbs
+	// SECTION 1
+	section.course-sec1.vseladd-sec1
 		.container
-			p Главная	> Автор
-	//SECTION 1
-	.cources-sec1
-		.container
-			form.subscribe-form
-				p.form-title.
-					Узнайте первыми о свежих тренингах <br>
-					и семинарах в Вашем городе!
-				.input-wrap
-					input(type="text",name="name", class="name",placeholder="Вашe Имя")
-					input(type="text",name="email", class="email",placeholder="Ваш e-mail")
-					input(type="submit", value="ПОДПИСАТЬСЯ").btn.btn-red
-			h2.sec-title Авторские Тренинги и Семинары
-			aside
-				ul.cources-list
-					li 
-						a Метафорические карты
-					li
-						a Точка Сборки
-					li
-						a ВсеЛенская Терапия
-					li
-						a ВсеЛенская Терапия. Дополнения 
-					li
-						a Тета-Хилинг Базовый
-					li
-						a Тета-Хилинг Продвинутый
-					li
-						a Тренерский курс
-					li
-						a Личная терапия
-					li
-						a Партнерские тренинги и семинары
-					li
-						a Пакетное обучение
-				.widgets
-			article
-				.cources
-					.cource.c1
-						.cource-icon
-						p.cource-name Метафорические карты
-						p.cource-info.
-							Простой способ
-							познакомиться с методикой
-							и научиться работе с картами
-					.cource.c2
-						.cource-icon
-						p.cource-name Точка Сборки
-						p.cource-info.
-							Легкий и веселый
-							обучающий семинар
-							по квантовой психологии
-					.cource.c3
-						.cource-icon
-						p.cource-name ВсеЛенская терапия
-						p.cource-info.
-							Обучение авторскому
-							методу терапии
-							Леонида Тальписа
-					.cource.c4
-						.cource-icon
-						p.cource-name.big.
-							ВсеЛенские <br>
-							дополнения 1-2-3
-						p.cource-info.
-							Работа с актуальными темами для тех, кто уже прошел обучение методу
-
-					.cource.c5
-						.cource-icon
-						p.cource-name.big Системное <br> моделирование
-						p.cource-info.
-							Авторский 
-							обучающий семинар
-							Александра Зелинского
-					.cource.c6
-						.cource-icon
-						p.cource-name Тета-Хилинг
-						p.cource-info.
-							Продвинутая авторская методика для проработки актуальных тем
-					.cource.c7
-						.cource-icon
-						p.cource-name Тренерский курс
-						p.cource-info.
-							Только для профессионалов, желающих преподавать ВсеЛенскую терапию
-
-					.cource.c8
-						.cource-icon
-						p.cource-name Групповая терапия
-						p.cource-info.
-							Работа с актуальными темами
-							для тех, кто уже прошел
-							обучение методу
-					.cource.c9
-						.cource-icon
-						p.cource-name Пакетное обучение
-						p.cource-info.
-							 Экономьте на обучении, 
-							пройдя полный пакет в удобное вам время.
-
-	include ../common/rewiews-blue.jade
+		h1.course-title.
+			ВсеЛенская Терапия. <br>
+			Дополнения
+		p.course-subtitle.
+			Дальнейшее погружение в методику Леонида Тальписа <br>
+			через расширение и углубление круга решаемых вопросов
+		a.btn.btn-bron(href="#") Забронировать
+		a.btn.btn-more(href="#") Узнать подробней
 
 	// SECTION 2
-	.cources-sec2
+	section.course-sec2.vseladd-sec2
 		.container
-			.row.clearfix
-				article
-					.post-image
-					p.post-title.
-						Леонид Тальпис: <br>
-						«Мы все время пытаемся превратить жизнь 
-						в достижение результата  и из-за этого теряем 
-						сам процесс жизни»
-					p.text.
-						О том, как найти в себе скрытые возможности для получения личного опыта и разрешения собственных вопросов, а также приобретения практических навыков для работы с клиентами. <br><br>
+			h2.sec-title.
+				Описание методики
+			p.sec-subtitle.
+				Для тех, кто уже прошел основной курс обучения ВсеЛенской терапии, 
+				мы предлагаем по новому взглянуть на принципиально важные 
+				и часто возникающие при работе с клиентами темы. 
+			.elements
 
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 	Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-				aside
-					.banner
-					.widget-postandvideo2
-			.banner
+				.element.el1
+					.element-icon
+					p.element-text.
+						Дополнения существенно расширяют и дополняют основной курс ВсеЛенской Терапии
+
+				.element.el2
+					.element-icon
+					p.element-text.
+						Вы сможете сосредоточиться на самых важных жизненных вопросах для Вас и Ваших клиентов
+
+				.element.el3
+					.element-icon
+					p.element-text.
+						Работа с вопросами, обычно остающимися за рамками классической психологии
+
+				.element.el4
+					.element-icon
+					p.element-text.
+						Способы интеграции ВсеЛенской терапии в вашу терапевтическую практику
+
+				.element.el5
+					.element-icon
+					p.element-text.
+						Получение новых степеней свободы, выход за рамки привычных жизненных сценариев
+
+
+	// SECTION 3
+	section.vseladd-sec3
+		.container
+			p.text.
+				Мало кто из терапевтов способен помочь клиенту прожить и интегрировать <br>
+				этот опыт в безопасном для него пространстве, <br>
+				а мы – этому учим!
+			a.btn.btn-red(href="#") Забронировать
+
+	// SECTION 4
+	section.vseladd-sec4
+		.container
+			h2.sec-title.
+				ВсеЛенская Терапия состоит<br>
+				Из Дополнений 1-2-3
+			p.text.
+				Каждое из которых фокусируется <br>
+				на глубоких запросах и помогает найти быстрое <br>
+				и безболезненное решение!
+
+	// SECTION ADDITIONS
+	section.vseladd-additions
+		.addition.add1
+			h2.sec-title Долнение 1
+			a.more(href="#") Подробнее
+		.addition.add2
+			h2.sec-title Долнение 2
+			a.more(href="#") Подробнее
+		.addition.add3
+			h2.sec-title Долнение 3
+			a.more(href="#") Подробнее
+
+	// SECTION 5
+	section.vseladd-sec5
+		.container
+			h2.sec-title.
+				ВсеЛенская Терапия. Дополнения <br>
+				фокусируется на обучении работать <br>
+				с такими темами, как:
+			.themes
+				p.theme.theme1 Любовь и Свобода
+				p.theme.theme2 Время и Бог
+				p.theme.theme3 Жизнь  <br> и Смерть
+				p.theme.theme4 Достоинство  <br> и Этика
+				p.theme.theme5 Власть и Ответственность
+			h2.sec-title.st2.
+				Этим самым раскрывая неповторимую глубину метода <br>
+				и расширяет возможности для поиска индивидуального подхода для Вас <br>
+				и Ваших клиентов
+			p.text.
+				Обучившись Дополнениям к ВсеЛенской терапии, Вы можете выйти <br>
+				за стандартные рамки запросов, касающимся отношений, денег и здоровья, <br>
+				и сфокусироваться на более глубоких причинах происходящего с клиентом и его жизнью, познавая тонкости терапии травм любой сложности
+
+	// SECTION 6
+	section.vseladd-sec6
+		.container
+			.left-block
+				h2.sec-title.
+					ВсеЛенская терапия. <br>
+					 Дополнения – для Вас, <br>
+					если Вы:
+				ul
+					li.
+						Обучились ВсеЛенской терапии и желаете расширить и углубить свои знания в работе 
+						с различными ее аспектами
+					li.
+						Сделать свою жизнь и жизнь своих клиентов более осознанными. Понять и интегрировать в свою жизнь понятия ВсеЛенской терапии
+					li.
+						Хотите научится обеспечивать безопасность 
+						и экологичность терапии для клиента.
+					li.
+						Понять свое место и оптимизировать свои терапевтические стратегии
+					a.btn.btn-red Забронировать
+
+			.image-block
+
+	// SECTION SERTEFICATE-BLUE
+	section.sec-serteficate-blue
+		.container
+			.sert
+			.text-block
+				p.text.
+					<span>А главное:</span>
+					По окончании курса вы получите сертификат 
+					Общероссийской Профессиональной 
+					Психотерапевтической Лиги соответствующего уровня.
+				a.btn.btn-bron Забронировать место
+
+
+
+	include ../common/rewiews.jade
+
+	// SECTION 9
+	section.met-sec7.vseladd-sec7
+		.container
+			h2.sec-title.
+				Не стоит искать промежуточных решений <br>
+				сложных вопросов! 
+			p.sec-subtitle.
+				Дополнения к ВсеЛенской терапии <br>
+				помогут вам улучшить базовую методологию и расширить свой арсенал навыков <br>
+				по работе с Клиентами!
+
+	// SECTION 10
+	section.vsel-sec10.course-formblock
+		.container
+			.form-block
+				form
+					p.form-title.
+						Углубите свои знания и получите практическую базу 
+					p.form-subtitle Для регистрации на семинар – заполните форму
+					input(type="text", name="name", placeholder="Имя / Фамилия").name
+					input(type="text", name="phone", placeholder="Номер телефона").phone
+					input(type="text", name="email", placeholder="Email").email
+					input(type="text", name="country", placeholder=" Город / Страна").country
+					.education-block
+						p.question Есть ли у вас психологическое образование?
+						span.radio.checked Нет
+						span.radio Да
+					a.seminar-price(href="#modal-vselenskayaaddPrice") Стоимость семинара
+					input(type="submit", value="Забронировать место").btn.met-subm
+					p.bottom-text.
+						<span>*</span> - Перед прохождением Дополнений обязательно прохождение базового семинара по <span>Вселенской терапии</span>
+
+	include ../common/closest-seminars.jade
+
+	include ../common/video-rewiews.jade
+
+	include ../common/talpis-bio.jade
+
+	include ../common/teraphy.jade
+
+
+
+
+
+
+
+
+
+
+
+
