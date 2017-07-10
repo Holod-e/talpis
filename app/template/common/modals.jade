@@ -166,3 +166,39 @@
 					<span>*</span> ПОСЛЕ ПОДТВЕРЖДЕНИЯ ДАННЫХ, <br>
 					  ВЫ БУДЕТЕ ПЕРЕНАПРАВЛЕНЫ НА СТРАНИЦУ ОПЛАТЫ
 				input(type="submit", value="Продолжить").step-subm-red
+
+// MODAL STEP 2
+.modal-overlay.modal-step.modal-step2
+	.modal-content.clearfix
+		.modal-nav
+			a.prev
+			a.first.done
+				span
+			a.second.current
+				span 2
+			a.next
+		.close-button
+			span.one
+			span.two
+		.form-block
+			form
+				p.form-title.
+					Остался последний шаг!
+				p.form-subtitle.
+					Давайте проверим правильность ваших данных:
+				.inputs-wrap
+					.inp-wrap
+						label.name-label Ваше имя
+						input(type="text", name="name").name
+					.inp-wrap
+						label.phone-label Номер телефона
+						input(type="text", name="phone").phone
+					.inp-wrap
+						label.email-label Email адрес
+						input(type="text", name="email").email
+					.inp-wrap
+						label.seminar-label Семинар по квантовой психологии
+						input(type="text", name="seminar-name").seminar-name
+				p.bottom-text.
+					<span>*</span> СУММА БРОНИРОВАНИЯ: <span class="dollar">100<span>
+				input(type="submit", value="Перейти к оплате").step-subm-red

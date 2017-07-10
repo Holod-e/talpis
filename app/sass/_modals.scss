@@ -227,7 +227,6 @@
 
 // STEPS MODALS
 .modal-step {
-	display: block;
 	.modal-content  {
 		width: 100%;
 		max-width: 944px;
@@ -308,6 +307,12 @@
 					background-color: $red;
 				}
 			}
+			&.done {
+				opacity: 1;
+				span {
+					background: #fff url(../img/done-icon.png) 50% no-repeat;
+				}
+			}
 		}
 		.second {
 			&:after {
@@ -380,15 +385,98 @@
 			}
 		}
 		.bottom-text {
-				color: #676767;
-				font-size: 13px;
-				font-family: $CR;
-				margin-bottom: 40px;
+			color: #676767;
+			font-size: 13px;
+			font-family: $CR;
+			margin-bottom: 40px;
+			display: inline-block;
+			span {
+				color: $red;
+			}
+			span.dollar {
 				display: inline-block;
-				span {
-					color: $red;
+				margin-left: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				font-family: $CB;
+				padding-left: 35px;
+				background: url(../img/dolar-icon.png) 0 50% no-repeat;
+				color: #000;
+			}
+		}
+	}
+}
+
+.modal-step2 {
+	.form-block {
+		padding-left: 192px;
+		.inputs-wrap {
+			padding-top: 0;
+			border: none;
+			border-bottom: 1px solid #e4e4e4;
+			margin-bottom: 78px;
+			position: relative;
+			.edit-icon {
+				width: 48px;
+				height: 48px;
+				box-shadow: 0 12px 10px rgba(218, 218, 219, 0.5);
+				background-color: #ff5656;
+				display: block;
+				position: absolute;
+				right: -24px;
+				top: -24px;
+			}
+			.inp-wrap {
+				padding-left: 30px;
+				padding-right: 30px;
+				width: 316px;
+				height: 117px;
+				padding-top: 36px;
+				border-radius: 5px;
+				background-color: #f6f9fd;
+				display: inline-block;
+				vertical-align: top;
+				margin-bottom: 22px;
+				label {
+					opacity: 0.8;
+					color: #676767;
+					font-family: $CR;
+					font-size: 14px;
+					padding-left: 30px;
+					background-position: 0 50%;
+					background-repeat: no-repeat;
+				}
+				.name-label {
+					background-image: url(../img/user-icon-form.png);
+				}
+				.phone-label {
+					background-image: url(../img/phone-icon-form.png);
+				}
+				.email-label {
+					background-image: url(../img/email-icon-form.png);
+				}
+				.seminar-label {
+					background-image: url(../img/seminar-icon-form.png);
+				}
+				input[type="text"] {
+					background-image: none;
+					padding-left: 30px;
+					color: #333333;
+					font-family: $CR;
+					font-size: 20px;
+					line-height: 36px;
+					height: 36px;
+				}
+				&:nth-child(1),
+				&:nth-child(3) {
+					margin-right: 16px;
 				}
 			}
+		}
 	}
-
+	.step-subm-red {
+		padding: 0;
+		background-image: none;
+		line-height: 43px;
+	}
 }
