@@ -76,3 +76,27 @@
 		}
 	}
 }
+
+.step-subm-red {
+	width: 191px;
+	height: 42px;
+	color: #ffffff;
+	font-family: $CB;
+	font-size: 13px;
+	text-transform: uppercase;
+	background-color: $red;
+	border-radius: 21px;
+	border: none;
+	line-height: 42px;
+	padding-right: 30px;
+	background: $red url(../img/arr-right-white.png) 90% 50% no-repeat;
+	cursor: pointer;
+	vertical-align: top;
+	float: right;
+	transition: all 0.3s linear;
+	&:hover,
+	&:active,
+	&:focus {
+		transform: scale(1.03);
+	}
+}

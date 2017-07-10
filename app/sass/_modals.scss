@@ -224,3 +224,171 @@
 		margin: 15px auto;
 	}
 }
+
+// STEPS MODALS
+.modal-step {
+	display: block;
+	.modal-content  {
+		width: 100%;
+		max-width: 944px;
+		margin: 5vh auto;
+		background: #fff url(../img/modal-step-nav.jpg) 0 0 no-repeat;
+		padding: 0;
+		height: 616px;
+	}
+	.modal-nav {
+		width: 192px;
+		height: 100%;
+		float: left;
+		text-align: center;
+		padding-top: 48px;
+		.prev {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border: 1px solid rgba(255,255,255, 0.4);
+			display: block;
+			margin: 0 auto;
+			background: url(../img/arr-top.png) 50% no-repeat;
+			margin-bottom: 150px;
+		}
+		.next {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border: 1px solid rgba(255,255,255, 0.4);
+			display: block;
+			margin: 0 auto;
+			background: url(../img/arr-top.png) 50% 43% no-repeat;
+			transform: rotate(180deg);
+			margin-top: 145px;
+		}
+		.first,
+		.second {
+			width: 53px;
+			height: 53px;
+			border: 1px solid #ffffff;
+			display: block;
+			margin: 0 auto;
+			border-radius: 50%;
+			line-height: 53px;
+			text-align: center;
+			margin-bottom: 42px;
+			position: relative;
+			opacity: 0.5;
+			&:before {
+				content: '...';
+				display: block;
+				position: absolute;
+				opacity: 0.4;
+				color: #ffffff;
+				font-family: $CB;
+				font-size: 16px;
+				transform: rotate(90deg);
+				left: 44%;
+				top: -45px;
+			}
+			span {
+				width: 40px;
+				height: 40px;
+				background-color: #ff5656;
+				display: inline-block;
+				background-color: rgba(256, 256, 256, 0.2);
+				border-radius: 50%;
+				margin-top: 6px;
+				color: #ffffff;
+				font-family: $CB;
+				font-size: 20px;
+				line-height: 43px;
+				margin-left: 1px;
+			}
+			&.current {
+				opacity: 1;
+				span {
+					background-color: $red;
+				}
+			}
+		}
+		.second {
+			&:after {
+				content: '...';
+				display: block;
+				position: absolute;
+				opacity: 0.4;
+				color: #ffffff;
+				font-family: $CB;
+				font-size: 16px;
+				transform: rotate(90deg);
+				left: 44%;
+				bottom: -45px;
+			}
+		}
+	}
+	.form-block {
+		width: 100%;
+		height: 100%;
+		padding-left: 200px;
+		text-align: left;
+		form {
+			padding-left: 50px;
+			padding-top: 45px;
+			padding-right: 50px;
+		}
+		.form-title {
+			color: #333333;
+			font-family: $CB;
+			font-size: 30px;
+			line-height: 32px;
+			margin-bottom: 14px;
+		}
+		.form-subtitle {
+			color: #333333;
+			font-family: $CL;
+			font-size: 20px;
+			line-height: 28px;
+			margin-bottom: 45px;
+			span {
+				display: inline-block;
+				margin-left: 5px;
+				font-family: $CB;
+				padding-left: 35px;
+				background: url(../img/dolar-icon.png) 0 50% no-repeat;
+			}
+		}
+		.inputs-wrap {
+			padding-top: 45px;
+			border-top: 1px solid #e4e4e4;
+			margin-bottom: 100px;
+			input[type="text"] {
+				width: 100%;
+				height: 46px;
+				border-radius: 4px;
+				background-color: #f6f9fd;
+				border: none;
+				outline: none;
+				padding-left: 45px;
+				line-height: 46px;
+				margin-bottom: 18px;
+				background-repeat: no-repeat;
+				background-position: 15px 50%;
+			}
+			input.name {background-image: url(../img/user-icon-form.png);}
+			input.phone {background-image: url(../img/phone-icon-form.png);}
+			input.email {
+				background-image: url(../img/email-icon-form.png);
+				margin-bottom: 0;
+			}
+		}
+		.bottom-text {
+				color: #676767;
+				font-size: 13px;
+				font-family: $CR;
+				margin-bottom: 40px;
+				display: inline-block;
+				span {
+					color: $red;
+				}
+			}
+	}
+
+}
