@@ -57,11 +57,14 @@
 		}
 		.social {
 			display: block;
-			width: 162px;
-			height: 26px;
-			background: url(../img/social.png) 0 0 no-repeat;
+			// width: 162px;
+			// height: 26px;
+			// background: url(../img/social.png) 0 0 no-repeat;
 			margin: 0 auto;
-			margin-bottom: 54px;
+			margin-bottom: 50px;
+			a.pluso-more {
+				display: none !important;
+			}
 		}
 	}
 	.copy {

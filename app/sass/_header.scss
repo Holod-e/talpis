@@ -44,10 +44,17 @@
 					border-radius: 4px;
 					background-color: $red;
 				}
-				&.active,
 				&:hover,
 				&:focus,
 				&:active {
+					opacity: 1;
+					&:after {
+						width: 100%;
+					}
+				}
+			}
+			&.active {
+				a {
 					opacity: 1;
 					&:after {
 						width: 100%;
