@@ -102,6 +102,26 @@ h2.sec-title {
 	}
 }
 
+
+h3.sec-title {
+	margin: 0;
+	color: $darkB;
+	font-family: $CB;
+	font-size: 26px;
+	line-height: 52px;
+	&:after {
+		content: '';
+		display: block;
+		width: 61px;
+		height: 3px;
+		background-color: $red;
+		border-radius: 3px;
+		margin: 0;
+		margin-top: 20px;
+		margin-bottom: 18px;
+	}
+}
+
 .sec-subtitle {
 	color: $darkL;
 	font-family: $CR;
@@ -565,6 +585,48 @@ h1.course-title {
 		}
 	}
 }
+
+// STYLES FOR SINGLE POST
+article.type-post {
+	h1 {
+		color: #333333;
+		font-family: $CB;
+		font-size: 40px;
+		line-height: 52px;
+		margin-top: 48px;
+		margin-bottom: 48px;
+	}
+	p {
+		color: #666666;
+		font-family: $CR;
+		font-size: 16px;
+		margin-bottom: 32px;
+		strong {
+			font-family: $CB;
+		}
+	}
+	blockquote {
+		padding-left: 50px;
+		border-left: 2px solid $red;
+		margin-left: 0;
+		p {
+			opacity: 0.8;
+			color: #333333;
+			font-family: $CR;
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
+}
+
+// COMMENTS SECTION STYLES
+.comments-section {
+	padding-top: 48px;
+	padding-bottom: 40px;
+	background-color: #f6f9fd;
+}
+
+
 /* ----------IMPORT FOOTER STYLES---------- */
 @import "_footer.scss";
 
