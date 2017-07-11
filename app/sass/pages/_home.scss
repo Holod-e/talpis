@@ -68,7 +68,7 @@
 			display: inline-block;
 			vertical-align: top;
 			margin: 9px;
-			border: 2px solid $white;
+			border: 2px solid transparent;
 			transition: all 0.3s linear;
 			cursor: pointer;
 			&:hover {
@@ -107,7 +107,6 @@
 		.course1 {
 			background-image: url(../img/icon-course1.png);
 			&:hover {
-				border: 2px solid $red;
 				.course-title {
 					color: $red;
 					&:after {
@@ -120,8 +119,7 @@
 		.course2 {
 			background-image: url(../img/icon-course2.png);
 			&:hover {
-				border: 2px solid #2fa8cc;
-				.course-title {  
+				.course-title {
 					color:  #2fa8cc;
 					&:after {
 						background-color: #2fa8cc;
@@ -133,8 +131,7 @@
 		.course3 {
 			background-image: url(../img/icon-course3.png);
 			&:hover {
-				border: 2px solid #f29c1f;
-				.course-title {  
+				.course-title {
 					color: #f29c1f;
 					&:after {
 						background-color: #f29c1f;
@@ -146,8 +143,7 @@
 		.course4 {
 			background-image: url(../img/icon-course4.png);
 			&:hover {
-				border: 2px solid #edc92f;
-				.course-title {  
+				.course-title {
 					color: #edc92f;
 					&:after {
 						background-color: #edc92f;
@@ -164,7 +160,7 @@
 			}
 			&:hover {
 				border: 2px solid  #f29c1f;
-				.course-title {  
+				.course-title {
 					color:  #f29c1f;
 					&:after {
 						background-color: #f29c1f;
@@ -176,8 +172,7 @@
 		.course6 {
 			background-image: url(../img/icon-course6.png);
 			&:hover {
-				border: 2px solid #b49aca;
-				.course-title {  
+				.course-title {
 					color: #b49aca;
 					&:after {
 						background-color: #b49aca;
@@ -194,7 +189,7 @@
 			}
 			&:hover {
 				border: 2px solid   #4fba6f;
-				.course-title {  
+				.course-title {
 					color:  #4fba6f;
 					&:after {
 						background-color: #4fba6f;
@@ -207,7 +202,7 @@
 			background-image: url(../img/icon-course8.png);
 			&:hover {
 				border: 2px solid #27d1db;
-				.course-title {  
+				.course-title {
 					color: #27d1db;
 					&:after {
 						background-color: #27d1db;

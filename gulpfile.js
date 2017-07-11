@@ -85,6 +85,7 @@ gulp.task('watch-jade', function () {
 	gulp.watch(['./app/template/**/*.jade'], ['jade']),			// watching changes in Jade
 	gulp.watch('bower.json', ['wiredep']);									// watching changes in Wiredep
 	gulp.watch(['./app/sass/*.scss'], ['scss']),						// watching changes in SASS
+	gulp.watch(['./app/sass/*.scss'], ['scss2']),						// watching changes in SASS
 	gulp.watch(['./app/js/*.js'], ['js']);									// watching changes in JS
 });
 
@@ -123,8 +124,21 @@ gulp.task('scss', function () {
 		.pipe(sass({includePaths: require('node-bourbon').includePaths}))
 		.pipe(autoprefixer({browsers: ['last 3 versions'], cascade: false}))
 		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('app/css'))														// where to put the file
+		.pipe(gulp.dest('app/css'))														// where to put the files
 		.pipe(browserSync.stream());													// browsersync stream
+});
+
+gulp.task('scss2', function () {
+	gulp.src('./app/sass/*.scss')														// get the files
+		.pipe(sourcemaps.init())
+		.pipe(plumber({errorHandler: notify.onError({
+			 title:    'Ошибка :(',
+			 message:  '<%= error.message %>'
+			})}))
+		.pipe(sass({includePaths: require('node-bourbon').includePaths}))
+		.pipe(autoprefixer({browsers: ['last 3 versions'], cascade: false}))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest('c:/OpenServer/domains/talpis.com/wp-content/themes/talpis/css/'));														// where to put the files
 });
 
 /*******************************************************************************\
