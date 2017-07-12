@@ -731,8 +731,21 @@ article.type-post {
 		background-color: #fff;
 		padding-top: 70px;
 		padding-bottom: 70px;
+		.comment-form-open {
+			width: 199px;
+			height: 42px;
+			color: #ffffff;
+			font-family: $CB;
+			font-size: 13px;
+			text-transform: uppercase;
+			line-height: 42px;
+			display: inline-block;
+			background-color:$red;
+			border-radius: 21px;
+		}
 	}
 	.comment-respond {
+		display: none;
 		.comment-notes {
 			display: none;
 		}
@@ -742,7 +755,6 @@ article.type-post {
 			font-size: 26px;
 			line-height: 26px;
 			margin-bottom: 40px;
-			margin-top: 70px;
 			text-align: center;
 			display: block;
 		}
