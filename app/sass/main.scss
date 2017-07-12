@@ -619,6 +619,64 @@ article.type-post {
 	}
 }
 
+.post-pagination {
+	padding: 70px 0;
+	padding-top: 35px;
+	text-align: center;
+	.prev-post,
+	.next-post {
+		float: left;
+		width: 100px;
+		color: #999999;
+		font-family: $CR;
+		font-size: 16px;
+		line-height: 20px;
+		padding-top: 37px;
+		position: relative;
+		display: inline-block;
+		a {
+			color: #999999;
+			font-family: $CR;
+			font-size: 16px;
+			line-height: 20px;
+			&:before {
+				content: '';
+				display: block;
+				width: 28px;
+				height: 28px;
+				border: 1px solid #b7b7b7;
+				position: absolute;
+				transform: translateX(-50%);
+				left: 50%;
+				top: 0;
+				background: url(../img/prev-post-icon.png) 50% no-repeat;
+				border-radius: 50%;
+			}
+			&:hover {
+				color: $red;
+				&:before {
+					transform: translateX(-50%) scale(-1, 1);
+					background: $red url(../img/prev-post-icon-hover.png) 50% no-repeat;
+					border: 1px solid $red;
+				}
+			}
+		}
+	}
+	.next-post {
+		float: right;
+		a {
+			&:before {
+				transform: translateX(-50%) scale(-1, 1);
+			}
+			&:hover {
+				&:before {
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+}
+
 // COMMENTS SECTION STYLES
 .comments-section {
 	padding-top: 48px;
