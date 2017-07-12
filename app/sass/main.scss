@@ -635,9 +635,92 @@ article.type-post {
 			margin-bottom: 16px;
 			img {
 				float: left;
+				border-radius: 50%;
 			}
 			.media-body {
 				padding-left: 112px;
+				position: relative;
+				p {
+					opacity: 0.8;
+					color: #666666;
+					font-family: $CR;
+					font-size: 16px;
+					line-height: 24px;
+				}
+				p.meta {
+					color: #2087c1;
+					font-family: $CB;
+					font-size: 17px;
+					line-height: 18px;
+					.comment-date {
+						position: absolute;
+						display: inline-block;
+						padding-left: 25px;
+						right: 0;
+						bottom: 0;
+						opacity: 0.8;
+						color: #999999;
+						font-family: $CR;
+						font-size: 14px;
+						background: url(../img/comment-meta-time-icon.png) 0 50% no-repeat;
+					}
+				}
+				.comment-reply-link {
+					color: #ff5656;
+					font-family: $CB;
+					font-size: 16px;
+					line-height: 18px;
+					display: inline-block;
+					padding-left: 25px;
+					background: url(../img/comment-reply-icon.png) 0 0 no-repeat;
+				}
+			}
+		}
+	}
+
+	.comment-pagination {
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.prev,
+		.next {
+			width: 18px;
+			height: 18px;
+			border: 1px solid #d0d0d0;
+			display: inline-block;
+			background: url(../img/comment-pagination-prev-icon.png) 50% no-repeat;
+			border-radius: 50%;
+			margin: 0 12px;
+			line-height: 26px;
+			vertical-align: top;
+			&:hover {
+				border: 1px solid $red;
+				background: url(../img/comment-pagination-icon-hover.png) 50% no-repeat;
+				transform: scale(-1,1);
+			}
+		}
+		.next {
+			transform: scale(-1,1);
+			&:hover {
+				transform: none;
+			}
+		}
+		.page-numbers {
+			width: 26px;
+			height: 26px;
+			background-color: #ffffff;
+			display: inline-block;
+			margin: 0 3px;
+			border-radius: 50%;
+			color: #333333;
+			font-family: $CB;
+			font-size: 14px;
+			display: inline-block;
+			vertical-align: top;
+			line-height: 29px;
+			&.current {
+				background-color:$red;
+				color: #fff;
 			}
 		}
 	}
@@ -721,7 +804,6 @@ article.type-post {
 				text-transform: uppercase;
 				line-height: 42px;
 				cursor: pointer;
-
 			}
 		}
 	}
