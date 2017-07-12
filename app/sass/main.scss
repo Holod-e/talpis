@@ -881,6 +881,86 @@ article.type-post {
 }
 
 
+// POST ANONS STYLES
+.section-postandvideo {
+	padding-top: 43px;
+	.sec-title {
+		margin-bottom: 40px;
+	}
+	.post{
+		height: 294px;
+		border-radius: 0 5px 5px 0;
+		background-color: #f6f9fd;
+		overflow: hidden;
+		margin-bottom: 32px;
+		padding-right: 20px;
+		
+		.thumb {
+			float: left;
+			width: 260px;
+		}
+	}
+	.post-body {
+		padding-left: 284px;
+		padding-top: 29px;
+		h4.post-title {
+			margin: 0;
+			margin-bottom: 25px;
+			a {
+				color: $darkB;
+				font-family: $CB;
+				font-size: 20px;
+			}
+		}
+		.meta {
+			margin-bottom: 26px;
+			span {
+				display: inline-block;
+				opacity: 0.8;
+				color: #999999;
+				font-family: $CR;
+				font-size: 14px;
+				margin-right: 32px;
+			}
+			.time {
+				padding-left: 25px;
+				background: url(../img/meta-time-icon.png) 0 50% no-repeat;
+			}
+			.wiews-number {
+				padding-left: 27px;
+				background: url(../img/meta-wiews-icon.png) 0 50% no-repeat;
+			}
+			.comments-number {
+				padding-left: 27px;
+				background: url(../img/meta-comments-icon.png) 0 50% no-repeat;
+			}
+		}
+		p {
+			opacity: 0.8;
+			color: $darkL;
+			font-family: $CR;
+			font-size: 16px;
+			line-height: 23px;
+			margin-bottom: 23px;
+		}
+	}
+	.more	{
+		width: 173px;
+		height: 40px;
+		line-height: 42px;
+		border-radius: 44px;
+		background-color: $red;
+		color: $white;
+		font-family: $CB;
+		font-size: 13px;
+		text-transform: uppercase;
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+
+
 /* ----------IMPORT FOOTER STYLES---------- */
 @import "_footer.scss";
 
