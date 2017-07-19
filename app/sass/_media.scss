@@ -2,17 +2,73 @@
 		Desktop First Method
 \*********************************************/
 /* Medium Devices, Notebooks */
-@media only screen and (max-width : 1130px) {	
+@media only screen and (max-width : 1170px) {
+	.container {width: 960px;}
+.home-sec3 .right-block .rewiews-block .rewiew {
+	padding: 0;
+}
+.author-sec1 {
+	.widget-consultation {
+		display: none;
+	}
+}
+.author-sec2 {
+	.slider {
+
+	}
+}
+
+.contacts-sec1 .map .place-info {
+	width: auto;
+}
+
 
 }
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 960px) {	
+@media only screen and (max-width : 960px) {
  .container {width: 720px;}
- br.sm {display: block;}
- br.xs {display: none;}
 
+.home-sec2 .sec-subtitle br {display: none;}
+.home-sec3 .left-block {
+	margin-bottom: 30px;
+}
+.author-sec2 .graphic-info {
+	margin-left: 0;
+}
+
+h2.sec-title {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.sec-reviews {
+	.review-slider {
+		width: 700px;
+		padding: 30px;
+		.review-info {
+			width: 550px;
+			.review-name {
+				font-size: 20px;
+				line-height: 26px;
+			}
+		}
+	}
+}
+
+.subscribe-form {
+	.email {
+		width: 200px;
+	}
+}
+
+.section-postandvideo .video .video-title {
+	max-width: 100%;
+}
+.contacts-sec2 .questions-block .question {
+	max-width: 100%;
+}
 }
 
 
@@ -24,6 +80,16 @@
 	}
 	br.sm {display: none;}
 	br.xs {display: block;}
+
+	h2.sec-title {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.sec-subtitle {
+		font-size: 18px;
+		line-height: 26px;
+	}
 
 	/*Disable Animation on Mobile Devices*/
 	.animated {
@@ -45,7 +111,288 @@
 		-o-animation: none !important;
 		-ms-animation: none !important;
 		animation: none !important;
-	}	
+	}
+
+.main-header {
+	text-align: center;
+	.logo {
+		display: inline-block;
+		float: none;
+	}
+	.header-menu {
+		display: none;
+	}
+}
+
+.home-sec1 {
+	background: url(../img/home1.jpg) 60% 0 no-repeat;
+	.home-title {
+		font-size: 32px;
+		line-height: 40px;
+		&:after {
+			width: 72px;
+		}
+	}
+	.subtitle {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+.home-sec2 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.sec-subtitle {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.courses{
+		.course {
+			width: 290px;
+		}
+	}
+}
+
+.home-sec3 {
+	border: none;
+	.left-block {
+		.video {
+			height: 169px;
+		}
+		.text {
+			line-height: 24px;
+			br {display: none;}
+		}
+		a.btn-red {
+			margin-bottom: 24px;
+		}
+	}
+	.right-block {
+		.rewiews-block {
+			.rewiew {
+				.rewiew-info {
+					max-width: 200px;
+				}
+			}
+		}
+	}
+}
+
+.home-sec4 {
+	padding-top: 0;
+	padding-bottom: 60px;
+	.talpis-photo {
+		margin-bottom: 40px;
+	}
+	.btn {
+		width: 300px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+.author-sec1 {
+	background: url(../img/author1.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	.author-title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+}
+
+
+.author-sec2 {
+	.slider {
+		width: 100%;
+	}
+	.slider2 {
+		float: none;
+		margin-bottom: 80px;
+	}
+	.citate {
+		padding-left: 25px;
+		font-size: 18px;
+		line-height: 30px;
+		br{display: none;}
+	}
+	.graphic {
+		padding-top: 70px;
+		width: 100%;
+		min-height: 380px;
+		background:  url(../img/graphic-xs.png) -10px 0 no-repeat;
+	}
+	.graphic-info {
+		width: 100%;
+		text-align: center;
+		.info {
+			padding-top: 100px;
+		}
+		.info:first-child {
+			background: url(../img/info-icon1.png) 50% 0 no-repeat;
+		}
+		.info:nth-child(2) {
+			background: url(../img/info-icon2.png) 50% 0 no-repeat;
+		}
+		.info:nth-child(3) {
+			background: url(../img/info-icon3.png) 50% 0 no-repeat;
+		}
+		.info:nth-child(4) {
+			background: url(../img/info-icon4.png) 50% 0 no-repeat;
+		}
+	}
+}
+
+#post-and-video .widget-body {
+	padding: 25px 10px;
+}
+
+
+
+.subscribe-form {
+	height: auto;
+	padding: 35px 20px;
+	.form-title {
+		font-size: 18px;
+		line-height: 24px;
+		br {
+			display: none;
+		}
+	}
+	.name {
+		margin: 0;
+		margin-bottom: 9px;
+		width: 100%;
+	}
+	.email {
+		margin: 0;
+		width: 100%;
+		margin-bottom: 34px;
+
+	}
+}
+.section-postandvideo {
+	.sec-title {
+		text-align: center;
+		&:after {
+			margin: 35px auto;
+		}
+	}
+	.post {
+		height: auto;
+		padding: 0;
+		.thumb {
+			float: none;
+			width: 100%;
+			height: 150px;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: auto;
+				margin-top: -50px;
+			}
+		}
+		.post-body {
+			padding: 25px 15px;
+			h4.post-title a {
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+		.more {
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}
+
+.contacts-sec3 {
+	.block-image {
+		margin-bottom: 30px;
+	}
+	.block-info {
+		padding: 0;
+	}
+}
+.contacts-sec1 {
+	.map {
+		iframe {
+			height: 700px;
+		}
+		.place-info {
+			padding-left: 15px;
+			padding-right: 15px;
+			width: 320px;
+			top: 300px;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.contacts-sec2 .form-block form .message {
+	height: 184px;
+}
+
+.contacts-sec3 .btn {
+	display: block;
+	background-color: $red;
+	color: #fff;
+}
+
+
+.sec-reviews {
+	padding-bottom: 100px;
+	.sec-title {
+		margin-bottom: 50px;
+		&:after {
+			display: none;
+		}
+	}
+	.review {
+		position: relative;
+		text-align: center;
+	}
+	.review-slider {
+		padding: 20px;
+		width: 300px;
+		.review-info {
+			width: 100%;
+			.review-text {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+		.author-info {
+			width: 124px;
+			margin: 0 auto;
+			margin-bottom: 50px;
+			.author-icon {
+				margin: 0 auto;
+				width: 109px;
+				height: 109px;
+				img {
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+			.author-name {
+				margin-top: 16px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.sec-teraphy {
+	.left,
+	.right {
+		width: 100%;
+		height: 280px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+
 }
 
 

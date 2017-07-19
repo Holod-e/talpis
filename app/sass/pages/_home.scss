@@ -220,10 +220,10 @@
 	text-align: center;
 	border-bottom: 1px solid #eeeeee;
 	.left-block {
-		width: 600px;
-		display: inline-block;
+		// width: 600px;
+		// display: inline-block;
 		vertical-align: top;
-		margin-right: 48px;
+		// margin-right: 48px;
 		.sec-title {
 			padding-top: 40px;
 			background: url(../img/icon-quotes.png) 50% 0 no-repeat;
@@ -255,9 +255,9 @@
 		}
 	}
 	.right-block {
-		width: 456px;
+		// width: 456px;
 
-		display: inline-block;
+		// display: inline-block;
 		vertical-align: top;
 		.rewiews-block {
 			background-color: #f6f9fd;
@@ -363,7 +363,7 @@
 		}
 		.banner {
 			margin-top: 48px;
-			width: 456px;
+			// width: 456px;
 			height: 218px;
 			background-color: #dfdfdf;
 		}
@@ -374,18 +374,18 @@
 	padding-top: 70px;
 	padding-bottom: 70px;
 	.talpis-photo {
-		display: inline-block;
-		vertical-align: top;
-		margin-right: 50px;
-		width: 377px;
+		// display: inline-block;
+		// vertical-align: top;
+		// margin-right: 50px;
+		// width: 377px;
 		height: 369px;
-		background: url(../img/talpis-photo.jpg) 0 0 no-repeat;
+		background: url(../img/talpis-photo.jpg) 50% no-repeat;
 	}
 	.talpis-info {
-		display: inline-block;
-		vertical-align: top;
-		max-width: 677px;
-		width: 100%;
+		// display: inline-block;
+		// vertical-align: top;
+		// max-width: 677px;
+		// width: 100%;
 		margin-bottom: 70px;
 	}
 	.sec-title {
@@ -402,7 +402,7 @@
 		margin-bottom: 63px;
 	}
 	.banner2 {
-		width: 1104px;
+		// width: 1104px;
 		height: 150px;
 		background-color: #dfdfdf;
 	}

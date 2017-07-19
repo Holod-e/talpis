@@ -12,6 +12,13 @@
 		height: 620px;
 		background: url(../img/teraphy-left.jpg) 50%  no-repeat;
 		background-size: cover;
+		transition: all 0.3s linear;
+		&:hover{
+			.btn-teraphy {
+				background-color: $red;
+				border: 2px solid $red;
+			}
+		}
 	}
 	.right {
 		padding-top: 200px;
@@ -21,13 +28,60 @@
 		height: 620px;
 		background: url(../img/teraphy-right.jpg) 50%  no-repeat;
 		background-size: cover;
+		transition: all 0.3s linear;
+		&:hover{
+			.btn-teraphy {
+				background-color: $red;
+				border: 2px solid $red;
+			}
+		}
+	}
+	.left,
+	.right {
+		position: relative;
+		transition: all 0.4s linear;
+		&:before {
+			content: '';
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-49%, -49%);
+			width: 500px;
+			height: 423px;
+			border: 3px solid #ffffff;
+			opacity: 0.1;
+			transition: all 0.2s linear;
+		}
+		&:after {
+			content: '';
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-51%, -51%);
+			width: 500px;
+			height: 423px;
+			border: 1px solid #ffffff;
+			opacity: 0.1;
+			transition: all 0.4s linear;
+		}
+		&:hover {
+			transition: all 0.4s linear;
+			&:after,
+			&:before {
+				transition: all 0.4s linear;
+				display: block;
+			}
+		}
 	}
 	.sec-title {
 		color: #fff;
+		margin-bottom: 40px;
 	}
 }
 
-.sec-rewiews {
+.sec-reviews {
 	min-height: 584px;
 	background: url(../img/sec-rewiewsbg.jpg) 50% no-repeat;
 	background-size: cover;
@@ -36,7 +90,7 @@
 	.sec-title {
 		color: $white;
 	}
-	.rewiew-slider {
+	.review-slider {
 		text-align: left;
 		margin-top: 10px;
 		width: 808px;
@@ -46,7 +100,6 @@
 		display: inline-block;
 		padding: 60px;
 		position: relative;
-
 		&:before {
 			content: '';
 			display: block;
@@ -57,7 +110,7 @@
 			transform: translateY(-50%);
 			position: absolute;
 			border-radius:50%;
-			background:#fff url(../img/prev.png) 50% no-repeat;
+			background:#fff ;
 		}
 		&:after {
 			content: '';
@@ -69,7 +122,10 @@
 			transform: translateY(-50%);
 			position: absolute;
 			border-radius:50%;
-			background: #fff url(../img/next.png) 50% no-repeat;
+			background: #fff;
+		}
+		.review {
+			background-color: #fff;
 		}
 		.author-info {
 			display: inline-block;
@@ -79,11 +135,18 @@
 			margin-right: 20px;
 			.author-icon {
 				border-radius: 50%;
+				overflow: hidden;
 				width: 64px;
 				height: 64px;
 				background-repeat: no-repeat;
 				background-position: 50%;
 				margin-bottom: 13px;
+				img {
+					width: 100%;
+					max-width: 100px;
+					height: 100%;
+					max-height: 100px;
+				}
 			}
 			.author-name {
 				color: $darkB;
@@ -99,29 +162,30 @@
 				line-height: 14px;
 			}
 		}
-		.rewiew-info {
+		.review-info {
 			display: inline-block;
 			vertical-align: top;
 			width: 600px;
-			.rewiew-name {
+			.review-name {
 				color: $darkB;
 				font-family: $CB;
 				font-size: 24px;
 				line-height: 33px;
+				margin-bottom: 10px;
 			}
-			.rewiew-theme {
+			.review-theme {
 				color: #999999;
 				font-family: $CR;
 				font-size: 18px;
 				line-height: 18px;
 				margin-bottom: 12px;
 			}
-			.rewiew-text {
+			.review-text {
 				opacity: 0.8;
 				color: $darkL;
 				font-family: $CR;
 				font-size: 16px;
-				height: 54px;
+				// height: 54px;
 				line-height: 24px;
 				margin-top: 10px;
 			}
@@ -134,6 +198,9 @@
 		background: url(../img/slider-nav.png) 50% 0 no-repeat;
 		margin: 0 auto;
 		margin-top: 75px;
+	}
+	.slick-dots {
+		left: 0;
 	}
 }
 

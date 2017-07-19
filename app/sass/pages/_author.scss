@@ -7,13 +7,13 @@
 		position: relative;
 	}
 	article {
-		width: 720px;
-		float: left;
+		// width: 720px;
+		// float: left;
 	}
 	aside {
-		width: 355px;
+		// width: 355px;
 		padding-top: 155px;
-		float: right;
+		// float: right;
 	}
 	.author-title {
 		margin: 0;
@@ -112,14 +112,6 @@
 		height: 44px;
 		background: url(../img/layer1.png) 0 0 no-repeat;
 	}
-	article {
-		width: 720px;
-		float: left;
-	}
-	aside {
-		width: 355px;
-		float: right;
-	}
 	.sec-title {
 		&:after {
 			margin-left: 0;
@@ -169,6 +161,7 @@
 	}
 	.widget-personalmeet {
 		height: 304px;
+		margin-top: 30px;
 		border-radius: 5px;
 		border: 2px dashed $red;
 		padding-top: 54px;

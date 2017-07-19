@@ -3,7 +3,6 @@
 	border-radius: 54px;
 	padding: 0 42px;
 	border: 2px solid $red;
-	// padding-top: ;
 	line-height: 57px;
 	text-align: center;
 	color: $red;
@@ -102,7 +101,7 @@
 
 .met-subm {
 	text-transform: uppercase;
-	border: none;
+	border: 2px solid transparent;
 	padding: 0;
 	width: 230px;
 	height: 57px;
@@ -142,4 +141,59 @@
 	&:focus {
 		transform: scale(1.03);
 	}
+}
+
+// button in talpis bio
+.btn-more-about-author {
+	margin-top: 50px;
+	width: 252px;
+	height: 57px;
+	display: block;
+	border-radius: 45px;
+	border: 2px solid $red;
+	color: $red;
+	font-family: $CB;
+	font-size: 13px;
+	text-align: center;
+	line-height: 57px;
+	transition: all 0.3s linear;
+	background-position: 100% 50%;
+	&:hover {
+		box-shadow: 0 6px 12px #ffcebe;
+		background: $red url(../img/arr-right-white.png) 211px 50% no-repeat;
+		padding-right: 25px;
+		color: #fff;
+	}
+}
+
+.seminar-btn {
+	color: #ffffff;
+	font-family: $CB;
+	font-size: 13px;
+	text-transform: uppercase;
+	width: 161px;
+	height: 42px;
+	background-color: $red;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	float: right;
+	border-radius: 21px;
+}
+
+.search-btn {
+	width: 136px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	color: #ffffff;
+	font-family: $CB;
+	font-size: 13px;
+	text-transform: uppercase;
+	background-color: $red;
+	border: none;
+	display: inline-block;
+	margin-left: 20px;
+	border-radius: 21px;
+	cursor: pointer;
 }

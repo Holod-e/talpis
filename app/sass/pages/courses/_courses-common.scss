@@ -222,7 +222,7 @@
 	padding-top: 116px;
 	padding-bottom: 75px;
 	position: relative;
-	// background: url(../img/met-sec9bg.png) 50% 104px no-repeat; 
+	// background: url(../img/met-sec9bg.png) 50% 104px no-repeat;
 	&:after {
 		content: '';
 		display: block;
@@ -251,8 +251,11 @@
 			vertical-align: top;
 			float: left;
 			height: 217px;
+			background-position: 50%;
+			background-size: cover;
 		}
 		.seminar-info {
+			height: 100%;
 			padding-top: 24px;
 			padding-right: 25px;
 			padding-left: 25px;
@@ -338,7 +341,7 @@
 }
 
 
-.rew-white {
+.rev-white {
 	background: url(../img/rewbgwhite.jpg) 50% repeat-x;
 	// background-size: cover;
 	position: relative;
@@ -535,7 +538,6 @@
 			text-transform: uppercase;
 			color: #fff;
 			background-color: $red;
-
 		}
 	}
 }

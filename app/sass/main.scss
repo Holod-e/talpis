@@ -28,13 +28,15 @@ body {
 	color: #333333;
 	position: relative;
 	background-color: #ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ////Удалить или закоментировать при адаптивном дизайне!//////////////
 .container {
 	// position: relative;
-	width: 100% !important;
-	max-width: 1140px !important;}
+	// width: 100% !important;
+	width: 1170px;}
 //////////////////////////////////////////////////////////////////////
 
 a {
@@ -45,6 +47,10 @@ a {
 		text-decoration: none;
 		// color: #fff;
 	}
+}
+
+input:focus {
+	outline: none;
 }
 
 .hidden {
@@ -678,6 +684,62 @@ article.type-post {
 	}
 }
 
+// PAGINATION
+.comment-pagination,
+.pagination {
+	text-align: center;
+	padding: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	margin: 0;
+	li {
+		list-style-type: none;
+		display: inline-block;
+	}
+	.prev,
+	.next {
+		width: 18px;
+		height: 18px;
+		border: 1px solid #d0d0d0;
+		display: inline-block;
+		background: url(../img/comment-pagination-prev-icon.png) 50% no-repeat;
+		border-radius: 50%;
+		margin: 0 12px;
+		line-height: 26px;
+		vertical-align: top;
+		&:hover {
+			border: 1px solid $red;
+			background: url(../img/comment-pagination-icon-hover.png) 50% no-repeat;
+			transform: scale(-1,1);
+		}
+	}
+	.next {
+		transform: scale(-1,1);
+		&:hover {
+			transform: none;
+		}
+	}
+	.page-numbers {
+		width: 26px;
+		height: 26px;
+		background-color: #ffffff;
+		display: inline-block;
+		margin: 0 3px;
+		border-radius: 50%;
+		color: #333333;
+		font-family: $CB;
+		font-size: 14px;
+		display: inline-block;
+		vertical-align: top;
+		line-height: 29px;
+		&.current {
+			background-color:$red;
+			color: #fff;
+		}
+	}
+}
+
 // COMMENTS SECTION STYLES
 .comments-section {
 	padding-top: 48px;
@@ -737,52 +799,6 @@ article.type-post {
 		}
 	}
 
-	.comment-pagination {
-		text-align: center;
-		padding-top: 30px;
-		padding-bottom: 30px;
-		.prev,
-		.next {
-			width: 18px;
-			height: 18px;
-			border: 1px solid #d0d0d0;
-			display: inline-block;
-			background: url(../img/comment-pagination-prev-icon.png) 50% no-repeat;
-			border-radius: 50%;
-			margin: 0 12px;
-			line-height: 26px;
-			vertical-align: top;
-			&:hover {
-				border: 1px solid $red;
-				background: url(../img/comment-pagination-icon-hover.png) 50% no-repeat;
-				transform: scale(-1,1);
-			}
-		}
-		.next {
-			transform: scale(-1,1);
-			&:hover {
-				transform: none;
-			}
-		}
-		.page-numbers {
-			width: 26px;
-			height: 26px;
-			background-color: #ffffff;
-			display: inline-block;
-			margin: 0 3px;
-			border-radius: 50%;
-			color: #333333;
-			font-family: $CB;
-			font-size: 14px;
-			display: inline-block;
-			vertical-align: top;
-			line-height: 29px;
-			&.current {
-				background-color:$red;
-				color: #fff;
-			}
-		}
-	}
 
 
 	.comments-respond-block {
@@ -894,7 +910,6 @@ article.type-post {
 		overflow: hidden;
 		margin-bottom: 32px;
 		padding-right: 20px;
-		
 		.thumb {
 			float: left;
 			width: 260px;
@@ -903,6 +918,7 @@ article.type-post {
 	.post-body {
 		padding-left: 284px;
 		padding-top: 29px;
+		height: 100%;
 		h4.post-title {
 			margin: 0;
 			margin-bottom: 25px;
@@ -950,16 +966,499 @@ article.type-post {
 		line-height: 42px;
 		border-radius: 44px;
 		background-color: $red;
+		border: 2px solid transparent;
 		color: $white;
 		font-family: $CB;
 		font-size: 13px;
 		text-transform: uppercase;
 		display: inline-block;
 		text-align: center;
+		transition: all 0.3s linear;
+		&:hover,
+		&:active,
+		&:focus {
+			border: 2px solid $red;
+			color: $red;
+			background-color: transparent;
+		}
+	}
+}
+
+// VIDEO STYLES
+.section-postandvideo {
+	.video {
+		height: 294px;
+		position: relative;
+		margin-bottom: 32px;
+		.playicon {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 53px;
+			height: 53px;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			background: url(../img/play-icon.png) 50% no-repeat;
+		}
+		.video-image {
+			display: block;
+			width: 100%;
+			height: 294px;
+			background-position: 50%;
+			background-size: cover;
+		}
+		.video-title {
+			position: absolute;
+			bottom: 50px;
+			left: 24px;
+			max-width: 300px;
+			display: block;
+			color: #ffffff;
+			font-family: $CB;
+			font-size: 20px;
+			line-height: 23px;
+		}
+		.meta {
+			position: absolute;
+			bottom: 24px;
+			left: 26px;
+			span {
+				display: inline-block;
+				opacity: 0.8;
+				color: #fff;
+				font-family: $CR;
+				font-size: 14px;
+				margin-right: 32px;
+			}
+			.time {
+				padding-left: 25px;
+				background: url(../img/meta-time-icon-white.png) 0 50% no-repeat;
+			}
+			.wiews-number {
+				padding-left: 27px;
+				background: url(../img/meta-wiews-icon-white.png) 0 50% no-repeat;
+			}
+		}
+	}
+}
+
+.section-calendar {
+	padding-top: 43px;
+	.sec-title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	.filters {
+		// background: url(../img/filters.png) 50% 0 no-repeat;
+		height:50px;
+		margin-bottom: 50px;
+	}
+	.seminar {
+		display: none;
+		height: 309px;
+		background-color: #f9fafd;
+		margin-bottom: 32px;
+		&.f1.f2.f3 {display: block;}
+		.seminar-body {
+			padding: 22px;
+			height: 237px;
+			.seminar-images {
+				float: left;
+				img {
+					width: 191px;
+					height: 191px;
+					overflow: hidden;
+					border-radius: 3px;
+				}
+			}
+			.seminar-info {
+				height: 100%;
+				margin-left: 210px;
+				position: relative;
+				.seminar-subtitle {
+					color: #999999;
+					font-family: $CR;
+					font-size: 14px;
+					margin-bottom: 4px;
+				}
+				.seminar-title {
+					color: #333333;
+					font-family: $CB;
+					font-size: 20px;
+					line-height: 22.93px;
+					margin-bottom: 37px;
+				}
+				.seminar-description {
+					color: #666666;
+					font-family: $CR;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 18px;
+					max-width: 350px;
+				}
+				.more-link {
+					color: #ff5656;
+					font-family: $CB;
+					font-size: 14px;
+					bottom: 0;
+					left: 0;
+					position: absolute;
+					display: inline-block;
+				}
+				.time-block {
+					position: absolute;
+					padding-left: 18px;
+					bottom: 0;
+					right: 0;
+					width: 100px;
+					height: 110px;
+					background: url(../img/time-block.png) 0 0 no-repeat;
+					p {
+						color: #999999;
+						font-family:$CR;
+						font-size: 13px;
+						line-height: 19.11px;
+						&:first-child {
+							margin-bottom: 28px;
+						}
+					}
+				}
+			}
+		}
+		.seminar-footer {
+			height: 73px;
+			background-color: #f0f4fa;
+			padding: 14px 22px ;
+			p {
+				display: inline-block;
+				padding-left: 23px;
+				margin-right: 40px;
+				color: #676767;
+				font-family: $CR;
+				font-size: 14px;
+				line-height: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				&.seminar-adress {
+					background: url(../img/seminar-adress-icon.png) 0 50% no-repeat;
+				}
+				&.seminar-price {
+					background: url(../img/seminar-price-icon.png) 0 50% no-repeat;
+				}
+				&.seminar-left-seats {
+					background: url(../img/seminar-seats-icon.png) 0 50% no-repeat;
+				}
+			}
+		}
 	}
 }
 
 
+// SEARCH RESLUTLS
+#dwls_search_results {
+	max-height: 300px;
+	overflow: auto;
+	border-radius: 5px;
+	li {
+		padding: 15px;
+		background-color: #fff;
+		border: none;
+		.daves-wordpress-live-search_title {
+			color: #333333;
+			font-family: $CB;
+			font-size: 16px;
+			&:hover {
+				color: $red;
+			}
+		}
+		p {
+			color: #676767;
+			font-family: CirceRegular;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+	.search_footer {
+		display: none;
+	}
+}
+
+
+// SEARCH RESULTS SECTION
+.searchresults-sec1 {
+	padding: 70px 0;
+	.subscribe-form {
+		height: 334px;
+		background: url(../img/searchformbg2.png) 50% no-repeat;
+		background-size: cover;
+		.form-title {
+			font-size: 20px;
+			line-height: 24px;
+			br {display: none;}
+			padding: 0 50px;
+		}
+		.name,
+		.email {
+			width: 307px;
+			margin-bottom: 10px;
+		}
+		.email {
+			margin-bottom: 30px;
+		}
+	}
+	.search-form {
+		margin-bottom: 24px;
+		.searchinput  {
+			padding-left: 13px;
+			border-radius: 28px;
+			border: 1px solid $red;
+			background-color: #ffffff;
+			max-width: 571px;
+			width: 100%;
+			height: 42px;
+			color: #333333;
+			font-family: $CR;
+			font-size: 14px;
+			line-height: 42px;
+		}
+	}
+	.search-title {
+		font-family: $CB;
+		font-size: 19px;
+		line-height: 30px;
+		color: #262626;
+		margin-bottom: 24px;
+		span {
+			color: $red;
+			font-family: $CR;
+		}
+	}
+	.post {
+		.video-image,
+		.video-title {
+			display: none;
+		}
+		.thumbnail {
+			vertical-align: top;
+			float: left;
+			img {
+				width: 85px;
+				height: 85px;
+			}
+		}
+		.post-body {
+			padding-left: 110px;
+			vertical-align: top;
+			.post-title {
+				margin: 0;
+				margin-bottom: 8px;
+				color: #333333;
+				font-family: $CB;
+				font-size: 20px;
+				&:hover,
+				&:active,
+				&:focus {
+					color: $red;
+				}
+			}
+			.meta {
+				display: none;
+			}
+			p {
+				margin: 0;
+				color: #666666;
+				opacity: 0.8;
+			}
+		}
+	}
+	.type-video {
+		height: 133px;
+		.post-body {
+			display: none;
+		}
+		.thumbnail {display: none;}
+		a.video-image {
+			display: block;
+		}
+		.video-image img{
+			width: 85px;
+			height: 85px;
+			float: left;
+		}
+		.meta {
+			display: none;
+		}
+		.video-title {
+			color: #333333;
+			font-family: $CB;
+			font-size: 20px;
+			display: block;
+			padding-left: 110px;
+		}
+	}
+	article {
+		padding: 25px;
+		background-color: #f6f9fd;
+		border-radius: 5px;
+		margin-bottom: 16px;
+	}
+}
+
+// 404 STYLES
+.page404-sec1 {
+	min-height: 480px;
+	text-align: center;
+	padding-top: 101px;
+	background: url(../img/404-img-bg.jpg) 50% no-repeat;
+	background-size: cover;
+	h1 {
+		margin: 0;
+		color: #ffffff;
+		font-family: $CB;
+		font-size: 106px;
+		letter-spacing: 2.5px;
+	}
+	.title {
+		color: #ffffff;
+		font-family: $CB;
+		font-size: 30px;
+		line-height: 34px;
+		margin-bottom: 8px;
+	}
+	.subtitle {
+		font-family:$CR;
+		font-size: 16px;
+		line-height: 28px;
+		color: #ffffff;
+		opacity: 0.8;
+		margin-bottom: 68px;
+		a {
+			color: $red;
+			text-decoration: underline;
+		}
+	}
+	.searchinput  {
+		padding-left: 13px;
+		border-radius: 28px;
+		border: none;
+		background-color: #ffffff;
+		max-width: 571px;
+		width: 100%;
+		height: 42px;
+		color: #333333;
+		font-family: $CR;
+		font-size: 14px;
+		line-height: 42px;
+	}
+}
+
+// WIDGET STYLES
+.widget-block {
+	background-color: #f6f9fd;
+	.widget-title {
+		text-align: center;
+		color: $white;
+		font-family: $CB;
+		font-size: 26px;
+		line-height: 32px;
+		background: url(../img/rewiewsbg.jpg) 50% 0 no-repeat;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			width: 61px;
+			height: 3px;
+			background-color: $red;
+			border-radius: 3px;
+			margin: 0 auto;
+			// margin-top: 20px;
+			// margin-bottom: 18px;
+		}
+	}
+}
+
+#post-and-video {
+	.widget-title {
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background: url(../img/widget-postandvideo-bg.jpg) 50%  no-repeat;
+		background-size: cover;
+	}
+	.widget-body {
+		padding: 25px 50px;
+	}
+	.post {
+		margin-bottom: 40px;
+		.thumb {
+			float: left;
+			img {
+				width: 70px;
+				height: auto;
+			}
+		}
+		.post-body {
+			padding-left: 80px;
+			.post-title {
+				margin: 0;
+				color: #333333;
+				font-family: $CB;
+				font-size: 20px;
+				line-height: 23px;
+				margin-bottom: 8px;
+			}
+			.meta {display: none;}
+			p {
+				color: #666666;
+				font-family: $CR;
+				font-size: 14px;
+				line-height: 18px;
+				height: 36px;
+				overflow: hidden;
+				margin-bottom: 8px;
+			}
+			.more {
+				color: #ff5656;
+				font-family: $CB;
+				font-size: 14px;
+				text-align: right;
+				display: block;
+			}
+		}
+	}
+
+	.video {
+		.video-image {
+			padding-left: 80px;
+			background-size: 70px;
+			background-repeat: no-repeat;
+			display: block;
+			min-height: 70px;
+			position: relative;
+			.playicon {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 53px;
+				height: 53px;
+				left: 35px;
+				top: 35px;
+				transform: translate(-50%, -50%);
+				background: url(../img/play-icon.png) 50% no-repeat;
+			}
+		}
+		.meta {
+			display: none;
+		}
+		.video-title {
+			color: #333333;
+			font-family:$CB;
+			font-size: 20px;
+			line-height: 23px;
+		}
+	}
+}
 
 /* ----------IMPORT FOOTER STYLES---------- */
 @import "_footer.scss";

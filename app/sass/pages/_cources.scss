@@ -14,7 +14,7 @@
 		height: 44px;
 		background: url(../img/layer1.png) 0 0 no-repeat;
 	}
-	
+
 	aside {
 		display: inline-block;
 		vertical-align: top;
@@ -41,7 +41,8 @@
 					cursor: pointer;
 					padding-top: 10px;
 					padding-bottom: 10px;
-					&:hover {
+					&:hover,
+					&.active {
 						background-color: #f6f9fd;
 						&:after {
 							content: '';
@@ -78,7 +79,8 @@
 				border-radius: 5px;
 				background-color: #f6f9fd;
 				transition: all 0.3s linear;
-				&:hover {
+				&:hover,
+				&.active {
 					box-shadow: 0 12px 10px #ebeef4;
 					border-radius: 5px;
 					background-color: $white;
@@ -243,9 +245,8 @@
 	padding-top: 70px;
 	padding-bottom: 70px;
 	article {
-		display: inline-block;
+		// display: inline-block;
 		vertical-align: top;
-		width: 612px;
 		margin-bottom: 70px;
 		.post-image {
 			width: 656px;
@@ -267,22 +268,22 @@
 		}
 	}
 	aside {
-		width: 456px;
-		display: inline-block;
-		float: right;
+		// display: inline-block;
+		// float: right;
+		vertical-align: top;
 		.banner {
 			height: 218px;
 			background-color: #dfdfdf;
 			margin-bottom: 37px;
 		}
 	}
-	.banner {
+	.banner2 {
 		margin-top: 70px;
 		height: 150px;
 		background-color: #dfdfdf;
 	}
 	.widget-postandvideo2 {
-		width: 456px;
+		// width: 456px;
 		height: 671px;
 		background: url(../img/widget2.jpg) 0 0 no-repeat;
 	}

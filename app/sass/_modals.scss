@@ -480,3 +480,17 @@
 		line-height: 43px;
 	}
 }
+
+#modal-video {
+	.modal-content {
+		background-color: transparent;
+	}
+	.one,
+	.two {
+		background-color: #fff;
+	}
+	.close-button {
+		top: 0;
+		right: 0;
+	}
+}
