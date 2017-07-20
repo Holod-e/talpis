@@ -382,9 +382,14 @@ h2.sec-title {
 	color: #fff;
 }
 
+.contacts-sec2 .form-block form {
+	padding: 0;
+}
 
 .sec-reviews {
 	padding-bottom: 100px;
+	background-size: cover;
+	&:after {display: none;}
 	.sec-title {
 		margin-bottom: 50px;
 		&:after {
@@ -490,6 +495,10 @@ h2.sec-title {
 	float: none;
 	text-align: left;
 }
+
+
+
+
 
 
 .section-calendar {
@@ -652,6 +661,227 @@ h1.course-title {
 	}
 	.btn-details {display: none;}
 }
+
+.met-sec4 {
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: #1d79b1;
+		height: 284px;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+	}
+	height: auto;
+	padding-top: 60px;
+	padding-bottom: 0px;
+	text-align: center;
+	position: relative;
+	.sec-title {
+		margin-bottom: 35px;
+		&:after {
+			display: none;
+		}
+	}
+	.sec-text {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 32px;
+	}
+	.left-block,
+	.right-block {
+		display: block;
+		width: 100%;
+		float: none;
+	}
+
+	.right-block {
+		.item {
+			float: none;
+			width: 100%;
+			text-align: left;
+			font-size: 15px;
+			padding-left: 100px;
+		}
+		.it2 {
+			padding-right: 50px;
+		}
+	}
+	.btn {
+		display: none;
+	}
+	.blue-text {
+		bottom: 0;
+		font-size: 20px;
+		line-height: 28px;
+		width: 100%;
+		position: relative;
+
+	}
+}
+
+
+.met-sec5 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.sec-title {
+		margin-bottom: 50px;
+		br {display: none;}
+		&:after {
+			display: none;
+		}
+	}
+	ul {
+		width: 100%;
+		li {
+			font-size: 16px;
+			line-height: 24px;
+			&:before {display: none;}
+		}
+	}
+}
+
+.met-sec6 {
+	padding: 60px 0;
+	.txt1 {
+		font-size: 17px;
+		line-height: 24px;
+	}
+	.txt2 {
+		font-size: 20px;
+		line-height: 28px;
+		br {display: none;}
+	}
+}
+
+.met-sec7 {
+	padding: 60px 0;
+	min-height: auto;
+	.sec-title {
+		br {display: none;}
+		&:after {display: none;}
+		margin-bottom: 67px;
+	}
+	.sec-subtitle {
+		font-size: 16px;
+		line-height: 24px;
+		br {display: none;}
+	}
+}
+
+.course-formblock {
+	height: auto;
+	padding: 60px 0;
+	.form-block {
+		width: 100%;
+		padding: 15px;
+		padding-top: 60px;
+		transform: none;
+		.form-title {
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 65px;
+		}
+		.form-subtitle {
+			font-size: 18px;
+			line-height: 24px;
+		}
+		input[type="text"]{
+			margin-bottom: 18px;
+			&:focus {
+			border: 1px solid $red;
+			}
+		}
+
+		.education-block {
+			margin-top: 20px;
+			padding: 35px 0;
+		}
+	}
+}
+
+
+.closest-seminars {
+	.seminar {
+		width: 100%;
+		float: none;
+		height: auto;
+		border-radius: 5px;
+		overflow: hidden;
+		.seminar-photo {
+			width: 100%;
+		}
+		.seminar-info {
+			width: 100%;
+		}
+	}
+}
+
+
+.talpis-bio-sec {
+	text-align: center;
+	padding-bottom: 60px;
+	padding-top: 60px;
+	.sec-title {
+		&:after {
+			margin: 30px auto;
+		}
+	}
+	.text {
+		line-height: 24px;
+		span {
+			display: block;
+			margin: 0 auto;
+			line-height: 72px;
+		}
+		&.big {
+		span {
+			float: none;
+			display: block;
+			margin: 0 auto;
+			}
+		}
+	}
+	.btn-more-about-author {
+		margin: 0 auto;
+	}
+	.talpis-photo {
+		height: 400px;
+		background-size: cover;
+	}
+	.talpis-info {
+		font-size: 20px;
+		line-height: 26px;
+	}
+}
+
+.sec-sertificate {
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.sertificate-info {
+		width: 100%;
+		.sec-title {
+			margin-bottom: 40px;
+			&:after {
+				display: none;
+			}
+		}
+		.sert-text {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+	.sertificate-photo {
+		width: 100%;
+		height: 214px;
+		background: url(../img/sertificate-image-xs.png) 50% no-repeat;
+		margin-bottom: 30px;
+	}
+}
+
 
 
 }
