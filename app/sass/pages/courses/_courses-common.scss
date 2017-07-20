@@ -468,18 +468,19 @@
 			}
 		}
 	}
-	.talpis-bio {
-		width: 50%;
-		display: inline-block;
-		vertical-align: top;
+	// .talpis-bio {
+	// 	width: 50%;
+	// 	display: inline-block;
+	// 	vertical-align: top;
 
-	}
+	// }
 	.talpis-photo {
-		display: inline-block;
-		width: 448px;
+		// display: inline-block;
+		// width: 448px;
 		height: 712px;
 		vertical-align: top;
-		float: right;
+		margin-bottom: 20px;
+		// float: right;
 		background: url(../img/talpis-bio-photo.jpg) 50% 0 no-repeat;
 	}
 	.btn-more {

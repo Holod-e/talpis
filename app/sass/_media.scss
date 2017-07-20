@@ -22,6 +22,14 @@
 	width: auto;
 }
 
+.trainers-sec1 {
+	.trainer {
+		.trainer-text {
+			width: 650px;
+		}
+	}
+}
+
 
 }
 
@@ -69,6 +77,26 @@ h2.sec-title {
 .contacts-sec2 .questions-block .question {
 	max-width: 100%;
 }
+
+.trainers-sec1 {
+	.trainer {
+		.trainer-text {
+			width: 410px;
+		}
+	}
+}
+
+.single-post .aside {display: none;}
+
+.met-sec4 .right-block .item, .teta-sec4 .right-block .item {
+	width: 350px;
+}
+.met-sec4 .blue-text br {display: none;}
+.met-sec5 ul li br {display: none;}
+.talpis-bio-sec .talpis-photo {
+	height: 500px;
+}
+
 }
 
 
@@ -113,14 +141,30 @@ h2.sec-title {
 		animation: none !important;
 	}
 
+
+#dwls_search_results {
+	left: auto !important;
+	right: 0;
+}
+
 .main-header {
 	text-align: center;
+	padding-top: 20px;
+	padding-left: 0;
+	padding-right: 0;
 	.logo {
 		display: inline-block;
 		float: none;
 	}
 	.header-menu {
 		display: none;
+	}
+	.mob-menu-icon {
+		display: block;
+	}
+	.search-form {
+		margin-right: 40px;
+		margin-left: -40px;
 	}
 }
 
@@ -390,6 +434,223 @@ h2.sec-title {
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+}
+
+
+.cources-sec1 {
+	.subscribe-form {
+		display: none;
+	}
+	.cources-list {
+		display: none;
+	}
+}
+
+
+.trainers-sec1 {
+	.trainer {
+		padding-top: 0;
+		border: none;
+		.trainer-info {
+			display: block;
+			margin-bottom: 24px;
+			.trainer-photo {
+				width: 100%;
+				height: 200px;
+				img {
+					width: 100%;
+				}
+			}
+		}
+		.trainer-text {
+			width: 100%;
+			.text-title {
+				font-size: 18px;
+				line-height: 24px;
+				margin-bottom: 24px;
+			}
+			.totrainer-site {
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+}
+.trainers-sec1 .trainer:nth-child(even) .trainer-info {
+	margin: 0;
+	margin-bottom: 24px;
+}
+.trainers-sec1 .trainer:nth-child(odd) .trainer-info {
+	float: none;
+	margin: 0;
+	margin-bottom: 24px;
+}
+
+.trainers-sec1 .trainer:nth-child(odd) .trainer-text {
+	float: none;
+	text-align: left;
+}
+
+
+.section-calendar {
+	.filters {
+		height: auto;
+		label {
+			display: block;
+			select {
+				display: block;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.seminar {
+		height: auto;
+		.seminar-body {
+			height: 520px;
+			.seminar-images {
+				float: none;
+				overflow: hidden;
+				height: 207px;
+				width: 100%;
+				img {
+					width: 100%;
+					height: auto;
+					margin-top: -50px;
+				}
+			}
+			.seminar-info {
+				margin-left: 0;
+				margin-top: 24px;
+				height: 260px;
+				.seminar-title {
+					margin-bottom: 18px;
+				}
+				.seminar-description {
+					padding-top: 14px;
+					border-top: 1px solid #dde1ed;
+					font-size: 16px;
+					line-height: 24px;
+				}
+				.more-link {
+					bottom: 80px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				.time-block {
+					width: 100%;
+					background: none;
+					height: 50px;
+					padding: 0;
+					position: relative;
+					margin-top: 80px;
+					&:before{
+						content: '...........';
+						display: inline-block;
+						height: 10px;
+						position: absolute;
+						text-align: center;
+						color: #a4abba;
+						opacity: 0.6;
+						left: 50%;
+						transform: translateX(-50%);
+						bottom: 20px;
+					}
+					.start-date {
+						display: inline-block;
+						padding-left: 18px;
+						background:  url(../img/location-gray-icon.png) 0 5px no-repeat;
+					}
+					.finish-date {
+						float: right;
+					}
+				}
+			}
+		}
+		.seminar-footer {
+			height: 200px;
+			.seminar-adress,
+			.seminar-place,
+			.seminar-left-seats {
+				display: block;
+			}
+			.seminar-btn {
+				margin: 0 auto;
+				float: none;
+			}
+		}
+	}
+}
+
+h1.course-title {
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.course-sec1 {
+	min-height: 590px;
+	padding-top: 118px;
+	&:after {
+		display: none;
+	}
+	.course-subtitle {
+		font-size: 16px;
+		line-height: 24px;
+		br {display: none;}
+		margin-bottom: 100px;
+	}
+	.btn-bron {
+		display: none;
+	}
+	.btn-more {
+		border: none;
+	}
+}
+
+
+
+.course-sec2 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.sec-title {
+		margin-bottom: 50px;
+		&:after {display: none;}
+	}
+	.sec-subtitle {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.element {
+		width: 100%;
+	}
+}
+
+.met-sec2 {
+	.element {
+		width: 100%;
+		margin-bottom: 40px;
+		.element-icon {
+			width: 95px;
+			height: 95px;
+			background-size: 50%;
+		}
+	}
+}
+
+.met-sec3 {
+	padding-top: 96px;
+	background-image: url(../img/cards-left-xs.png), url(../img/cards-right-xs.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0 95%, 100% 5%;
+	.cart-txt1 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.cart-txt2 {
+		font-size: 20px;
+		line-height: 28px;
+		br {display: none;}
+	}
+	.btn-details {display: none;}
 }
 
 

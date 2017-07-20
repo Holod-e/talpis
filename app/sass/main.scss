@@ -593,13 +593,86 @@ h1.course-title {
 }
 
 // STYLES FOR SINGLE POST
+section.single-post {
+	padding-top: 60px;
+	.latest-posts {
+		background-color: #f6f9fd;
+		padding:35px;
+		.thumb {
+			width: 280px;
+			height: 120px;
+			display: block;
+			overflow: hidden;
+			img {
+				width: 280px;
+				transform: translateY(-20%);
+			}
+		}
+		.post-title a{
+			color: #333333;
+			font-family: $CB;
+			font-size: 20px;
+			line-height: 23px;
+		}
+		.post {
+			width: 280px;
+			padding-top: 35px;
+			padding-bottom: 35px;
+			border-bottom: 1px solid #e3e5e8;
+			margin: 0 auto;
+			.meta {
+				margin-bottom: 0;
+				span {
+					display: inline-block;
+					opacity: 0.8;
+					color: #999999;
+					font-family: $CR;
+					font-size: 14px;
+					margin-right: 32px;
+				}
+				.time {
+					padding-left: 25px;
+					background: url(../img/meta-time-icon.png) 0 50% no-repeat;
+				}
+				.wiews-number {
+					padding-left: 27px;
+					background: url(../img/meta-wiews-icon.png) 0 50% no-repeat;
+				}
+				.comments-number {
+					padding-left: 27px;
+					background: url(../img/meta-comments-icon.png) 0 50% no-repeat;
+				}
+			}
+		}
+		.show-all {
+			width: 180px;
+			color: $red;
+			font-family: $CB;
+			font-size: 16px;
+			line-height: 20px;
+			margin: 0 auto;
+			margin-top: 25px;
+			display: block;
+			&:before {
+				content:'';
+				display: inline-block;
+				width: 15px;
+				height: 25px;
+				line-height: 20px;
+				background: url(../img/show-all-icon.png) 50% 100% no-repeat;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
 article.type-post {
 	h1 {
 		color: #333333;
 		font-family: $CB;
 		font-size: 40px;
 		line-height: 52px;
-		margin-top: 48px;
+		margin-top: 0;
 		margin-bottom: 48px;
 	}
 	p {
