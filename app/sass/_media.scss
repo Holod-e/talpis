@@ -387,14 +387,14 @@ h2.sec-title {
 }
 
 .sec-reviews {
+	.container {
+		overflow: visible;
+	}
 	padding-bottom: 100px;
 	background-size: cover;
 	&:after {display: none;}
 	.sec-title {
 		margin-bottom: 50px;
-		&:after {
-			display: none;
-		}
 	}
 	.review {
 		position: relative;
@@ -605,14 +605,12 @@ h1.course-title {
 		font-size: 16px;
 		line-height: 24px;
 		br {display: none;}
-		margin-bottom: 100px;
+		margin-bottom: 50px;
 	}
 	.btn-bron {
-		display: none;
+		margin-bottom: 10px;
 	}
-	.btn-more {
-		border: none;
-	}
+
 }
 
 
@@ -622,14 +620,26 @@ h1.course-title {
 	padding-bottom: 60px;
 	.sec-title {
 		margin-bottom: 50px;
-		&:after {display: none;}
+
 	}
 	.sec-subtitle {
 		font-size: 16px;
 		line-height: 24px;
+		br {display: none;}
 	}
-	.element {
-		width: 100%;
+	.elements {
+		.element {
+			width: 100%;
+			margin-bottom: 40px;
+			.element-icon {
+				width: 95px;
+				height: 95px;
+				background-size: 50%;
+			}
+			.element-text {
+				max-width: 100%;
+			}
+		}
 	}
 }
 
@@ -662,6 +672,18 @@ h1.course-title {
 	.btn-details {display: none;}
 }
 
+.ts-sec3,
+.vsel-sec3 {
+	background: none;
+}
+
+.vsel-sec4 {
+	.sec-text {
+		br {display: none;}
+	}
+}
+
+
 .met-sec4 {
 	&:before {
 		content: '';
@@ -681,9 +703,6 @@ h1.course-title {
 	position: relative;
 	.sec-title {
 		margin-bottom: 35px;
-		&:after {
-			display: none;
-		}
 	}
 	.sec-text {
 		font-size: 16px;
@@ -728,10 +747,6 @@ h1.course-title {
 	padding-bottom: 60px;
 	.sec-title {
 		margin-bottom: 50px;
-		br {display: none;}
-		&:after {
-			display: none;
-		}
 	}
 	ul {
 		width: 100%;
@@ -760,8 +775,6 @@ h1.course-title {
 	padding: 60px 0;
 	min-height: auto;
 	.sec-title {
-		br {display: none;}
-		&:after {display: none;}
 		margin-bottom: 67px;
 	}
 	.sec-subtitle {
@@ -820,6 +833,12 @@ h1.course-title {
 }
 
 
+.video-rewiews {
+	.video-slider {
+		width: 100%;
+	}
+}
+
 .talpis-bio-sec {
 	text-align: center;
 	padding-bottom: 60px;
@@ -865,9 +884,6 @@ h1.course-title {
 		width: 100%;
 		.sec-title {
 			margin-bottom: 40px;
-			&:after {
-				display: none;
-			}
 		}
 		.sert-text {
 			font-size: 18px;

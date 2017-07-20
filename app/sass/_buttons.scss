@@ -1,7 +1,8 @@
 .btn {
 	height: 57px;
+	width: 230px;
 	border-radius: 54px;
-	padding: 0 42px;
+	padding: 0;
 	border: 2px solid $red;
 	line-height: 57px;
 	text-align: center;
@@ -80,22 +81,12 @@
 .btn-more {
 	width: 236px;
 	height: 57px;
-	line-height: 57px;
 	padding: 0;
-	border-radius: 100px;
-	border: 2px solid $red;
-	background-color: transparent;
-	color: $red;
-	transition: all 0.3s linear;
-	&:hover,
-	&:active,
-	&:focus {
-		background-color: $red;
-		color: #fff;
-	}
 }
 
 .btn-details {
+	width: 221px;
+	padding: 0;
 	text-transform: uppercase;
 }
 

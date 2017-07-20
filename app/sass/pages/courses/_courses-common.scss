@@ -12,7 +12,7 @@
 		display: block;
 		width: 117px;
 		height: 32px;
-		background: url(../img/layer-white.png) 50% 0 no-repeat;
+		background: url(../img/layer-snow.png) 50% 0 no-repeat;
 		left: 50%;
 		transform: translateX(-50%);
 		bottom: -17px;
@@ -222,7 +222,7 @@
 	padding-top: 116px;
 	padding-bottom: 75px;
 	position: relative;
-	// background: url(../img/met-sec9bg.png) 50% 104px no-repeat;
+	background: url(../img/closest-seminars-bg.png) 50% 104px no-repeat;
 	&:after {
 		content: '';
 		display: block;
@@ -233,6 +233,7 @@
 		left: 50%;
 		bottom: -15px;
 		transform: translateX(-50%) rotate(180deg);
+		z-index: 99;
 	}
 	.seminars {
 		margin-top: 38px;
