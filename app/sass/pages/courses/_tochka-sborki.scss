@@ -44,6 +44,7 @@
 }
 
 .ts-sec4 {
+	padding-top: 171px;
 	padding-bottom: 200px;
 	text-align: center;
 	background: url(../img/ts-sec4.jpg) 50% no-repeat;
@@ -75,6 +76,11 @@
 
 .ts-sec6 {
 	padding-bottom: 96px;
+	.sec-title {
+		&:after {
+			margin-bottom: 35px;
+		}
+	}
 }
 
 .ts-sec8 {

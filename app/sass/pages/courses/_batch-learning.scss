@@ -28,6 +28,9 @@
 				color:#262626
 			}
 		}
+		.element-icon {
+			border: none;
+		}
 		&.el1 .element-icon {
 			background-color: #ff5656;
 			background-image: url(../img/trainer-el2.png);
@@ -86,6 +89,14 @@
 	}
 	.items {
 		border: none;
+		padding: 0;
+		.item {
+			max-width: 300px;
+			margin: 0 auto;
+		}
+		.item:nth-child(2) {
+			margin: 0;
+		}
 	}
 }
 

@@ -3,7 +3,7 @@
 	background: url(../img/trainer-course-sec1.jpg) 50% no-repeat;
 	background-size: cover;
 	&:after {
-		background: url(../img/layer-snow.png)50%no-repeat;
+		background: url(../img/layer-snow.png) 50% no-repeat;
 	}
 }
 
@@ -23,7 +23,7 @@
 		transition: all 0.3s linear;
 		&:hover {
 			.element-icon {
-				transform: scale(1.03);
+				transform: scale(1.07);
 			}
 		}
 		.element-icon {
@@ -35,6 +35,7 @@
 			background-repeat: no-repeat;
 			background-position: 50%;
 			transition: all 0.3s linear;
+			border: none;
 		}
 		&.el1 {
 			.element-icon {
@@ -135,8 +136,8 @@
 		padding: 50px 0;
 		border-top: 1px solid #efefef;
 		.item {
-			width: 280px;
-			display: inline-block;
+			// width: 280px;
+			// display: inline-block;
 			vertical-align: top;
 			text-align: left;
 			color: #333333;
@@ -184,15 +185,27 @@
 		display: block;
 		width: 117px;
 		height: 32px;
-		background: url(../img/layer1.png) 50% no-repeat;
+		background: url(../img/layer-snow.png) 50% no-repeat;
 		bottom: -15px;
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translateX(-50%)  rotate(180deg);
 		position: absolute;
 	}
+	&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 14px;
+			height: 21px;
+			background: url(../img/arr-blue-down.png) 50% no-repeat;
+			z-index: 99;
+		}
 	.left-block {
-		width: 55%;
-		display: inline-block;
+		// width: 55%;
+		// display: inline-block;
 		vertical-align: top;
 		.sec-title {
 			margin-bottom: 40px;
@@ -202,9 +215,9 @@
 		}
 	}
 	.image-block {
-		display: inline-block;
-		vertical-align: top;
-		width: 44%;
+		// display: inline-block;
+		// vertical-align: top;
+		// width: 44%;
 		min-height: 702px;
 		background: url(../img/trainer-sec5-img.jpg) 100% 0 no-repeat;
 	}
@@ -244,7 +257,7 @@
 }
 
 .trainer-sec7 {
-	height: 851px;
+	height: 900px;
 	.form-block {
 		transform: translateY(-434px);
 	}

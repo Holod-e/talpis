@@ -18,6 +18,18 @@
 		bottom: -17px;
 		position: absolute;
 	}
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 14px;
+		height: 21px;
+		background: url(../img/arr-blue-down.png) 50% no-repeat;
+		z-index: 99;
+	}
 	.btn {
 		margin: 0 12px;
 		text-transform: uppercase;
@@ -206,11 +218,14 @@
 			}
 		}
 		a.seminar-price {
+			width: 140px;
 			color: $red;
 			font-family: $CB;
 			font-size: 14px;
 			display: block;
 			margin: 15px auto;
+			padding-right: 10px;
+			background: url(../img/priceseminar-icon.png) 100% 50% no-repeat;
 		}
 	}
 
@@ -343,8 +358,9 @@
 
 
 .rev-white {
-	background: url(../img/rewbgwhite.jpg) 50% repeat-x;
+	background: url(../img/rewbgwhite.jpg) 50% 100%;
 	// background-size: cover;
+	padding-bottom: 100px;
 	position: relative;
 	&:after {
 		content: '';
@@ -429,6 +445,7 @@
 .talpis-bio-sec {
 	padding-top: 117px;
 	padding-bottom: 117px;
+	background: url(../img/about-circles1.jpg) 0 100% no-repeat;
 	.sec-title {
 		&:after {
 			margin-left: 0;

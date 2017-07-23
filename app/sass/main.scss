@@ -141,6 +141,7 @@ h1.course-title {
 	font-family: $CB;
 	font-size: 56px;
 	line-height: 72px;
+	margin-top: 0;
 	&:after {
 		content: '';
 		display: block;
@@ -363,6 +364,7 @@ h1.course-title {
 		line-height: 35px;
 		&:after {
 			display: block;
+			margin-top: 37px;
 		}
 	}
 	.text {
@@ -381,9 +383,9 @@ h1.course-title {
 	padding-bottom: 120px;
 	position: relative;
 	.left-block {
-		width: 55%;
-		display: inline-block;
-		vertical-align: top;
+		// width: 55%;
+		// display: inline-block;
+		// vertical-align: top;
 		.sec-title {
 			margin-bottom: 40px;
 			&:after {
@@ -392,9 +394,9 @@ h1.course-title {
 		}
 	}
 	.image-block {
-		display: inline-block;
-		vertical-align: top;
-		width: 44%;
+		// display: inline-block;
+		// vertical-align: top;
+		// width: 44%;
 		min-height: 702px;
 		background: url(../img/vseladd-sec6-img.jpg) 100% 0 no-repeat;
 	}

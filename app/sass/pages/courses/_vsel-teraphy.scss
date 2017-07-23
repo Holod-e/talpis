@@ -2,6 +2,9 @@
 .vsel-sec1 {
 	background: url(../img/vsel-sec1.jpg) 50% no-repeat;
 	background-size: cover;
+	&:after {
+		background: url(../img/layer-white.png) 50% 0 no-repeat;
+	}
 }
 .vsel-sec2 {
 	background-color: #f6f9fd;
@@ -35,6 +38,7 @@
 	background-size: cover;
 	&:after {
 		z-index: 15;
+		background: url(../img/layer-snow-check.png) 50% 0 no-repeat;
 	}
 }
 
@@ -49,10 +53,10 @@
 		display: block;
 		width: 117px;
 		height: 32px;
-		background: url(../img/layer-white.png) 50% no-repeat;
+		background: url(../img/layer-snow.png) 50% no-repeat;
 		position: absolute;
 		left: 50%;
-		bottom: -15px;
+		bottom: -17px;
 		transform: translateX(-50%);
 		z-index: 10;
 		}
