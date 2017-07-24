@@ -18,6 +18,118 @@
 /* ---------- @IMPORT BUTTONS ---------- */
 @import "_buttons.scss";
 
+.preloaderGM {
+	z-index: 999999999;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100vh;
+	padding-top: 45vh;
+	background: #fff;
+	opacity: 1;
+	animation: preloader_hide 1s 2s linear forwards, decrease 1s 3s linear forwards;
+	-o-animation: preloader_hide 1s 2s linear forwards, decrease 1s 3s linear forwards;
+	-moz-animation: preloader_hide 1s 2s linear forwards, decrease 1s 3s linear forwards;
+	-ms-animation: preloader_hide 1s 2s linear forwards, decrease 1s 3s linear forwards;
+	-webkit-animation: preloader_hide 1s 2s linear forwards, decrease 1s 3s linear forwards; }
+.preloaderGM .pre_circles {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto; }
+.preloaderGM .pre_circles .pre_circle1 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 2px solid #232323;
+	will-change: contents;
+	animation: circle_grow 1s 1s linear infinite;
+	-o-animation: circle_grow 1s 1s linear infinite;
+	-webkit-animation: circle_grow 1s 1s linear infinite;
+	-moz-animation: circle_grow 1s 1s linear infinite;
+	-ms-animation: circle_grow 1s 1s linear infinite;
+	opacity: 0; }
+.preloaderGM .pre_circles .pre_circle2 {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 0px;
+	height: 0px;
+	border-radius: 50px;
+	border: 2px solid #232323;
+	will-change: contents;
+	animation: circle_grow 1s 2s linear infinite;
+	-o-animation: circle_grow 1s 2s linear infinite;
+	-moz-animation: circle_grow 1s 2s linear infinite;
+	-ms-animation: circle_grow 1s 2s linear infinite;
+	-webkit-animation: circle_grow 1s 2s linear infinite;
+	opacity: 0; }
+
+@keyframes decrease {
+	0% {
+		width: 100%; }
+	100% {
+		width: 0%; } }
+
+@-webkit-keyframes decrease {
+	0% {
+		width: 100%; }
+	100% {
+		width: 0%; } }
+
+@keyframes circle_grow {
+	0% {
+		width: 0;
+		height: 0;
+		margin-left: 25px;
+		margin-top: 25px;
+		opacity: 1; }
+	100% {
+		width: 50px;
+		height: 50px;
+		margin-left: 0px;
+		margin-top: 0px;
+		opacity: 0; } }
+
+@keyframes preloader_hide {
+	0% {
+		opacity: 1; }
+	100% {
+		opacity: 0; } }
+
+@keyframes loader_vis {
+	0% {
+		opacity: 0; }
+	100% {
+		opacity: 1; } }
+
+@-webkit-keyframes circle_grow {
+	0% {
+		width: 0;
+		height: 0;
+		margin-left: 25px;
+		margin-top: 25px;
+		opacity: 1; }
+	100% {
+		width: 50px;
+		height: 50px;
+		margin-left: 0px;
+		margin-top: 0px;
+		opacity: 0; } }
+
+@-webkit-keyframes preloader_hide {
+	0% {
+		opacity: 1; }
+	100% {
+		opacity: 0; } }
+
+@-webkit-keyframes loader_vis {
+	0% {
+		opacity: 0; }
+	100% {
+		opacity: 1; } }
+
+
 
 /* ----------MAIN STYLE---------- */
 body {
