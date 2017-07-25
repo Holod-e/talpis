@@ -82,7 +82,7 @@
 }
 
 .sec-reviews {
-	min-height: 584px;
+	min-height: 650px;
 	background: url(../img/sec-rewiewsbg.jpg) 50% no-repeat;
 	background-size: cover;
 	padding-top: 60px;
@@ -261,6 +261,12 @@ section.breadcrumbs {
 		font-size: 16px;
 		line-height: 18px;
 		position: relative;
+		&:hover,
+		&:active,
+		&:focus {
+			outline: none;
+			border: none;
+		}
 	}
 	.name {
 		width: 200px;

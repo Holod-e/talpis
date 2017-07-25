@@ -1611,6 +1611,8 @@ article.type-post {
 				font-size: 14px;
 				text-align: right;
 				display: block;
+				padding-right: 10px;
+				background: url(../img/priceseminar-icon.png) 100% 50% no-repeat;
 			}
 		}
 	}
@@ -1644,6 +1646,13 @@ article.type-post {
 			font-size: 20px;
 			line-height: 23px;
 		}
+	}
+}
+
+#modal-individual-teraphy,
+#modal-group-teraphy {
+	.btn {
+		margin-top: 30px;
 	}
 }
 
