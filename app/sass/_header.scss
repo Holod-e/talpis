@@ -14,6 +14,7 @@
 		font-size: 28px;
 		line-height: 28px;
 		float: left;
+		transform: translateY(-4px);
 	}
 	.header-menu {
 		margin: 0;
@@ -66,12 +67,29 @@
 		}
 		.menu-item-has-children {
 			margin: 0;
-
 			a:first-child:hover {
 				background-color: #fff;
-				border-radius: 4px;color: $red;
+				color: $red;
+				border-radius: 0 !important;
 				&:after {
 					display: none;
+				}
+			}
+			a.hovered {
+				background-color: #fff;
+				color: #333333;;
+				border-radius: 4px 4px 0 0;
+				opacity: 1;
+				&:before {
+					content: '';
+					display: block;
+					background: url(../img/sum-menu-open.svg) 0 no-repeat;
+					width: 5px;
+					height: 8px;
+					position: absolute;
+					left: 90px;
+					top: 9px;
+					transform: rotate(90deg);
 				}
 			}
 		}
@@ -82,7 +100,17 @@
 		}
 		.menu-item-has-children > a {
 			padding: 0 12px;
-			&:hover {
+			padding-right: 25px;
+			&:hover:before {
+				content: '';
+				display: block;
+				background: url(../img/sum-menu-open.svg) 0 no-repeat;
+				width: 5px;
+				height: 8px;
+				position: absolute;
+				left: 90px;
+				top: 9px;
+				transform: rotate(90deg);
 			}
 		}
 	}
@@ -95,7 +123,7 @@
 		position: absolute;
 		left: 0;
 		top: 25px;
-		border-radius: 4px;
+		border-radius:0 4px 4px 4px;
 		width: 230px;
 		z-index: 99;
 		opacity: 1;
@@ -112,15 +140,18 @@
 				padding-bottom: 13px;
 				padding-left: 13px;
 				line-height: 18px;
+				border-radius: 0;
 				margin: 0;
 				background-color: $white;
 				color: $darkB;
-				&:after {
+				&:after,
+				&:before {
 					display: none;
 				}
 				&:hover {
 					background-color: $red !important;
 					color: #fff !important;
+					border-radius: 0;
 				}
 			}
 		}
@@ -135,6 +166,7 @@
 		position: relative;
 		overflow: hidden;
 		transition: all 0.3s linear;
+		transform: translateY(-3px);
 		.form-control {
 			display: none;
 			border: none;

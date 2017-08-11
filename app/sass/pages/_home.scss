@@ -270,6 +270,7 @@
 				font-size: 26px;
 				line-height: 32px;
 				background: url(../img/rewiewsbg.jpg) 50% 0 no-repeat;
+				background-size: 100%;
 				position: relative;
 				&:after {
 					content: '';
@@ -286,7 +287,7 @@
 			.rewiew {
 				padding-left: 48px;
 				padding-right: 48px;
-				margin-top: 40px;
+				margin-top: 35px;
 				.author-info {
 					display: inline-block;
 					vertical-align: top;
@@ -324,6 +325,7 @@
 						font-family: $CB;
 						font-size: 20px;
 						line-height: 23px;
+						margin-bottom: 6px;
 					}
 					.rewiew-theme {
 						color: #999999;
@@ -360,6 +362,9 @@
 					background-image: url(../img/rew2.png);
 				}
 			}
+			.slick-dots {
+				bottom: -27px;
+			}
 		}
 		.banner {
 			margin-top: 48px;
@@ -378,6 +383,8 @@
 		// vertical-align: top;
 		// margin-right: 50px;
 		// width: 377px;
+		width: 100%;
+		max-width: 340px;
 		height: 369px;
 		background: url(../img/talpis-photo.jpg) 50% no-repeat;
 	}
@@ -399,7 +406,7 @@
 		font-family: $CR;
 		font-size: 16px;
 		line-height: 25px;
-		margin-bottom: 63px;
+		margin-bottom: 55px;
 	}
 	.banner2 {
 		// width: 1104px;

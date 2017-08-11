@@ -209,6 +209,7 @@
 		font-size: 14px;
 		text-transform: uppercase;
 		display: inline-block;
+		cursor: pointer;
 	}
 	.btn-more.active {
 		width: 57px;
@@ -252,8 +253,8 @@
 		position: relative;
 		padding-top: 72px;
 		padding-bottom: 72px;
-		&:after {
-			content: '';
+		.btn-close {
+			// content: '';
 			display: block;
 			width: 44px;
 			height: 44px;

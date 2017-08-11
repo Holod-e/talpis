@@ -638,9 +638,24 @@ h1.course-title {
 		border-radius: 10px;
 		position: relative;
 		padding-top: 72px;
-		padding-bottom: 72px;
-		&:after {
-			content: '';
+		padding-bottom: 118px;
+		// &:after {
+		// 	content: '';
+		// 	display: block;
+		// 	width: 44px;
+		// 	height: 44px;
+		// 	border-radius: 50%;
+		// 	position: absolute;
+		// 	left: 50%;
+		// 	transform: translateX(-50%);
+		// 	bottom: -22px;
+		// 	box-shadow: 0px 1px 21px 0px rgba(0,0,0,0.1);
+		// 	background: #fff url(../img/up-red.png) 50% no-repeat;
+		// 	cursor: pointer;
+		// 	z-index: 999;
+		// }
+		.btn-close {
+			// content: '';
 			display: block;
 			width: 44px;
 			height: 44px;
@@ -652,6 +667,9 @@ h1.course-title {
 			box-shadow: 0px 1px 21px 0px rgba(0,0,0,0.1);
 			background: #fff url(../img/up-red.png) 50% no-repeat;
 			cursor: pointer;
+		}
+		.btn {
+			margin-top: 40px;
 		}
 	}
 	.sec-title {
