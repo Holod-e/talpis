@@ -13,12 +13,14 @@
 			color: #b5bdca;
 			font-family: $CB;
 			font-size: 14px;
-			margin: 0 50px;
+			margin: 0 73px;
 			padding-left: 23px;
 		}
 		.place {background: url(../img/place-icon.png) 0 50% no-repeat;}
 		.email-adress {background: url(../img/email-icon.png) 0 50% no-repeat;}
-		.phone-number {background: url(../img/phone-icon.png) 0 50% no-repeat;}
+		.phone-number {
+			background: url(../img/phone-icon.png) 0 50% no-repeat;
+			margin-right:0;}
 		.search {
 			width: 260px;
 			height: 34px;
@@ -29,6 +31,7 @@
 			font-size: 14px;
 			padding-left: 16px;
 			background:  #ecf1f6 url(../img/serach-icon.png) 90% 50% no-repeat;
+			margin-right: 30px;
 		}
 	}
 	.main-footer {
@@ -95,6 +98,11 @@
 
 @media only screen and (max-width : 960px) {
 	.footer {
+		.top-footer {
+			.search {
+				margin-right: 0;
+			}
+		}
 		.form-inline {
 			display: block;
 			margin-bottom: 20px;
