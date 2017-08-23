@@ -1577,6 +1577,10 @@ article.type-post {
 			background-color: $red;
 			border-radius: 3px;
 			margin: 0 auto;
+			position: absolute;
+			bottom: 30px;
+			left: 50%;
+			transform: translateX(-50%);
 			// margin-top: 20px;
 			// margin-bottom: 18px;
 		}

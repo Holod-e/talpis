@@ -86,9 +86,9 @@
 			width: 173px;
 			height: 40px;
 			border-radius: 44px;
-			background-color: $red;
-			color: $white;
-			font-family: $CR;
+			background-color: #ff5656;
+			color: #ffffff;
+			font-family: CirceBold;
 			font-size: 13px;
 			line-height: 40px;
 			padding-top: 0;
@@ -246,6 +246,29 @@
 				color: $darkB;
 				font-family: $CB;
 				font-size: 20px;
+			}
+		}
+	}
+	.slider2 {
+		.slick-dots {
+			li {
+				margin: 0 30px;
+				button {
+					transform: translateY(3px);
+					font-size: 0;
+					width: 8px;
+					height: 8px;
+					background: #d8d8d8;
+
+				}
+				&.slick-active {
+					button {
+						transform: translateY(0);
+						width: 15px;
+						height: 15px;
+						background-color: $red;
+					}
+				}
 			}
 		}
 	}

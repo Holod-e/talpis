@@ -253,14 +253,23 @@ section.breadcrumbs {
 		border-radius: 4px;
 		background-color: $white;
 		padding-left: 24px;
+		padding-top: 3px;
 		height: 42px;
 		border: none;
 		outline: none;
-		color: #aab9c9;
+		color: #000;
 		font-family: $CR;
 		font-size: 16px;
-		line-height: 42px;
+		line-height: 40px;
+		vertical-align: middle;
 		position: relative;
+		&::-webkit-input-placeholder,
+		&::-moz-placeholder,
+		&:-moz-placeholder,
+		&:-ms-input-placeholder {
+			line-height: 42px;
+			vertical-align: middle;
+		}
 		&:hover,
 		&:active,
 		&:focus {
