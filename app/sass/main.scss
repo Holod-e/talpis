@@ -621,6 +621,15 @@ h1.course-title {
 	}
 }
 
+.vseladd-additions {
+	.seminar-plan {
+		ul li.small {
+			padding-top: 13px;
+			padding-bottom: 13px;
+		}
+	}
+}
+
 .seminar-plan {
 	display: none;
 	text-align: center;
@@ -638,22 +647,8 @@ h1.course-title {
 		border-radius: 10px;
 		position: relative;
 		padding-top: 72px;
-		padding-bottom: 118px;
-		// &:after {
-		// 	content: '';
-		// 	display: block;
-		// 	width: 44px;
-		// 	height: 44px;
-		// 	border-radius: 50%;
-		// 	position: absolute;
-		// 	left: 50%;
-		// 	transform: translateX(-50%);
-		// 	bottom: -22px;
-		// 	box-shadow: 0px 1px 21px 0px rgba(0,0,0,0.1);
-		// 	background: #fff url(../img/up-red.png) 50% no-repeat;
-		// 	cursor: pointer;
-		// 	z-index: 999;
-		// }
+		padding-bottom: 87px;
+		min-height: 944px;
 		.btn-close {
 			// content: '';
 			display: block;
@@ -1742,11 +1737,14 @@ article.type-post {
 				width: 219px;
 				height: 236px;
 				overflow: hidden;
-				img {
+				.seminar-image {
 					width: 219px;
 					height: 236px;
 					overflow: hidden;
 					border-radius: 3px;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: 50% ;
 				}
 			}
 			.seminar-info-header {
@@ -1839,7 +1837,7 @@ article.type-post {
 			p {
 				display: inline-block;
 				padding-left: 23px;
-				margin: 0 30px;
+				margin: 0;
 				color: #c8e6f9;
 				font-family: $CR;
 				font-size: 14px;
@@ -1850,6 +1848,7 @@ article.type-post {
 					background: url(../img/seminar-adress-icon.png) 0 50% no-repeat;
 				}
 				&.seminar-price {
+					margin: 0 20px;
 					background: url(../img/seminar-price-icon.png) 0 50% no-repeat;
 				}
 				&.seminar-left-seats {
@@ -1916,6 +1915,40 @@ article.type-post {
 		margin-top: 48px;
 		display: inline-block;
 	}
+}
+
+#semDate {
+	margin: 0 auto;
+	// width: 200px;
+	&:before{
+		content: '';
+		display: block;
+		width: 50px;
+		height: 76px;
+		background-color: #fff;
+		z-index: 95;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&:after{
+		content: '';
+		display: block;
+		width: 50px;
+		height: 76px;
+		background-color: #fff;
+		z-index: 95;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.slick-next {
+		right: 10px;
+	}
+	.slick-prev {
+		left: 10px;
+	}
+
 }
 
 /* ----------IMPORT FOOTER STYLES---------- */
