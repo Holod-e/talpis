@@ -39,6 +39,7 @@
 		transform: translateX(-50%);
 		background: url(../img/layer-gr.png) 50% 0 no-repeat;
 		position: absolute;
+		z-index: 99;
 	}
 	.cart-txt1 {
 		opacity: 0.8;

@@ -252,7 +252,7 @@ section.breadcrumbs {
 	.email {
 		border-radius: 4px;
 		background-color: $white;
-		padding-left: 24px;
+		// padding-left: 24px;
 		padding-top: 3px;
 		height: 42px;
 		border: none;
@@ -263,12 +263,14 @@ section.breadcrumbs {
 		line-height: 40px;
 		vertical-align: middle;
 		position: relative;
+		text-align: center;
 		&::-webkit-input-placeholder,
 		&::-moz-placeholder,
 		&:-moz-placeholder,
 		&:-ms-input-placeholder {
 			line-height: 42px;
 			vertical-align: middle;
+			text-align: center;
 		}
 		&:hover,
 		&:active,

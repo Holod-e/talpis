@@ -14,17 +14,25 @@
 		height: 44px;
 		background: url(../img/layer1.png) 0 0 no-repeat;
 	}
+	h2.sec-title:after {
+		margin-bottom: 46px;
+		margin-top: 33px;
+	}
 
 	aside {
 		display: inline-block;
 		vertical-align: top;
-		width: 260px;
+		width: 258px;
 		text-align: left;
 		.cources-list {
 			margin: 0;
+			padding-top: 12px;
+			padding-bottom: 12px;
 			padding-left: 13px;
 			width: 260px;
 			margin-bottom: 73px;
+			border-radius: 5px;
+			border: 1px solid #ebecee;
 			li {
 				list-style-type: none;
 				a {
@@ -61,6 +69,63 @@
 				}
 			}
 		}
+		.widgets {
+			.widget-title {
+				color: $darkB;
+				font-size: 26px;
+				&:after {
+					content: '';
+					display: block;
+					width: 62px;
+					height: 3px;
+					background-color: $red;
+					border-radius: 3px;
+					margin: 0;
+					margin-top: 18px;
+					margin-bottom: 27px;
+				}
+			}
+		}
+		.widget-body {
+			background-color:#fff;
+			.seminar {
+				margin-bottom: 30px;
+				&:after{
+					content: '';
+					display: block;
+					clear: both;
+				}
+			}
+			.seminar-photo {
+				background-position: 50%;
+				background-repeat: no-repeat;
+				width: 60px;
+				height: 60px;
+				background-size: cover;
+				box-shadow: 0 12px 10px rgba(235, 238, 244, 0.5);
+				float: left;
+			}
+			.seminar-info {
+				float: left;
+				margin-left: 16px;
+				.seminar-name {
+					color: $darkL;
+					font-family: $CR;
+					font-size: 16px;
+					line-height: 20px;
+				}
+				.date {
+					padding-left: 20px;
+					background: url(../img/icon-date.png) 0 40% no-repeat;
+					display: inline-block;
+					opacity: 0.8;
+					color: #999999;
+					font-family: $CR;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
 	}
 	article {
 		width: 100%;
@@ -79,11 +144,13 @@
 				border-radius: 5px;
 				background-color: #f6f9fd;
 				transition: all 0.3s linear;
+				border: 1px solid transparent;
 				&:hover,
 				&.active {
 					box-shadow: 0 12px 10px #ebeef4;
 					border-radius: 5px;
 					background-color: $white;
+					border: 1px solid #ebecee;
 				}
 				.cource-icon {
 					width: 72px;
@@ -266,6 +333,7 @@
 			}
 		}
 	}
+
 }
 
 .cources-sec2 {
@@ -314,4 +382,5 @@
 		height: 671px;
 		background: url(../img/widget2.jpg) 0 0 no-repeat;
 	}
+
 }

@@ -1255,9 +1255,40 @@ article.type-post {
 		margin-bottom: 60px;
 	}
 	.filters {
-		// background: url(../img/filters.png) 50% 0 no-repeat;
-		height:50px;
+		
+		// height:50px;
 		margin-bottom: 50px;
+		label {
+			color: #858585;
+			font-family: $CR;
+			font-size: 16px;
+			line-height: 18px;
+			position: relative;
+		}
+		select {
+			border: none;
+			color: $red;
+			font-family: $CB;
+			font-size: 13px;
+			text-transform: uppercase;
+			// width: 50px;
+			}
+		option {
+			color: #676767;
+			font-family: $CR;
+			font-size: 14px;
+			line-height: 28px;
+			text-transform: none;
+			margin-bottom: 7px;
+			&:focus {
+				box-shadow: 0 1px 30px rgba(162, 162, 162, 0.5);
+				border-radius: 5px;
+				border: 1px solid #eeeeee;
+				background-color: $white;
+				// position: absolute;
+				width: 222px;
+			}
+		}
 	}
 	.seminar {
 		display: none;
@@ -1269,6 +1300,9 @@ article.type-post {
 			padding: 22px;
 			height: 237px;
 			.seminar-images {
+				overflow: hidden;
+				width: 191px;
+				height: 191px;
 				float: left;
 				img {
 					width: 191px;
@@ -1675,6 +1709,212 @@ article.type-post {
 #modal-group-teraphy {
 	.btn {
 		margin-top: 30px;
+	}
+}
+
+.seminar-widgets {
+	position: relative;
+	transform: translateY(85px);
+	z-index: 999;
+	height: 236px;
+	overflow: hidden;
+	.closest-seminar {
+		max-width: 793px;
+		float: left;
+	}
+	.seminar {
+		// display: none;
+		height: 236px;
+		background-color: #167ab2;
+		border-radius: 5px;
+		overflow: hidden;
+		// &.f1.f2.f3 {display: block;}
+		.seminar-body {
+			padding: 0;
+			height: 237px;
+			&:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			.seminar-images {
+				float: left;
+				width: 219px;
+				height: 236px;
+				overflow: hidden;
+				img {
+					width: 219px;
+					height: 236px;
+					overflow: hidden;
+					border-radius: 3px;
+				}
+			}
+			.seminar-info-header {
+				padding-top: 12px;
+				padding-right: 24px;
+				padding-left: 24px;
+				height: 78px;
+				background: #156fa1 url(../img/seminar-city.png) 100% 100% no-repeat;
+				position: relative;
+			}
+			.seminar-info-body {
+				padding-top: 24px;
+				padding-right: 24px;
+				padding-left: 24px;
+				background-color: #167ab2;
+				padding-bottom: 24px;
+			}
+			.seminar-info {
+				height: 100%;
+				margin-left: 219px;
+				// float: left;
+				
+				position: relative;
+				.seminar-title {
+					color: $white;
+					font-family: $CB;
+					font-size: 20px;
+					line-height: 26px;
+					display: inline-block;
+					margin-left: 25px;
+				}
+				.seminar-description {
+					opacity: 0.8;
+					color: #c8e6f8;
+					font-family: $CR;
+					font-size: 16px;
+					line-height: 22px;
+					width: 331px;
+					display: inline-block;
+				}
+				.seminar-city {
+					color: $white;
+					font-family: $CR;
+					font-size: 22px;
+					line-height: 23px;
+					position: absolute;
+					top: 28px;
+					right: 26px;
+				}
+				.more-link {
+					color: #ff5656;
+					font-family: $CB;
+					font-size: 14px;
+					bottom: 0;
+					left: 0;
+					position: absolute;
+					display: inline-block;
+				}
+				.time-block {
+					display: inline-block;vertical-align: top;
+					p {
+						color: #c8e6f9;
+						font-family: $CR;
+						font-size: 18px;
+						line-height: 23px;
+						font-weight: 400;
+
+					}
+				}
+			}
+		}
+		.seminar-info-footer {
+			height: 67px;
+			background-color: #167ab2;
+			padding-top: 20px;
+			text-align: center;
+			position: relative;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				background-color: #1275ac;
+				max-width: 526px;
+				width: 100%;
+				height: 2px;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			p {
+				display: inline-block;
+				padding-left: 23px;
+				margin: 0 30px;
+				color: #c8e6f9;
+				font-family: $CR;
+				font-size: 14px;
+				line-height: 15.29px;
+				padding-top:5px;
+				padding-bottom: 5px;
+				&.seminar-adress {
+					background: url(../img/seminar-adress-icon.png) 0 50% no-repeat;
+				}
+				&.seminar-price {
+					background: url(../img/seminar-price-icon.png) 0 50% no-repeat;
+				}
+				&.seminar-left-seats {
+					background: url(../img/seminar-seats-icon.png) 0 50% no-repeat;
+				}
+			}
+		}
+	}
+	.calendar-widget {
+		float: left;
+		width: 324px;
+		height: 237px;
+		box-shadow: 0 12px 10px rgba(235, 238, 244, 0.5);
+		border-radius: 5px;
+		background-color: $white;
+		display: inline-block;
+		margin-left: 20px;
+		text-align: center;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		&__title {
+			color: $darkB;
+			font-family: $CB;
+			font-size: 18px;
+			margin-bottom: 34px;
+		}
+		.seminar-body {
+			display: none;
+		}
+		.seminar {
+			height: auto;
+			background-color: transparent;
+		}
+	}
+	.seminar-date-text {
+			margin: 10px 0;
+			text-align: center;
+			border: 1px solid #e8f2fc;
+			background-color: #f0f4f9;
+			opacity: 0.7;
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			display: inline-block;
+			padding-top: 11px;
+			padding-left: 12px;
+			padding-right: 12px;
+			// transition: all 0.3s linear;
+			cursor: pointer;
+		}
+
+	.slick-current .seminar-date-text {
+		border: 1px solid $red;
+		background-color: #fff;
+		transform: scale(1.2);
+	}
+	.slick-current:focus {
+		outline: none;
+	}
+	.tocalendar {
+		color: $red;
+		font-family: $CB;
+		font-size: 14px;
+		margin-top: 48px;
+		display: inline-block;
 	}
 }
 

@@ -76,21 +76,10 @@
 				}
 			}
 			a.hovered {
-				background-color: #fff;
-				color: #333333;;
+				color: $red;
 				border-radius: 4px 4px 0 0;
 				opacity: 1;
-				&:before {
-					content: '';
-					display: block;
-					background: url(../img/sum-menu-open.svg) 0 no-repeat;
-					width: 5px;
-					height: 8px;
-					position: absolute;
-					left: 90px;
-					top: 9px;
-					transform: rotate(90deg);
-				}
+				background: #fff url(../img/courses-open-icon-hover.svg) 92% 50% no-repeat;
 			}
 		}
 		.menu-item-has-children:hover {
@@ -101,16 +90,9 @@
 		.menu-item-has-children > a {
 			padding: 0 12px;
 			padding-right: 25px;
-			&:hover:before {
-				content: '';
-				display: block;
-				background: url(../img/sum-menu-open.svg) 0 no-repeat;
-				width: 5px;
-				height: 8px;
-				position: absolute;
-				left: 90px;
-				top: 9px;
-				transform: rotate(90deg);
+			background: url(../img/courses-open-icon.svg) 92% 50% no-repeat;
+			&:hover {
+				background: url(../img/courses-open-icon-hover.svg) 92% 50% no-repeat;
 			}
 		}
 	}
@@ -158,6 +140,7 @@
 	}
 	.search-form {
 		float: right;
+		margin:0 12px;
 		display: inline-block;
 		width: 34px;
 		height: 34px;

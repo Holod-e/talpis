@@ -59,6 +59,7 @@
 		}
 	}
 	.questions-block {
+		border-right: 1px solid #eeeeee;
 		.question {
 			max-width: 513px;
 			min-height: 182px;
@@ -106,7 +107,7 @@
 				color: $darkB;
 				font-family: $CB;
 				font-size: 20px;
-				line-height: 30px;
+				line-height: 23px;
 				margin-bottom: 16px;
 				transition: all 0.3s linear;
 			}
@@ -132,6 +133,10 @@
 				}
 			}
 		}
+		.slick-dots {
+			max-width: 513px;
+			bottom: -52px;
+		}
 	}
 	.answers-nav {
 		margin: 0 auto;
@@ -149,6 +154,7 @@
 				font-family: $CR;
 				font-size: 16px;
 				display: block;
+				margin-bottom: 4px;
 			}
 			input[type="text"],
 			.message{
