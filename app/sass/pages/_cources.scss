@@ -108,6 +108,7 @@
 			.seminar-info {
 				float: left;
 				margin-left: 16px;
+				max-width: 175px;
 				.seminar-name {
 					color: $darkL;
 					font-family: $CR;
@@ -361,10 +362,20 @@
 			font-family: $CR;
 			font-size: 16px;
 		}
+		 .more {
+		    color: #ff5656;
+		    font-family: CirceBold;
+		    font-size: 14px;
+		    text-align: right;
+		    display: block;
+		    padding-right: 10px;
+		    background: url(../img/priceseminar-icon.png) 100% 50% no-repeat;
+		}
 	}
 	aside {
 		// display: inline-block;
 		// float: right;
+
 		vertical-align: top;
 		.banner {
 			height: 218px;
@@ -381,6 +392,10 @@
 		// width: 456px;
 		height: 671px;
 		background: url(../img/widget2.jpg) 0 0 no-repeat;
+	}
+	.line {
+		height: 1px;
+		background-color: #eeeeee;
 	}
 
 }

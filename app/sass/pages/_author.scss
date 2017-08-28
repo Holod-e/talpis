@@ -158,6 +158,13 @@
 		height: 766px;
 		background: url(../img/widget-postandvideo.jpg) 0 0 no-repeat;
 		margin-bottom: 32px;
+
+	}
+
+	#post-and-video .search {
+		 #search-field {
+			max-width: 220px;
+		}
 	}
 	.widget-personalmeet {
 		height: 304px;
@@ -285,6 +292,9 @@
 			display: inline-block;
 			vertical-align: top;
 			text-align: center;
+			background-position: 50%;
+			background-size: cover;
+			background-repeat: no-repeat;
 			.hidden-text {
 				display: none;
 				color: $white;

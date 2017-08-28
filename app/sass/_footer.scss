@@ -71,6 +71,14 @@
 			a.pluso-more {
 				display: none !important;
 			}
+			.pluso-010010010110-05 .pluso-wrap {
+				a {border-radius: 50%;}
+				a.pluso-vkontakte {background: rgba(0,0,0,0.2) url(../img/vk-icon.png) 50% no-repeat !important ; }
+				a.pluso-facebook {background: rgba(0,0,0,0.2) url(../img/fb-icon.png) 50% no-repeat !important ; }
+				a.pluso-google {background: rgba(0,0,0,0.2) url(../img/gp-icon.png) 50% no-repeat !important ; }
+				a.pluso-twitter {background: rgba(0,0,0,0.2) url(../img/tw-icon.png) 50% no-repeat !important ; }
+				a.pluso-odnoklassniki {background: rgba(0,0,0,0.2) url(../img/od-icon.svg) 50% no-repeat !important ; }
+			}
 		}
 	}
 	.copy {
