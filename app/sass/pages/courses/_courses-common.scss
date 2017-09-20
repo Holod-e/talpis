@@ -254,7 +254,7 @@
 		margin-top: 38px;
 	}
 	.seminar {
-		display: inline-block;
+		display: none;
 		width: 50%;
 		height: 217px;
 		background-color:  #f6f9fd;
@@ -342,7 +342,10 @@
 			font-size: 14px;
 		}
 		&:nth-child(3),
-		&:nth-child(4){
+		&:nth-child(4),
+		&:nth-child(7),
+		&:nth-child(8)
+		{
 			.seminar-photo {
 				float: right;
 			}
@@ -353,6 +356,15 @@
 				}
 			}
 		}
+	}
+	.seminar:nth-child(1),
+	.seminar:nth-child(2),
+	.seminar:nth-child(3),
+	.seminar:nth-child(4){
+		display: inline-block;
+	}
+	.seminar.seminar-finished {
+		display: none;
 	}
 }
 
@@ -417,6 +429,8 @@
 		vertical-align: top;
 		// float: left;
 		background: url(../img/sertificate.png)0 50% no-repeat;
+		&.metafor-sert {background: url(../img/methafor-sert.jpg) 0 50% no-repeat;}
+		&.ts-sert {background: url(../img/ts-sert.jpg) 0 50% no-repeat;}
 	}
 	.sertificate-info {
 		width: 50%;

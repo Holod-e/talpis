@@ -105,7 +105,7 @@
 			}
 		}
 		.course1 {
-			background-image: url(../img/icon-course1.png);
+			background-image: url(../img/icon-metaphor-card-svg.svg);
 			&:hover {
 				.course-title {
 					color: $red;
@@ -141,7 +141,7 @@
 			}
 		}
 		.course4 {
-			background-image: url(../img/icon-course4.png);
+			background-image: url(../img/icon-course4.svg);
 			&:hover {
 				.course-title {
 					color: #edc92f;
@@ -154,7 +154,7 @@
 		}
 		.course5 {
 			padding-top: 137px;
-			background-image: url(../img/icon-course5.svg);
+			background-image: url(../img/icon-vselenskaya-additional-svg.svg);
 			.course-title {
 				margin-bottom: 16px;
 				&:after {
@@ -162,7 +162,7 @@
 				}
 			}
 			&:hover {
-				border: 2px solid  #f29c1f;
+				// border: 2px solid  #f29c1f;
 				.course-title {
 					color:  #f29c1f;
 					&:after {
@@ -194,7 +194,7 @@
 				}
 			}
 			&:hover {
-				border: 2px solid   #4fba6f;
+				// border: 2px solid   #4fba6f;
 				.course-title {
 					color:  #4fba6f;
 					&:after {
@@ -207,7 +207,7 @@
 		.course8 {
 			background-image: url(../img/icon-course8.svg);
 			&:hover {
-				border: 2px solid #27d1db;
+				// border: 2px solid #27d1db;
 				.course-title {
 					color: #27d1db;
 					&:after {
@@ -372,7 +372,7 @@
 			margin-top: 48px;
 			// width: 456px;
 			height: 218px;
-			background-color: #dfdfdf;
+			background-color: #fff;
 		}
 	}
 }
@@ -413,6 +413,6 @@
 	.banner2 {
 		// width: 1104px;
 		height: 150px;
-		background-color: #dfdfdf;
+		background-color: #fff;
 	}
 }

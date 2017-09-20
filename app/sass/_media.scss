@@ -156,6 +156,8 @@ h2.sec-title {
 	.logo {
 		display: inline-block;
 		float: none;
+		font-size: 24px;
+		transform: translateY(0);
 	}
 	.header-menu {
 		display: none;
@@ -165,7 +167,7 @@ h2.sec-title {
 	}
 	.search-form {
 		margin-right: 40px;
-		margin-left: -40px;
+		margin-left: -5px;
 	}
 }
 
@@ -182,6 +184,9 @@ h2.sec-title {
 		font-size: 18px;
 		line-height: 24px;
 	}
+	.seminar-widgets {
+		display: none;
+	}
 }
 
 .home-sec2 {
@@ -196,6 +201,7 @@ h2.sec-title {
 			width: 290px;
 		}
 	}
+	
 }
 
 .home-sec3 {
@@ -246,6 +252,13 @@ h2.sec-title {
 	.author-title {
 		font-size: 32px;
 		line-height: 40px;
+		&:before {
+			left: 0;
+			top: -40px;
+		}
+		.blockq {
+			right: 20px;
+		}
 	}
 }
 
@@ -266,7 +279,7 @@ h2.sec-title {
 		br{display: none;}
 	}
 	.graphic {
-		padding-top: 70px;
+		padding-top: 80px;
 		width: 100%;
 		min-height: 380px;
 		background:  url(../img/graphic-xs.png) -10px 0 no-repeat;
@@ -289,6 +302,9 @@ h2.sec-title {
 		.info:nth-child(4) {
 			background: url(../img/info-icon4.png) 50% 0 no-repeat;
 		}
+	}
+	.txt2 {
+		width: 100%;
 	}
 }
 
@@ -418,6 +434,12 @@ h2.sec-title {
 	.review-slider {
 		padding: 20px;
 		width: 300px;
+		&:after {
+			right:-10px;
+		}
+		&:before {
+			left: -10px;
+		}
 		.review-info {
 			width: 100%;
 			.review-text {
@@ -443,6 +465,12 @@ h2.sec-title {
 				font-size: 14px;
 			}
 		}
+	}
+	.slick-prev {
+		left: -10px;
+	}
+	.slick-next {
+		right: -10px;
 	}
 }
 
@@ -959,6 +987,9 @@ h1.course-title {
 		height: 214px;
 		background: url(../img/sertificate-image-xs.png) 50% no-repeat;
 		margin-bottom: 30px;
+		background-size: cover;
+		&.metafor-sert {background-size: cover;}
+		&.ts-sert {background-size: cover;}
 	}
 }
 
@@ -1253,6 +1284,27 @@ h1.course-title {
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
+	.seminar-plan {
+		width: 100%;
+		left: 0;
+		transform: none;
+		top: 240px;
+		.title {
+			margin-bottom: 30px;
+		}
+		ul {
+			width: 100%;
+			li {
+				font-size: 18px;
+				line-height: 25px;
+				padding-left: 40px;
+				background-size: 30px;
+			}
+		}
+		.btn-close {
+			bottom: 12px;
+		}
+	}
 }
 
 .teta-sec-openforyou {
@@ -1313,6 +1365,8 @@ h1.course-title {
 	left: 16px;
 	bottom: 16px;
 }
+
+#post-and-video .search #search-field {max-width: 250px;}
 
 
 
