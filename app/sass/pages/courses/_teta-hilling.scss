@@ -287,7 +287,7 @@
 		li {
 			color: $darkL;
 			font-family: $CL;
-			font-size: 20px;  
+			font-size: 20px;
 			line-height: 28px;
 			padding-left: 68px;
 			background: url(../img/bull-big.png) 0 0 no-repeat;
@@ -359,10 +359,10 @@
 	.form-block {
 		padding-left: 50px;
 		padding-right: 50px;
-		width: 918px;
-		input[type="text"] {
-			max-width: 525px;
-		}
+		// width: 918px;
+		// input[type="text"] {
+		// 	max-width: 525px;
+		// }
 	}
 	.education-block {
 		max-width: 525px;

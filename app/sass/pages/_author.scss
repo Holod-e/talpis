@@ -184,6 +184,11 @@
 		border: 2px dashed $red;
 		padding-top: 54px;
 		text-align: center;
+		&.fixed {
+			position: fixed;
+			top:30px;
+			width: 366px;
+		}
 		.widget-title {
 			color: $darkB;
 			font-family: $CR;

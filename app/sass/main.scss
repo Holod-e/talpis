@@ -737,7 +737,7 @@ h1.course-title {
 // STYLES FOR SINGLE POST
 section.single-post {
 	padding-top: 60px;
-	
+
 	.latest-posts {
 		background-color: #f6f9fd;
 		padding:35px;
@@ -1979,6 +1979,7 @@ article.type-post {
 	z-index: 999;
 	height: 236px;
 	overflow: hidden;
+	text-align: left;
 	.closest-seminar {
 		max-width: 793px;
 		float: left;
@@ -2032,7 +2033,7 @@ article.type-post {
 				height: 100%;
 				margin-left: 219px;
 				// float: left;
-				
+
 				position: relative;
 				.seminar-title {
 					color: $white;
@@ -2150,7 +2151,7 @@ article.type-post {
 			height: auto;
 			background-color: transparent;
 		}
-		
+
 	}
 	.seminar-date-text {
 			margin: 10px 0;
@@ -2436,6 +2437,9 @@ article.type-post {
 	}
 }
 
+.othercity-text {
+	display: none;
+}
 /* ----------IMPORT FOOTER STYLES---------- */
 @import "_footer.scss";
 

@@ -76,6 +76,7 @@
 
 .modal-seminar-price .modal-content,
 .modal-teraphy .modal-content,
+.modal-form .modal-content
  {
  	text-align: center;
 	width: auto;
@@ -83,16 +84,19 @@
 	height: auto;
 }
 
-.modal-teraphy {
+.modal-teraphy,
+.modal-form {
 	text-align: center;
 }
 
-.modal-teraphy .modal-content {
+.modal-teraphy .modal-content,
+.modal-form .modal-content {
 	padding: 0;
 	margin: 5vh auto;
 }
 
-.modal-teraphy .form-block {
+.modal-teraphy .form-block,
+.modal-form .form-block {
 	width: 725px;
 	display: inline-block;
 	padding-top: 70px;
@@ -117,7 +121,10 @@
 		font-size: 20px;
 		line-height: 28px;
 	}
-	input[type="text"]{
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select {
 		width: 100%;
 		max-width: 525px;
 		height: 46px;
@@ -494,3 +501,79 @@
 		right: 0;
 	}
 }
+
+#modal-success-subscribe,
+#modal-success-course {
+	.modal-content {
+		border-radius: 10px;
+		width: 474px;
+		height: auto;
+		border-radius: 10px;
+		padding: 0;
+		background-color: #fff;
+		overflow: hidden;
+		.modal-header {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background: url(../img/modal-form-bg.jpg) 0 0 no-repeat;
+			background-size: cover;
+			.modal-icon {
+				width: 65px;
+				height: 65px;
+				border-radius: 50%;
+				margin: 0 auto;
+				margin-bottom: 25px;
+			}
+		}
+		.modal-footer {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+	.modal-title {
+		text-align: center;
+		color: #ffffff;
+		font-family: $CB;
+		font-size: 26px;
+		line-height: 32px;
+		margin-bottom: 17px;
+	}
+	.modal-text {
+		opacity: 0.8;
+		color: #ffffff;
+		font-family: $CR;
+		font-size: 16px;
+	}
+	.close-modal {
+		width: 171px;
+		height: 42px;
+		display: inline-block;
+		color: #ffffff;
+		font-family: CirceBold;
+		font-size: 13px;
+		line-height: 42px;
+		text-transform: uppercase;
+		border-radius: 21px;
+		background-color: #ff5656;
+	}
+	.close-button {
+		.one,
+		.two {
+			background-color: #fff;
+		}
+	}
+}
+
+#modal-success-course {
+	.modal-icon {
+		background: url(../img/modal-icon-course.png) 50% no-repeat;
+	}
+}
+div.wpcf7-mail-sent-ok {
+	display: none !important;
+}
+
+div.wpcf7 .ajax-loader {
+	display: none !important;
+}
+
