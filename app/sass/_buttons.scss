@@ -172,6 +172,14 @@
 	display: block;
 	float: right;
 	border-radius: 21px;
+	transition: all 0.2s linear;
+	&:hover,
+	&:focus {
+		transform: scale(1.02);
+	}
+	&:active {
+		background-color: #EA4141;
+	}
 }
 
 .search-btn {

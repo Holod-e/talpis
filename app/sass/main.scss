@@ -1590,14 +1590,21 @@ article.type-post {
 				padding-top: 10px;
 				padding-bottom: 10px;
 				&.seminar-adress {
+
 					background: url(../img/seminar-adress-icon.png) 0 50% no-repeat;
 				}
 				&.seminar-price {
+					display: none;
 					background: url(../img/seminar-price-icon.png) 0 50% no-repeat;
 				}
 				&.seminar-left-seats {
 					background: url(../img/seminar-seats-icon.png) 0 50% no-repeat;
 				}
+			}
+		}
+		&.mosc {
+			p.seminar-price {
+				display: inline-block;
 			}
 		}
 	}
@@ -1645,6 +1652,42 @@ article.type-post {
 
 
 // SEARCH RESULTS SECTION
+.single-post {
+	.container {
+		position: relative;
+	}
+	.subscribe-form {
+		height: 334px;
+		background: url(../img/searchformbg2.png) 50% no-repeat;
+		background-size: cover;
+		.form-title {
+			font-size: 20px;
+			line-height: 24px;
+			br {display: none;}
+			padding: 0 50px;
+		}
+		.name,
+		.email {
+			width: 307px;
+			margin-bottom: 10px;
+		}
+		.email {
+			margin-bottom: 30px;
+		}
+		&.fixed-form {
+			position: fixed;
+			width: 370px;
+			top: 50px;
+		}
+		&.absolute-form {
+			position: absolute;
+			width: 370px;
+			bottom: 0px;
+			margin-bottom: 0;
+		}
+	}
+}
+
 .searchresults-sec1 {
 	padding: 70px 0;
 	.subscribe-form {
@@ -2042,6 +2085,7 @@ article.type-post {
 					line-height: 26px;
 					display: inline-block;
 					margin-left: 25px;
+					max-width: 240px;
 				}
 				.seminar-description {
 					opacity: 0.8;
@@ -2116,6 +2160,7 @@ article.type-post {
 					background: url(../img/seminar-adress-icon.png) 0 50% no-repeat;
 				}
 				&.seminar-price {
+					display: none;
 					margin: 0 20px;
 					background: url(../img/seminar-price-icon.png) 0 50% no-repeat;
 				}
@@ -2123,6 +2168,11 @@ article.type-post {
 					margin: 0 20px;
 					background: url(../img/seminar-seats-icon.png) 0 50% no-repeat;
 				}
+			}
+		}
+		&.mosc {
+			p.seminar-price {
+				display: inline-block;
 			}
 		}
 	}
@@ -2397,6 +2447,13 @@ article.type-post {
 		line-height: 38px;
 		background: $white url(../img/calendar-btn.png) 50%  no-repeat;
 		cursor: pointer;
+	}
+}
+
+.seminar-widgets .seminar.seminar-finished {
+	.widget-seminar-btn {
+		pointer-events: none;
+		opacity: 0.4;
 	}
 }
 
