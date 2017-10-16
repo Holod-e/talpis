@@ -221,8 +221,9 @@
 }
 
 .met-sec7 {
-	padding-top: 150px;
-	min-height: 617px;
+	padding-top: 130px;
+	// min-height: 617px;
+	min-height: 577px;
 	background: url(../img/met-sec7bg.jpg) 50% no-repeat;
 	background-size: cover;
 	text-align: center;
@@ -232,12 +233,16 @@
 	}
 	.sec-subtitle {
 		color: #fff;
+		margin-bottom: 24px;
 		opacity: 0.8;
+	}
+	.underform-desc {
+		margin-top: 97px;
 	}
 }
 
 .met-sec8 {
-	height: 966px;
+	height: auto;
 	background-color: #eef3fa;
 	text-align: center;
 	.form-block {
@@ -245,11 +250,11 @@
 		padding-top: 78px;
 		padding-left: 100px;
 		padding-right: 100px;
-		padding-bottom: 90px;
+		padding-bottom: 60px;
 		border-radius: 10px;
 		background-color: $white;
 		margin: 0 auto;
-		transform: translateY(-100px);
+		transform: translateY(-55px);
 	}
 	.form-title {
 		color: $darkB;
@@ -288,12 +293,9 @@
 	input.country {background-image: url(../img/country-icon-form.png);margin-bottom: 0;}
 
 	.education-block {
-		padding-top: 40px;
-		padding-bottom: 30px;
 		border-top: 1px solid #e3e3e3;
-		border-bottom: 1px solid #e3e3e3;
-		margin-top: 45px;
-		margin-bottom: 45px;
+		// margin-top: 45px;
+		// margin-bottom: 45px;
 		.question {
 			color: #676767;
 			font-family: $CR;
@@ -301,41 +303,41 @@
 			line-height: 28px;
 			margin-bottom: 24px;
 		}
-		.radio {
-			color: #676767;
-			font-family: $CR;
-			font-size: 16px;
-			line-height: 36px;
-			margin: 0 25px;
-			display: inline-block;
-			position: relative;
-			padding-left: 30px;
-			&:before {
-				content: '';
-				display: block;
-				width: 20px;
-				height: 20px;
-				border: 2px solid #1397e1;
-				background-color: $white;
-				border-radius: 50%;
-				position: absolute;
-				left: 0;
-				top:7px;
-			}
-			&.checked {
-				&:after {
-					content: '';
-					display: block;
-					width: 12px;
-					height: 12px;
-					background-color: #1397e1;
-					border-radius: 50%;
-					position: absolute;
-					left: 4px;
-					top:11px;
-				}
-			}
-		}
+		// .radio {
+		// 	color: #676767;
+		// 	font-family: $CR;
+		// 	font-size: 16px;
+		// 	line-height: 36px;
+		// 	margin: 0 25px;
+		// 	display: inline-block;
+		// 	position: relative;
+		// 	padding-left: 30px;
+		// 	&:before {
+		// 		content: '';
+		// 		display: block;
+		// 		width: 20px;
+		// 		height: 20px;
+		// 		border: 2px solid #1397e1;
+		// 		background-color: $white;
+		// 		border-radius: 50%;
+		// 		position: absolute;
+		// 		left: 0;
+		// 		top:7px;
+		// 	}
+		// 	&.checked {
+		// 		&:after {
+		// 			content: '';
+		// 			display: block;
+		// 			width: 12px;
+		// 			height: 12px;
+		// 			background-color: #1397e1;
+		// 			border-radius: 50%;
+		// 			position: absolute;
+		// 			left: 4px;
+		// 			top:11px;
+		// 		}
+		// 	}
+		// }
 	}
 	.price-title {
 		color: $darkB;

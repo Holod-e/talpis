@@ -347,18 +347,23 @@
 .teta-sec7 {
 	background: url(../img/teta-sec7bg.jpg) 50% no-repeat;
 	background-size: cover;
+	padding-top: 76px;
 	height: 577px;
 	.sec-title {
 		&:after {
 			margin: 30px auto;
 		}
 	}
+	.underform-desc {
+		margin-top: 68px;
+	}
 }
 
 .teta-sec8 {
 	.form-block {
-		padding-left: 50px;
-		padding-right: 50px;
+		// padding-left: 50px;
+		// padding-right: 50px;
+		transform: translateY(-55px);
 		// width: 918px;
 		// input[type="text"] {
 		// 	max-width: 525px;
@@ -371,8 +376,8 @@
 	.bottom-text {
 		max-width: 620px;
 		display: inline-block;
-		margin-bottom: 36px;
-		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-top: 24px;
 		opacity: 0.8;
 		font-size: 16px;
 		font-family: $CR;

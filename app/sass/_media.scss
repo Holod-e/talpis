@@ -567,9 +567,14 @@ h2.sec-title {
 		height: auto;
 		label {
 			display: block;
+			margin-bottom: 30px;
+			margin-right: 0;
 			select {
 				display: block;
 				margin-bottom: 10px;
+				position:absolute;
+				right: 0;
+				top: 0;
 			}
 		}
 	}
@@ -637,11 +642,15 @@ h2.sec-title {
 			}
 		}
 		.seminar-footer {
-			height: 200px;
+			height: 160px;
 			.seminar-adress,
 			.seminar-place,
-			.seminar-left-seats {
-				display: block;
+			.seminar-left-seats,
+			.seminar-duration {
+				display: inline-block;
+				width: 49%;
+				margin: 0;
+				vertical-align: top;
 			}
 			.seminar-btn {
 				margin: 0 auto;
@@ -1373,6 +1382,7 @@ h1.course-title {
 #post-and-video .search #search-field {max-width: 250px;}
 .section-calendar .search-top #search-field {width: 85%;}
 
+.modal-teraphy,
 .modal-form {
 	.form-block {
 		width: 100%;

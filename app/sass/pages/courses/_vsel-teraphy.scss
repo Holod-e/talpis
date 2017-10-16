@@ -213,20 +213,15 @@
 }
 
 .vsel-sec9 {
-	background: url(../img/vsel-sec8.jpg) 50% no-repeat;
+	background: url(../img/vsel-sec9.jpg) 50% 0 no-repeat;
 	background-size: cover;
-}
-
-.vsel-sec10 {
-	height: 1112px;
-	padding-bottom: 123px;
-	.form-block {
-		.bottom-text {
-				margin-top: 36px;
-			margin-bottom: 0;
-		}
+	min-height: 603px;
+	padding-top: 133px;
+	.underform-desc {
+		margin-top: 108px;
 	}
 }
+
 
 .page-template-vselenadd .vsel-sec10 {
 	height: auto;

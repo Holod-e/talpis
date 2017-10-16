@@ -1560,7 +1560,7 @@ article.type-post {
 					padding-left: 18px;
 					bottom: 0;
 					right: 0;
-					width: 100px;
+					width: 110px;
 					height: 110px;
 					background: url(../img/time-block.png) 0 0 no-repeat;
 					p {
@@ -1591,14 +1591,17 @@ article.type-post {
 				padding-bottom: 10px;
 				&.seminar-adress {
 
-					background: url(../img/seminar-adress-icon.png) 0 50% no-repeat;
+					background: url(../img/icon-location.svg) 0 50% no-repeat;
 				}
 				&.seminar-price {
 					display: none;
-					background: url(../img/seminar-price-icon.png) 0 50% no-repeat;
+					background: url(../img/icon-price.svg) 0 50% no-repeat;
 				}
 				&.seminar-left-seats {
-					background: url(../img/seminar-seats-icon.png) 0 50% no-repeat;
+					background: url(../img/icon-places.svg) 0 50% no-repeat;
+				}
+				&.seminar-duration {
+					background: url(../img/icon-duration.svg) 0 50% no-repeat;
 				}
 			}
 		}
@@ -2157,16 +2160,19 @@ article.type-post {
 				padding-bottom: 5px;
 				&.seminar-adress {
 					display: none;
-					background: url(../img/seminar-adress-icon.png) 0 50% no-repeat;
+					background: url(../img/icon-location.svg) 0 50% no-repeat;
 				}
 				&.seminar-price {
 					display: none;
 					margin: 0 20px;
-					background: url(../img/seminar-price-icon.png) 0 50% no-repeat;
+					background: url(../img/icon-price.svg) 0 50% no-repeat;
 				}
 				&.seminar-left-seats {
 					margin: 0 20px;
-					background: url(../img/seminar-seats-icon.png) 0 50% no-repeat;
+					background: url(../img/icon-places.svg) 0 50% no-repeat;
+				}
+				&.seminar-duration {
+					background: url(../img/icon-duration.svg) 0 50% no-repeat;
 				}
 			}
 		}
@@ -2457,6 +2463,10 @@ article.type-post {
 	}
 }
 
+.moscov-price {
+	display: none;
+}
+
 .hidden-calendar {
 	display: block;
 	visibility: hidden;
@@ -2496,6 +2506,45 @@ article.type-post {
 
 .othercity-text {
 	display: none;
+}
+
+.underform-desc {
+	color: $white;
+	font-family: $CB;
+	font-size: 24px;
+	line-height: 36.94px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 92px;
+	position: relative;
+	&:after {
+		content: '...';
+		display: block;
+		opacity: 0.4;
+		color: $white;
+		font-family: $CB;
+		font-size: 16px;
+		width: 13px;
+		height: 13px;
+		transform: rotate(90deg) translateX(-50%);
+		position: absolute;
+		bottom: -21px;
+		left: 50%;
+	}
+}
+
+.date-title {
+	color: #545454;
+	font-family: $CR;
+	font-size: 18px;
+	line-height: 19.77px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.videoreview {
+	width: 708px;
+	height: 395px;
 }
 /* ----------IMPORT FOOTER STYLES---------- */
 @import "_footer.scss";
