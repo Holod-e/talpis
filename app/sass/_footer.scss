@@ -16,10 +16,10 @@
 			margin: 0 65px;
 			padding-left: 23px;
 		}
-		.place {background: url(../img/place-icon.png) 0 50% no-repeat;}
-		.email-adress {background: url(../img/email-icon.png) 0 50% no-repeat;}
+		.place {background: url(../img/place-icon.svg) 0 50% no-repeat;}
+		.email-adress {background: url(../img/email-icon.svg) 0 50% no-repeat;}
 		.phone-number {
-			background: url(../img/phone-icon.png) 0 50% no-repeat;
+			background: url(../img/phone-icon.svg) 0 50% no-repeat;
 			margin-right:0;}
 		.search {
 			width: 260px;
@@ -30,7 +30,7 @@
 			font-family: $CR;
 			font-size: 14px;
 			padding-left: 16px;
-			background:  #ecf1f6 url(../img/serach-icon.png) 90% 50% no-repeat;
+			background:  #ecf1f6 url(../img/serach-icon.svg) 90% 50% no-repeat;
 			margin-right: 30px;
 		}
 	}
@@ -73,10 +73,10 @@
 			}
 			.pluso-010010010110-05 .pluso-wrap {
 				a {border-radius: 50%;}
-				a.pluso-vkontakte {background: rgba(0,0,0,0.2) url(../img/vk-icon.png) 50% no-repeat !important ; }
-				a.pluso-facebook {background: rgba(0,0,0,0.2) url(../img/fb-icon.png) 50% no-repeat !important ; }
-				a.pluso-google {background: rgba(0,0,0,0.2) url(../img/gp-icon.png) 50% no-repeat !important ; }
-				a.pluso-twitter {background: rgba(0,0,0,0.2) url(../img/tw-icon.png) 50% no-repeat !important ; }
+				a.pluso-vkontakte {background: rgba(0,0,0,0.2) url(../img/vk-icon.svg) 50% no-repeat !important ; }
+				a.pluso-facebook {background: rgba(0,0,0,0.2) url(../img/fb-icon.svg) 50% no-repeat !important ; }
+				a.pluso-google {background: rgba(0,0,0,0.2) url(../img/gp-icon.svg) 50% no-repeat !important ; }
+				a.pluso-twitter {background: rgba(0,0,0,0.2) url(../img/tw-icon.svg) 50% no-repeat !important ; }
 				a.pluso-odnoklassniki {background: rgba(0,0,0,0.2) url(../img/od-icon.svg) 50% no-repeat !important ; }
 			}
 		}

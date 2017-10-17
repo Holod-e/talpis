@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="57px" viewBox="0 0 55 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-number-list</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Courses" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Vselenskaya-teraphy" transform="translate(-785.000000, -5033.000000)">
+            <g id="body" transform="translate(0.000000, 590.000000)">
+                <g id="base_course" transform="translate(166.000000, 4331.000000)">
+                    <g id="main" transform="translate(0.000000, 112.000000)">
+                        <g id="2row" transform="translate(620.000000, -0.000000)">
+                            <g id="1">
+                                <g id="icon-number-list" transform="translate(0.000000, 1.000000)">
+                                    <ellipse id="Oval-Copy" stroke="#34BF49" opacity="0.200000003" cx="26.5" cy="27.5" rx="26.5" ry="27.5"></ellipse>
+                                    <ellipse id="Oval" fill="#34BF49" opacity="0.0599999987" cx="26.5" cy="27" rx="15.5" ry="16"></ellipse>
+                                    <path d="M26.625,31.625 C26.4583325,31.7916675 26.2708344,31.875 26.0625,31.875 C25.8541656,31.875 25.6666675,31.7916675 25.5,31.625 L22,28.125 L23.125,27 L26.0625,29.9375 L33.875,22.0625 L34.9375,23.1875 L26.625,31.625 Z" id="ion-ios-checkmark-empty---Ionicons" fill="#34BF49"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

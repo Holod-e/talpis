@@ -152,7 +152,9 @@
 	input.phone {background-image: url(../img/phone-icon-form.svg);}
 	input.email {background-image: url(../img/email-icon-form.svg);}
 	input.country {background-image: url(../img/country-icon-form.svg);}
+	input.city {background-image: url(../img/country-icon-form.svg);}
 	input.your-city {    background-image: url(../img/country-icon-form.svg);}
+	input.skype {    background-image: url(../img/icon-skype.svg);}
 
 	.education-block {
 		margin-top: 24px;
@@ -244,6 +246,20 @@
 }
 
 
+.modal-teraphy .form-block {
+	.education-block {
+		margin: 0;
+		margin-top: 20px;
+	}
+}
+
+#modal-organization-form {
+	.education-block {
+		padding-top: 24px;
+		margin-top: 0;
+		border-top: 1px solid #e3e3e3;
+	}
+}
 #modal-video {
 	.modal-content {
 		background-color: transparent;
@@ -261,6 +277,7 @@
 #modal-success-subscribe,
 #modal-success-course,
 #modal-success-teraphy,
+#modal-success-groupteraphy,
 #modal-success-question,
 #modal-success-organizator {
 	.modal-content {
@@ -291,13 +308,13 @@
 			&:before {
 				content: '';
 				display: block;
-				width: 82px;
-				height: 26px;
-				top: -13px;
+				width: 40px;
+				height: 12px;
+				top: 0;
 				left: 50%;
 				transform: translateX(-50%);
 				position: absolute;
-				// background: url(../img/success-element.png) 50% no-repeat;
+				background: url(../img/success-element.jpg) 50% no-repeat;
 			}
 		}
 	}
@@ -353,9 +370,10 @@
 	}
 }
 
-#modal-success-groupteraphy {
+#modal-success-groupteraphy,
+#modal-success-teraphy {
 	.modal-icon {
-		background: url(../img/modal-success-icon.svg) 50% no-repeat;
+		background: #fff url(../img/modal-icon-gal.jpg) 50% no-repeat;
 	}
 }
 
@@ -371,7 +389,7 @@ textarea.expirience{
 	line-height: 24px;
 	padding-left: 16px;
 	margin-bottom: 35px;
-	height: 200px;
+	height: 81px;
 }
 
 div.wpcf7-mail-sent-ok {

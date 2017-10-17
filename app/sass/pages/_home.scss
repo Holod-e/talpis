@@ -229,7 +229,7 @@
 		vertical-align: top;
 		.sec-title {
 			padding-top: 40px;
-			background: url(../img/icon-quotes.png) 50% 0 no-repeat;
+			background: url(../img/icon-quotes.svg) 50% 0 no-repeat;
 		}
 		.video {
 			width: 100%;
@@ -263,6 +263,9 @@
 		.rewiews-block {
 			background-color: #f6f9fd;
 			padding-bottom: 35px;
+			.slick-dotted.slick-slider {
+				padding-bottom: 30px;
+			}
 			.rewiews-title {
 				padding-top: 40px;
 				padding-bottom: 15px;

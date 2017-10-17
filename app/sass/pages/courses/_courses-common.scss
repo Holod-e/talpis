@@ -238,7 +238,7 @@
 	}
 }
 #modal-organization-form .form-block input.your-city {
-	 background-image: url(../img/country-icon-form.png);
+	 background-image: url(../img/place-icon.svg);
 }
 
 #modal-organization-form .form-block p label {
@@ -246,8 +246,9 @@
 	font-family: CirceRegular;
 	font-size: 18px;
 	line-height: 28px;
-	margin-bottom: 20px;
-	}
+	display: block;
+	// margin-bottom: 20px;
+}
 
 .closest-seminars {
 	text-align: center;
@@ -348,7 +349,7 @@
 			font-family: $CR;
 			font-size: 14px;
 			padding-left: 20px;
-			background: url(../img/date-icon.png) 0 50% no-repeat;
+			background: url(../img/meta-time-icon.svg) 0 50% no-repeat;
 		}
 		.more {
 			position: absolute;

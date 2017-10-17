@@ -540,7 +540,7 @@ h1.course-title {
 				display: block;
 				width: 53px;
 				height: 53px;
-				background: url(../img/bull-big.png) 50% no-repeat;
+				background: url(../img/bull-big.svg) 50% no-repeat;
 				position: absolute;
 				left: 0;
 				top: 0;
@@ -704,7 +704,7 @@ h1.course-title {
 			font-size: 20px;
 			line-height: 28px;
 			padding-left: 68px;
-			background: url(../img/bull-big.png) 0 0 no-repeat;
+			background: url(../img/bull-big.svg) 0 0 no-repeat;
 			text-align: left;
 			margin-bottom: 28px;
 			position: relative;
@@ -1245,15 +1245,15 @@ article.type-post {
 			}
 			.time {
 				padding-left: 25px;
-				background: url(../img/meta-time-icon.png) 0 50% no-repeat;
+				background: url(../img/meta-time-icon.svg) 0 50% no-repeat;
 			}
 			.wiews-number {
 				padding-left: 27px;
-				background: url(../img/meta-wiews-icon.png) 0 50% no-repeat;
+				background: url(../img/meta-wiews-icon.svg) 0 50% no-repeat;
 			}
 			.comments-number {
 				padding-left: 27px;
-				background: url(../img/meta-comments-icon.png) 0 50% no-repeat;
+				background: url(../img/meta-comments-icon.svg) 0 50% no-repeat;
 			}
 		}
 		p {
@@ -1301,7 +1301,7 @@ article.type-post {
 		}
 		.btn-search {
 			border-radius: 0 3px 3px 0;
-			background: $red url(../img/search-icon.png) 50% no-repeat;
+			background: $red url(../img/search-icon.svg) 50% no-repeat;
 			width: 47px;
 			height: 34px;
 			border: none;
@@ -1339,7 +1339,7 @@ article.type-post {
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%, -50%);
-			background: url(../img/play-icon.png) 50% no-repeat;
+			background: url(../img/play-icon.svg) 50% no-repeat;
 		}
 		.video-image {
 			display: block;
@@ -1490,7 +1490,7 @@ article.type-post {
 		}
 		.btn-search {
 			border-radius: 0 3px 3px 0;
-			background: #ff5656 url(../img/search-icon.png) 50% no-repeat;
+			background: #ff5656 url(../img/search-icon.svg) 50% no-repeat;
 			width: 47px;
 			height: 34px;
 			border: none;
@@ -1562,7 +1562,7 @@ article.type-post {
 					right: 0;
 					width: 110px;
 					height: 110px;
-					background: url(../img/time-block.png) 0 0 no-repeat;
+					background: url(../img/time-block.svg) 0 0 no-repeat;
 					p {
 						color: #999999;
 						font-family:$CR;

@@ -145,7 +145,7 @@
 		width: 34px;
 		height: 34px;
 		border-radius: 100px;
-		background: rgba(255,255,255,0.2) url(../img/search-icon.png) 50% no-repeat;
+		background: rgba(255,255,255,0.2) url(../img/search-icon.svg) 50% no-repeat;
 		position: relative;
 		overflow: hidden;
 		transition: all 0.3s linear;
@@ -177,7 +177,7 @@
 			height: 34px;
 			border-top-left-radius: 100px;
 			border-bottom-left-radius: 100px;
-			background: $red url(../img/search-icon.png) 50% no-repeat;
+			background: $red url(../img/search-icon.svg) 50% no-repeat;
 			cursor: pointer;
 		}
 		&:hover,
