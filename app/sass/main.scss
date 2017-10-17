@@ -1660,9 +1660,11 @@ article.type-post {
 		position: relative;
 	}
 	.subscribe-form {
+		margin-top: 20px;
 		height: 334px;
 		background: url(../img/searchformbg2.png) 50% no-repeat;
 		background-size: cover;
+		// transition: all 0.3s linear;
 		.form-title {
 			font-size: 20px;
 			line-height: 24px;
@@ -1680,7 +1682,7 @@ article.type-post {
 		&.fixed-form {
 			position: fixed;
 			width: 370px;
-			top: 50px;
+			top: 0;
 		}
 		&.absolute-form {
 			position: absolute;

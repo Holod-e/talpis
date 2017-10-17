@@ -184,10 +184,17 @@
 		border: 2px dashed $red;
 		padding-top: 54px;
 		text-align: center;
+		transition: all 0.3s linear;
 		&.fixed {
 			position: fixed;
-			top:30px;
+			top:0px;
 			width: 366px;
+		}
+		&.absolute {
+			position: absolute;
+			bottom: -70px;
+			width: 366px;
+			height: 304px;
 		}
 		.widget-title {
 			color: $darkB;
@@ -294,6 +301,10 @@
 				}
 			}
 		}
+	}
+	aside {
+		height: 3500px;
+		position: relative;
 	}
 }
 
