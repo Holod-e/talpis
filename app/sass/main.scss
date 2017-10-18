@@ -298,6 +298,22 @@ h1.course-title {
 
 @import "_modals.scss";
 
+
+#toTop {
+	position: fixed;
+	border: 1px solid #FF5656;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	bottom: 40px;
+	right: 40px;
+	background-color: rgba(255,86,86,0.5);
+	display: none;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-image: url(../img/totop.svg);
+	z-index: 99;
+}
 .vseladd-sec1 {
 	padding-top: 168px;
 	background: url(../img/vseladd-sec1.jpg) 50% no-repeat;
