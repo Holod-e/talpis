@@ -46,7 +46,8 @@
 		&.el2 {
 			.element-icon {
 				background-color: #ff5656;
-				background-image: url(../img/trainer-el2.png);
+				background-image: url(../img/metaphor-cards-icon.svg);
+				background-size: 130px 130px;
 			}
 		}
 		&.el3 {
@@ -221,6 +222,7 @@
 		// width: 44%;
 		min-height: 702px;
 		background: url(../img/trainer-sec5-img.jpg) 100% 0 no-repeat;
+		background-size: contain;
 	}
 	ul {
 		margin: 0;
@@ -269,9 +271,12 @@
 	.form-block {
 		transform: translateY(-185px);
 		padding-bottom: 30px;
+		.after-price {
+			margin-bottom: 26px;
+		}
 	}
 	.bottom-text {
-		margin-top: 40px;
+		margin-top: 24px;
 		opacity: 0.8;
 		font-size: 16px;
 		font-family: $CR;

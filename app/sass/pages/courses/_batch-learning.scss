@@ -33,7 +33,8 @@
 		}
 		&.el1 .element-icon {
 			background-color: #ff5656;
-			background-image: url(../img/trainer-el2.png);
+			background-image: url(../img/metaphor-cards-icon.svg);
+			background-size: 100%;
 		}
 		&.el2 .element-icon {
 			background-color: #edc92f;
@@ -45,7 +46,8 @@
 		}
 		&.el4 .element-icon {
 			background-color: #f29c1f;
-			background-image: url(../img/batch-el4.png);
+			background-image: url(../img/vselenka-add-icon.svg);
+			background-size: 100%;
 		}
 		&.el5 .element-icon {
 			background-color: #2fa8cc;
@@ -122,6 +124,24 @@
 		.bottom-text {
 			margin-top: 36px;
 			margin-bottom: 0;
+		}
+		.price {
+			margin-bottom: 26px;
+			b {
+				font-size: 16px;
+				position: relative;
+				&:before {
+					content: '';
+					display: block;
+					height: 1px;
+					width: 83px;
+					position: absolute;
+					bottom: 11px;
+					left: 0;
+					transform: rotate(-6deg);
+					background-color: red;
+				}
+			}
 		}
 	}
 }
