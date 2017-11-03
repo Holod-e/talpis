@@ -8,7 +8,13 @@
 }
 
 .teta-sec2 {
+	.sec-subtitle {
+		margin-bottom: 0;
+		margin-top: 40px;
+	}
 	.elements {
+		margin-top: 50px;
+		@include clearfix();
 		.element {
 			width: 20%;
 			float: left;

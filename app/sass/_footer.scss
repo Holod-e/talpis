@@ -82,6 +82,7 @@
 		}
 	}
 	.copy {
+		text-align: left;
 		min-height: 50px;
 		background-color: #1c73a9;
 		padding-top: 16px;
@@ -91,6 +92,20 @@
 			font-family: $CR;
 			font-size: 13px;
 		}
+		.madeby {
+			color: #15557d;
+			font-family: $CB;
+			font-size: 13px;
+			display: inline-block;
+			float: right;
+			.dotwork-logo {
+				margin-left: 9px;
+				width: 64px;
+				height: 13px;
+				display: inline-block;
+				background: url(../img/dotwork-logo.svg) 0 0 no-repeat;
+			}
+		}
 	}
 }
 
@@ -99,6 +114,14 @@
 		.top-footer {
 			p {
 				margin: 0 30px;
+			}
+		}
+		.copy {
+			text-align: center;
+			.madeby {
+				float: none;
+				display: block;
+				margin-top: 10px;
 			}
 		}
 	}
