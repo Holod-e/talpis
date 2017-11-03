@@ -207,6 +207,7 @@
 			color: #000000;
 			font-size: 26px;
 			font-size: 14px;
+			margin-bottom: 20px;
 			span {
 				font-family: $CB;
 				color: #f34d67;
@@ -443,6 +444,7 @@
 		background: url(../img/sertificate.png)0 50% no-repeat;
 		&.metafor-sert {background: url(../img/methafor-sert.jpg) 0 50% no-repeat;}
 		&.ts-sert {background: url(../img/ts-sert.jpg) 0 50% no-repeat;}
+		&.vs-sert {background: url(../img/vs-sert.jpg) 0 50% no-repeat;}
 	}
 	.sertificate-info {
 		width: 50%;
@@ -482,7 +484,7 @@
 		opacity: 0.8;
 		color: $darkB;
 		font-family: $CR;
-		font-size: 26px;
+		font-size: 25px;
 		margin-bottom: 40px;
 	}
 	.text {
@@ -583,6 +585,16 @@
 			text-transform: uppercase;
 			color: #fff;
 			background-color: $red;
+		}
+	}
+	&.vs-sert {
+		.sert {
+			background: url(../img/vs-sert.jpg) 50% 0 no-repeat;
+		}
+	}
+	&.vsadd-sert {
+		.sert {
+			background: url(../img/vsadd-sert.jpg) 50% 0 no-repeat;
 		}
 	}
 }
